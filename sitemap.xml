@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ruixi.fun/2024/01/24/%E7%95%AA%E8%8C%84%E8%82%89%E6%9C%AB%E6%84%8F%E9%9D%A2/</loc>
+    <loc>https://ruixi.fun/2024/01/23/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</loc>
+    
+    <lastmod>2024-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ruixi.fun/2024/01/23/%E6%B5%81%E5%BC%8F%E7%BB%86%E8%83%9E%E6%9C%AF/</loc>
     
     <lastmod>2024-01-24</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://ruixi.fun/2024/01/19/%E8%A7%84%E5%88%92/</loc>
+    <loc>https://ruixi.fun/2024/01/24/%E7%95%AA%E8%8C%84%E8%82%89%E6%9C%AB%E6%84%8F%E9%9D%A2/</loc>
     
     <lastmod>2024-01-24</lastmod>
     
@@ -29,18 +38,9 @@
   </url>
   
   <url>
-    <loc>https://ruixi.fun/2024/01/23/%E6%B5%81%E5%BC%8F%E7%BB%86%E8%83%9E%E6%9C%AF/</loc>
+    <loc>https://ruixi.fun/2024/01/19/%E8%A7%84%E5%88%92/</loc>
     
-    <lastmod>2024-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ruixi.fun/2024/01/23/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</loc>
-    
-    <lastmod>2024-01-23</lastmod>
+    <lastmod>2024-01-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -250,6 +250,20 @@
   
   <url>
     <loc>https://ruixi.fun/tags/%E8%8F%9C%E8%B0%B1/</loc>
+    <lastmod>2024-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ruixi.fun/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2024-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ruixi.fun/tags/hexo/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
