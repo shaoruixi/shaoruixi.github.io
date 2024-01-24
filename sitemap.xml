@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ruixi.fun/2024/01/24/%E7%95%AA%E8%8C%84%E8%82%89%E6%9C%AB%E6%84%8F%E9%9D%A2/</loc>
+    
+    <lastmod>2024-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ruixi.fun/2024/01/24/%E5%8C%96%E5%A6%86%E5%93%81MSDS%E3%80%81COA%E5%92%8CTDS/</loc>
+    
+    <lastmod>2024-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ruixi.fun/2024/01/19/%E8%A7%84%E5%88%92/</loc>
     
     <lastmod>2024-01-24</lastmod>
@@ -225,6 +243,13 @@
   
   <url>
     <loc>https://ruixi.fun/tags/BCA%E6%B3%95/</loc>
+    <lastmod>2024-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ruixi.fun/tags/%E8%8F%9C%E8%B0%B1/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
