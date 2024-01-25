@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>BCA法测蛋白浓度</title>
+    <url>/post/7fce6e30.html</url>
+    <content><![CDATA[<h1 id="BCA法测蛋白（多肽）浓度"><a href="#BCA法测蛋白（多肽）浓度" class="headerlink" title="BCA法测蛋白（多肽）浓度"></a>BCA法测蛋白（多肽）浓度</h1><h4 id="BCA法所用试剂"><a href="#BCA法所用试剂" class="headerlink" title="BCA法所用试剂"></a>BCA法所用试剂</h4><p>A液：1%BCA二钠盐，0.4%氢氧化钠，0.16%酒石酸钠，2%无水碳酸钠，0.95%碳酸氢钠，混合后pH调至11.25</p>
+<p>B液：4%硫酸铜溶液</p>
+<span id="more"></span>
+
+<p>1、配置标准溶液。</p>
+<p>2、加入样品20微升。</p>
+<p>3、加入BCA工作液（A：B&#x3D;50:1）200微升，<strong>吹打均匀</strong>。</p>
+<p>4、37摄氏度放置30min，打开酶标仪（隔壁实验室，启动有点慢），测OD值。</p>
+]]></content>
+      <tags>
+        <tag>BCA法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Excel下拉多选</title>
+    <url>/post/f1cc98c4.html</url>
+    <content><![CDATA[<p>Excel下拉框一般只能单选，但有时候需要多选，多选的方法如下：</p>
+<span id="more"></span>
+
+<p>以office 2016中的excel为例：1、数据验证入口</p>
+<p><img src="https://img-blog.csdnimg.cn/20190909165615159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bW9yaWF0eQ==,size_16,color_FFFFFF,t_70"></p>
+<p>2、设置数据</p>
+<p><img src="https://img-blog.csdnimg.cn/20190909165643648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bW9yaWF0eQ==,size_16,color_FFFFFF,t_70"></p>
+<p>3、sheet页右击查看代码</p>
+<p><img src="https://img-blog.csdnimg.cn/20190909165719724.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bW9yaWF0eQ==,size_16,color_FFFFFF,t_70"></p>
+<p>4、复制下面代码进去：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190909165801100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bW9yaWF0eQ==,size_16,color_FFFFFF,t_70"></p>
+<p>5、效果如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190909170103723.png"></p>
+<p>VB代码如下：</p>
+<pre><code>Option Explicit
+
+Sub Worksheet_Change(ByVal Target As Range)
+&#39;让数据有效性选择 可以多选,重复选
+Dim rngDV As Range
+Dim oldVal As String
+Dim newVal As String
+If Target.Count &gt; 1 Then GoTo exitHandler
+
+On Error Resume Next
+Set rngDV = Cells.SpecialCells(xlCellTypeAllValidation)
+On Error GoTo exitHandler
+
+If rngDV Is Nothing Then GoTo exitHandler
+
+If Intersect(Target, rngDV) Is Nothing Then
+&#39;do nothing
+Else
+Application.EnableEvents = False
+newVal = Target.Value
+Application.Undo
+oldVal = Target.Value
+Target.Value = newVal
+If oldVal = &quot;&quot; Then
+Else
+If newVal = &quot;&quot; Then
+Else
+Target.Value = oldVal _
+&amp; &quot;, &quot; &amp; newVal
+End If
+End If
+End If
+
+exitHandler:
+Application.EnableEvents = True
+End Sub
+</code></pre>
+<p>————————————————</p>
+<p>版权声明：本文为CSDN博主「MapC」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。原文链接：<a href="https://blog.csdn.net/symoriaty/article/details/100667725">https://blog.csdn.net/symoriaty/article/details/100667725</a></p>
+]]></content>
+      <tags>
+        <tag>小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo博客迁移</title>
+    <url>/post/ae40b68b.html</url>
+    <content><![CDATA[<p>近期完成了拖延已久的博客迁移，实际方法很简单，将原电脑中的hexo文件夹拷贝到新电脑，终端输入几个指令，就可以重新在新电脑进行部署，推送。</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习记录</title>
+    <url>/post/8ad1a2bc.html</url>
+    <content><![CDATA[<ul>
+<li><p>2022年8月12日22:25:33 <a href="https://www.runoob.com/html/html-head.html">HTML 头部 | 菜鸟教程 (runoob.com)</a></p>
+</li>
+<li><p>2022年8月13日16:42:22 利用valine及<a href="https://console.leancloud.cn/apps">LeanCloud</a>搭建评论系统（无备案）</p>
+</li>
+<li><p>2022年9月11日17:15:08  插入&lt;!-- more --&gt;控制hexo next主页文章预览范围</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>化妆品MSDS、COA和TDS</title>
+    <url>/post/c5689b52.html</url>
+    <content><![CDATA[<h4 id="MSDS（Material-Safety-Data-Sheet）"><a href="#MSDS（Material-Safety-Data-Sheet）" class="headerlink" title="MSDS（Material Safety Data Sheet）"></a>MSDS（Material Safety Data Sheet）</h4><p>MSDS是<strong>化学品的安全说明书</strong>（Material Safety Data Sheet），国际上称作化学品安全信息卡，简称MSDS（欧洲一般叫SDS），是化学品生产商和进口商用来阐明化学品的理化特性（如PH值，闪点，易燃度，反应活性等）以及对使用者的健康（如致癌，致畸等）可能产生的危害的一份文件。是一份关于化学品的燃、爆性能，毒性和环境危害，以及安全使用、泄漏应急救护处置、主要理化参数、法律法规等方面信息的综合性文件，是传递化学品危害信息的重要文件。</p>
+<h4 id="COA（Certificate-Of-Analysis）"><a href="#COA（Certificate-Of-Analysis）" class="headerlink" title="COA（Certificate Of Analysis）"></a>COA（Certificate Of Analysis）</h4><p>COA中文意思是<strong>分析报告</strong>，一般针对产品的原料，每种原料都需要提供COA分析报告。化妆品类一般都需要做原料的COA报告，证明原料的安全性。目前欧盟的EC(EU) 1223&#x2F;2009法规就要求化妆品企业提供每个原料的COA报告。</p>
+<h4 id="TDS（Technical-Data-Sheet）"><a href="#TDS（Technical-Data-Sheet）" class="headerlink" title="TDS（Technical Data Sheet）"></a>TDS（Technical Data Sheet）</h4><p>TDS中文意思是<strong>技术参数表</strong>，也叫技术数据表。根据每个厂商的规格要求需提交技术参数表，以便和其他厂商做对比。招标、技术会议、规格、物流贸易都会提到技术参数表。</p>
+<p>PS:TDS和COA一般是针对原料的，MSDS一般是针对产品的。同一个原料或产品既可以做MSDS报告，也可以做TDS、COA报告，这三份报告是完全独立的。</p>
+<blockquote>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>小知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记 Day-2</title>
+    <url>/post/db90e617.html</url>
+    <content><![CDATA[<p>今天听了第一次组会，从中知道了自己需要学习的内容，以及一些文献汇报中的注意点。</p>
+<span id="more"></span>
+
+<p>需要学习的点：</p>
+<ul>
+<li><p><input disabled="" type="checkbox"> 
+免疫</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+细胞间接触</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+细胞培养</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+应力，应变</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+杨氏模量</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+电镜</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+成骨分化特异性标志物</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+材料@材料代表什么意思</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+EDS 分析</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+骨修复ct和micro ct</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+he染色</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+文献汇报注意点 创新点 认为怎么样</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记 Day-3</title>
+    <url>/post/ac97d681.html</url>
+    <content><![CDATA[<p>1、EDS分析：<strong>X射线能谱分析，简写EDS，通常通过配合扫描电子显微镜与透射电子显微镜的使用，是用来对材料微区成分元素种类与含量进行分析：利用电子束与物质作用时产生的特征X射线，来提供样品化学组成方面的信息，可定性、半定量检测大部分元素（Be4-PU94），可进行表面污染物的分析。</strong>  </p>
+<p>(1)定性分析<br>EDS的谱图中谱峰代表样品中存在的元素。定性分析是分析未知样品的第一步，即鉴别所含的元素。如果不能正确地鉴别元素的种类，最后定量分析的精度就毫无意义。  </p>
+<p>(2)定量分析<br>定量分析是通过X射线强度来获取组成样品材料的各种元素的浓度。根据实际情况，人们寻求并提出了测量未知样品和标样的强度比方法，再把强度比经过定量修正换算成浓度比。最广泛使用的一种定量修正技术是ZAF修正。</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记 Day-1</title>
+    <url>/post/4299b7ad.html</url>
+    <content><![CDATA[<p>初步了解一下导师实验室的研究内容，总结一下之前的了解情况</p>
+<p>交叉学科：生物科学、高分子科学、材料科学、医学科学</p>
+<p>研究角度：生物医学材料、保健品、环保材料、新型质纤维材料</p>
+<p>丝蛋白的基础理论与应用研究：生物矿化、干细胞培养、噬菌体展示技术<br>其他：生物敷料、多孔支架、微球、3D打印、纳米纤维</p>
+<p>具体：<br>        利用分子自组装原理阐明丝蛋白调控羟基磷灰石结晶生成的生物矿化机制<br>        蚕丝蛋白材料在骨组织工程领域的应用<br>        蚕丝蛋白材料在药物缓释载体领域的应用<br>        蚕丝蛋白材料在人工皮肤领域的应用<br>        蚕丝蛋白在环保领域的应用</p>
+<p>需要进一步了解的点：</p>
+<ol>
+<li><p>材料力学性能中的专业名词和公式原理等</p>
+<ol>
+<li><p>模量、断裂强度、GPa、MPa、断裂伸长率等</p>
+</li>
+<li><p>材料共混带来的影响</p>
+</li>
+<li><p>力学性能改善的方法</p>
+</li>
+</ol>
+</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="1-认识蚕丝"><a href="#1-认识蚕丝" class="headerlink" title="1.   认识蚕丝"></a>1.   认识蚕丝</h2><p>1.   蚕丝的基本知识</p>
+<ol>
+<li><p>蚕丝蛋白包括丝素蛋白和丝胶蛋白。</p>
+<p>丝素蛋白占蚕丝蛋白总含量的四分之三，丝胶蛋白含量约占四分之一。</p>
+<p>丝胶蛋白包裹与丝素蛋白纤维外侧，起到保护和黏附丝素蛋白的作用。</p>
+</li>
+<li><p>两种蛋白氨基酸组成相同，由18种氨基酸构成，但氨基酸含量占比不同。</p>
+<p><strong>丝素蛋白具有疏水性</strong>，疏水性氨基酸含量比亲水性氨基酸含量多，<strong>丝氨酸</strong>、<strong>丙氨酸</strong>和<strong>甘氨酸</strong>占氨基酸总量的87%。</p>
+<p><strong>丝胶蛋白具有亲水性</strong>，亲水性氨基酸含量比疏水性氨基酸含量多。</p>
+</li>
+<li><p>丝素蛋白为主要成分，占总蚕丝质量的70-75%，结构由：重链、轻链和P25蛋白构成，分子比为6：6：1。</p>
+<p>丝素蛋白中存在两种区域：以甘氨酸、丙氨酸和丝氨酸残基为主构成的整齐且有序的<strong>结晶区</strong>；以苯丙氨酸、酪氨酸、色氨酸等其他氨基酸残基构成的松散且无序的<strong>非结晶区</strong>。</p>
+<p><strong>重链</strong>中包含12个疏水结构域，由重复序列的氨基酸组成的疏水结构域能够形成β-折叠结构，提高了丝素蛋白的强度和韧性。11个亲水结构域由非重复序列氨基酸组成。主要有Silk I型、Silk II型和Silk III型三种聚集形态，I型主要存在于丝素蛋白非结晶区，分子构象介于α-螺旋和β-折叠之间（分子链构像以无规卷曲和α-螺旋为主？），通过改变温度、pH、剪切力等方法，可以使之转变为II型，更加稳定，是一种反平行β-折叠层状结构。</p>
+</li>
+<li><p>丝素蛋白材料的特性：</p>
+<ol>
+<li><p>丝素蛋白的<strong>力学性能</strong></p>
+<p>丝素蛋白中结晶区紧密的β-折叠结构，使其拥有较好的抗拉伸性和良好的韧性，而非结晶区的杂乱无序和较多的极性基团，又能使其获得较好的弹性和延展性。天然蚕丝纤维的初始模量为5-12GPa，断裂强度为500MPa，断裂伸长率为19%；脱胶蚕丝纤维的初始模量为15-17GPa，断裂强度为610-690MPa，断裂伸长率为4%-16%。与天然丝素纤维相比，再生丝素材料力学性能有所下降，所以改善再生丝素材料力学性能已成为丝素蛋白生物材料领域的重要研究课题。如将一些高分子物质，如聚乙二醇、聚己内酯、聚乙烯醇等，与丝素蛋白进行共混，从而达到改善丝素材料力学性能的效果。此外，向再生丝素蛋白材料中添加微&#x2F;纳米级别的物质，同样可以制备得到力学性能增强的丝素材料。</p>
+</li>
+<li><p>丝素蛋白的<strong>生物相容性</strong></p>
+<p>生物相容性是指材料与生物体之间相互作用后产生的各种反应，包括生物反应、物理反应、化学反应等。丝线缝合的成功使蚕丝蛋白成为一种具有良好生物相容性的材料。在丝素蛋白的18种氨基酸中，有11种氨基酸为人体必需的氨基酸，且蚕丝无毒无污染，具有良好的抑菌效果和一定的抗紫外线效果。其吸湿能力和保湿能力优良，致敏性极低。</p>
+</li>
+<li><p>丝素蛋白的<strong>可降解性</strong></p>
+<p>生物降解性是材料选择的一项重要指标。生物降解性是指生物材料在生理环境下发生分解、溶解或生分子量下降，降解产物可以被机体吸收或释放出体外的性质。丝素蛋白材料无论是何种形态，在合适的酶作用下都可以被最终降解。通过生物体内的可降解性实验表明，水凝胶丝素3D支架植入大鼠后，在几周内就出现裂解，并在一年后完全消失。宿主免疫系统对三维丝素蛋白多孔支架的降解并无明显排斥，这表明丝素不仅可降解，而且可以被机体有效吸收。</p>
+</li>
+</ol>
+</li>
+<li><p>丝胶含有较多极性残基蛋白，大部分由<strong>丝氨酸</strong>和<strong>天冬氨酸</strong>组成，丝氨酸和天冬氨酸都是亲水基团，大约占丝胶成分的 80%，丝胶的结构排列也不紧密，分子间作用力小，这使得丝胶的亲水性较好。</p>
+</li>
+<li><p>丝素蛋白作为天然蛋白，有很好的生物相容性、降解性和稳定性，能促进细胞在材料表面的黏附，支持细胞的铺展和生长，维持细胞正常形态和功能，因此在骨修复、伤口敷料和生物传感器等<strong>生物医学组织工程</strong>。丝素蛋白经加工处理后可以获得不同形态：如<strong>膜、凝胶、微球和多孔支架</strong>等。</p>
+</li>
+</ol>
+<p>    饲养家蚕可以获得家蚕蚕丝，正常家蚕吐丝可获得椭圆状的蚕茧，改变家蚕营茧的蔟具可获得<strong>家蚕平面丝（Flat silk cocoon）</strong>。平面丝天然形成了一个平面的网状结构，是一种天然的高分子聚合物。</p>
+<hr>
+<h2 id="2-已有的蚕丝应用"><a href="#2-已有的蚕丝应用" class="headerlink" title="2.   已有的蚕丝应用"></a>2.   已有的蚕丝应用</h2><p>    传统：丝绸服装的制作，蚕丝被的加工，平面丝可加工成丝绵被、仿皮、地毯、书画丝纸等工艺品。但是经济效益不好。由蚕丝纤维加工成的织物具有优雅的外观、 柔软性、舒适性、亲肤性，并且能够生物降解，是一种非常优质的绿色环保面料。</p>
+<h2 id="3-丝素蛋白在生物材料领域的应用"><a href="#3-丝素蛋白在生物材料领域的应用" class="headerlink" title="3. 丝素蛋白在生物材料领域的应用"></a><strong>3. 丝素蛋白在生物材料领域的应用</strong></h2><h3 id="3-1-骨组织"><a href="#3-1-骨组织" class="headerlink" title="3.1  骨组织"></a>3.1  骨组织</h3><p>骨组织工程当前研究的重要方向是制备具有骨再生功能且可生物降解的支架材料。丝素蛋白已成为骨组织工程的重点开发对象，可形成各种形式的丝素蛋白生物材料，如丝素膜、丝素水凝胶、丝素多孔支架等。在骨组织修复应用中，丝素蛋白可以作为引导骨组织再生膜的重要材料来源，并通过先进的技术来改良其性能，对骨缺损修复起到重要作用。在骨组织工程所需的支架材料中，丝素蛋白可以提供细胞生长、附着和分化的空间。</p>
+<p>近年来，研究人员致力于研究具有良好骨传导性和骨诱导性，同时保有材料良好的生物相容性及降解性的丝素蛋白复合材料。羟基磷灰石是目前在复合材料中应用较为广泛的一种主要无机成分，此种复合材料的生物力学性能优越，作为工程支架时大大提高了力学性能和骨传导性。</p>
+<h3 id="3-2-血管组织"><a href="#3-2-血管组织" class="headerlink" title="3.2  血管组织"></a>3.2  血管组织</h3><p>丝素蛋白特殊的氨基酸排列结构使它具有一定的抗凝血功能，同时还具有抗血栓形成的表面，对高剪切应力和血流压力具有良好的抵抗力。将蚕丝蛋白用于人造血管的材料中，不但具有良好的生物相容性，还有利于人造血管的内皮细胞定植生长。此外，加入甘油可增加材料的难溶性，亦可提高止血性能。在丝素蛋白表面构建再生丝素蛋白和壳聚糖多层膜，可以显著提高人工血管材料的生物相容性，促进组织生长。 </p>
+<h3 id="3-3-神经组织"><a href="#3-3-神经组织" class="headerlink" title="3.3  神经组织"></a>3.3  神经组织</h3><p>每年有数以百万计的人遭受周围神经损伤，神经系统能够自我修复轻度伤害，而大的损伤需要通过在身体其他部位收获的神经移植物进行手术治疗。自体神经移植由于术后并发症和自体神经量有限的问题，并不能很好地满足医疗需求。寻找合适的生物材料来提高人工神经的修复能力是目前研究的关键点。国内外团队通过研究发现在丝素蛋白中混入丝胶蛋白可以大大提高材料的机械强度，制备出机械强度优良的高仿生丝胶蛋白&#x2F;丝素蛋白共混材料人工神经导管。此外3D打印技术与静电纺丝法相结合所制备出的聚吡咯&#x2F;丝素蛋白纤维基导电型复合支架，支架稳定性强，生物相容性好，有助于背根神经节的粘附生长和轴突的延伸生长。 </p>
+<h3 id="3-4-皮肤组织"><a href="#3-4-皮肤组织" class="headerlink" title="3.4  皮肤组织"></a>3.4  皮肤组织</h3><p>丝素蛋白能很好地支持人类角质形成细胞和成纤维细胞。用丝素蛋白制成的皮肤敷料可以帮助皮肤得到更快的修复。以丝素蛋白作为主要材料来制备皮肤敷料时，主要是以丝素水凝胶形式进行。单颖慧老师团队通过静电纺丝法将黄芪装载于丝素&#x2F;明胶纳米纤维膜中，得到一种载药纳米纤维敷料，生物相容性好，促进皮肤创口愈合且能抑制疤痕形成。 </p>
+<h3 id="3-5-药物缓释载体"><a href="#3-5-药物缓释载体" class="headerlink" title="3.5  药物缓释载体"></a>3.5  药物缓释载体</h3><p>药物缓释是指使药物缓慢进入血液以降低血液中的药物浓度，所以制备能使被承载的药物缓慢释放的载体材料是非常必要的。现今常见的材料包括壳聚糖、水凝胶、聚羟基丁酸酯等。丝素蛋白也因其优良特性在药物缓释中得到应用。张海云团队以丝素蛋白与 Fe3O4纳米颗粒为主要材料，制备成一种具有磁靶向的复合微球药物载体，其具有药物靶向释放能力，可以有效提高药物利用率和控制药物缓释，并证明了具备良好流动性后的丝素蛋白水凝胶的药物传递效率较高。</p>
+<h3 id="3-6-水凝胶"><a href="#3-6-水凝胶" class="headerlink" title="3.6  水凝胶"></a>3.6  水凝胶</h3><p>丝素蛋白通过氢键、亲疏水性、静电及剪切力等相互作用，使得分子链之间相互作用形成 β-折叠结构，导致大分子链之间相互缠绕、集聚，形成蛋白微球胶束，并进一步物理交联形成水凝胶。聚氨酯基丝素蛋白水凝胶是丝素蛋白复合水凝胶中的一种，因为同时具有水凝胶的优异生物相容性和聚氨酯材料在性能方面的可调性，一直受到研究人员的青睐。现有的工艺技术已将聚氨酯与丝素蛋白的优异性能结合起来，优化合成工艺，制备出力学性能较好的聚氨酯-丝素蛋白水凝胶材料，在生物工程材料领域有着广泛的应用前景。</p>
+<h2 id="4-丝素蛋白未来的发展前景"><a href="#4-丝素蛋白未来的发展前景" class="headerlink" title="4.丝素蛋白未来的发展前景"></a><strong>4</strong>.<strong>丝素蛋白未来的发展前景</strong></h2><p>丝素蛋白目前最广泛的应用于在骨修复领域。主要包括丝素蛋白骨修复材料的制备工艺研究、体内外生物相容性研究、丝素蛋白生物材料对干细胞的成骨和成软骨诱导能力研究以及丝素组织工程骨在体内骨缺失修复效果研究几个方面。可以根据临床的实际需要，将丝素蛋白制备成不同形式的骨修复材料，如丝素膜、丝素纳米纤维、丝素水凝胶以及丝素多孔支架。此外，丝素蛋白生物材料能够通过化学修饰、负载生物活性因子以及复合无机物的等方式来增强骨修复的效果。虽然研究者对丝素蛋白在骨修复的应用进行了体内体外等一系列研究，但是离临床应用要求还一定差距，仍有一些问题需要解决，如: 丝素蛋白骨修复材料如何更好地调控种子细胞的成骨分化; 如何构建出更高机械强度的丝素蛋白骨修复材料; 如何确保丝素蛋白骨修复材料的降解速度与骨组织的生长相匹配等等。如果仅期望于通过优化丝素蛋白材料的加工工艺解决上述所有问题，其难度很大。因此，利用转基因技术得到适合于骨修复的具有优良性能的重组丝素蛋白，再通过化学修饰、组分复合等手段得到性能优良，具有临床应用价值的骨修复材料，将成为今后该领域研究的热点。此外，利用3D打印技术制备出完全模拟骨组织内部结构的丝素骨修复材料，以及对丝素生物材料体内外诱导成骨机理的研究，也是今后值得关注的课题。</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>干细胞人工子宫培养胚胎文献阅读</title>
+    <url>/post/7e182216.html</url>
+    <content><![CDATA[<p>Post-Gastrulation Synthetic Embryos Generated Ex Utero from Mouse Naive ESCs</p>
+<p>小鼠初始ESC能够在子宫外产生原肠运动后的合成胚胎</p>
+<p>Trophoectoderm induction: 滋养外胚层诱导</p>
+<p>Primitive Endoderm induction： 原始内胚层诱导：</p>
+<p>co-aggregation：共聚合</p>
+<p>egg-cylinder：卵圆筒</p>
+<p>EUCM：ex utero culture medium 宫外培养基</p>
+<p>organogenesis stage：器官发生期</p>
+<p>亮点：</p>
+<p>由胚胎干细胞在体外设置中自组装的高级合成胚胎（sEmbryos）</p>
+<p>幼稚的胚胎干细胞在胚胎中产生所有胚胎和胚胎外隔室</p>
+<p>原肠胚形成后干细胞衍生的胚胎发育出器官特异性祖细胞</p>
+<p>胚外隔室在原肠胚发育后充分发育整个胚胎</p>
+<span id="more"></span>
+
+<p>实验1：</p>
+<p>培养了可以被DOX诱发表达Cdx2基因的胚胎干细胞，叫做iCdx2</p>
+<p>表达出的Cdx2基因可以被Elf5-YFP报告，TSCs的可靠标记</p>
+<p>另外加入lysophosphatidic acid (LPA)， 一个Hippo 通路的阻碍物</p>
+<p>        2i &#x2F;LIF 培养基，包括基础培养基 N2B27( Knockout DMEM &#x2F;F12 + N2 + Neurobasal + B27 +20% SＲ) 添加 1 μmol &#x2F;L PD0325901( FGF － MAPK 通路抑制剂) 和 3 μmol &#x2F;L CHIＲ99021( GSK 通路抑制剂) 两个小分子化合物以及 10 ng &#x2F;mL 小鼠白血病抑制因子( mLIF) ，以丝裂霉素 C 处理过的小鼠胎儿成纤维细胞( MEF) 为饲养层培养小鼠胚胎干细胞，进而探讨该培养基对维持 ES 细胞多能性的影响，并进行 PCＲ 和免疫荧光检测以及体内外分化试验，为应用该培养基到大家畜多能干细胞体外培养奠定基础。结</p>
+<h3 id="Summary："><a href="#Summary：" class="headerlink" title="Summary："></a>Summary：</h3><p>具有不同发育能力的体外培养的干细胞在显微注射到植入前的哺乳动物胚胎后有助于胚胎或胚胎外组织。然而，培养的<strong>干细胞</strong>是否可以独立地产生具有<strong>胚胎</strong>和<strong>胚胎外隔室</strong>的整个<strong>原肠胚样结构</strong>仍然未知。在这里，我们调整了一个最近创建的平台，用于延长天然胚胎的宫外生长，以生成小鼠原肠胚后合成全胚胎模型（sEmbryos），包括胚胎和胚胎外隔室，仅从幼稚的 ESC 开始。这是通过共聚集非转导的 ESC 来实现的，幼稚的 ESC 瞬时表达<strong>Cdx2</strong> 或 <strong>Gata4</strong> 以促进它们分别向<strong>滋养外胚层</strong>和<strong>原始内胚层</strong>谱系的启动。 合成胚胎充分完成原肠胚形成，通过关键的发育里程碑，并在类似于 E8.5 阶段小鼠胚胎的复杂胚胎外隔室中发育器官祖细胞。我们的研究结果强调了<strong>幼稚多能细胞在原肠胚形成后自我组织和功能重组和模拟整个哺乳动物胚胎的可塑性潜力。</strong></p>
+<h3 id="Introduction："><a href="#Introduction：" class="headerlink" title="Introduction："></a>Introduction：</h3><p>        不同类型的干细胞可以在体外培养，当注入小鼠植入前胚胎时，它们可以促进胚胎或胚胎外组织的形成。在幼稚条件下培养的小鼠胚胎干细胞 (ESCs) 可以在囊胚显微注射后产生嵌合胚胎，证明这些细胞具有使胚胎的所有组织正常化的潜力 (Bradley et al., 1984)。小鼠胚胎衍生的滋养层干细胞 (eTSCs) 可以来源于早期胚胎 (E3.5–E6.5)，并且可以形成胚胎胎盘 (Tanaka et al., 1998)。</p>
+<p>        最近的研究越来越强调 <strong>ESC 在体外被诱导自组装成有组织的结构的能力</strong>，例如胚泡、类器官、组装体和原肠胚（Lancaster 等人，2013 年；Veenvliet 等人，2020 年）。为发展问题建模的开放途径。例如，将小鼠 ESC 与 eTSC 结合会形成类似囊胚的结构，称为胚状体。然而，后一种实体在子宫内移植时无法形成胚胎（Rivron 等人，2018 年）。类肠胚是由小鼠 ESC 制成的小聚集体，可以概括对称性破坏和轴形成（Beccari 等人，2018 年）。然而，目前可用的原肠胚没有表现出原始条纹形成，因此不能模拟真实的原肠胚形成，也不能完成原肠胚形成过程。此外，它们大多可以模仿大脑中后部而不是前部的发育，并且缺乏胚胎外隔室。</p>
+<p>        另一种方法是<strong>形成早期干细胞基模型</strong>，这些模型由不同类型的胚胎和胚胎外干细胞聚集形成（De Paepe等人，2013;加德纳等人，1973年）。在最近的实例中，将小鼠eTSCs和胚胎外内胚层（XEN）（Kunath等人，2005）细胞与ESC聚合导致形成类似于早期E6.0植入后胚胎的卵圆柱状结构（ETX）（Harrison等人，2017;索森等人，2018）。当使用Gata4诱导的ESC而不是XEN细胞时，可以达到E6.5阶段（Amadei等人，2021），这仍然无法完全通过原肠胚形成。然而，还不可能进一步测试和优化推定的早期胚胎样实体（例如，体外扩增的胚泡、ETX、胃管等）的发育潜力，因为在植入后阶段将胚胎移植回宿主子宫在技术上是不可行的，即使对于天然子宫，也有利于从这些胚胎阶段进行宫外胚胎发生的平台， 它允许联合和连续捕获正常的原肠胚形成和器官发生，直到最近才可用，即使对于天然胚胎也是如此（Aguilera-Castrejon等人，2021;贝林格等人，2014）。体外培养的干细胞或聚集体是否以及哪些可以产生具有胚胎和胚胎外区室的整个胚胎样实体，并且可以通过原肠胚形成并启动器官发生的概念证明仍有待确定。此外，TSC品系的可变性和有限的发展潜力（Seong等人，2022）凸显了探索仅从幼稚的ESC开始实现这一目标的可能性的必要性。</p>
+<p>        为了应对这一挑战，我们最近有能力设<strong>计静态和动态培养平台和生长条件</strong>，这些平台允许从原肠胚形成前到子宫内器官发生晚期阶段连续捕获自然小鼠胚胎发生（Aguilera-Castrejon 等人， 2021）。这是通过将滚筒培养系统集成在滚筒上（New，1978；Behringer 等，2014；Sturm 和 Tam，1993；Tam，1998）与内部开发的电子气体和压力调节模块（ Aguilera-Castrejon 等人，2021）。此外，<strong>我们定义了最适合生长植入后小鼠胚胎的生长条件（称为宫外培养基 [EUCM]）</strong>（Aguilera-Castrejon 等人，2021）。这项工作表明，在哺乳动物物种中，原肠胚形成和器官发生过程可以在培养皿中共同且连续地充分概括，进一步促使我们询问<strong>是否可以从体外培养的多能干细胞中从头开始重建这些过程。放置在这些人工的宫外实验环境中</strong>。我们将此类推定的高级原肠胚形成后胚胎样模型称为<strong>合成胚胎</strong> (<strong>sEmbryos</strong>)或<strong>合成全胚状体</strong> (<strong>SWEM</strong>)。</p>
+<h3 id="Result："><a href="#Result：" class="headerlink" title="Result："></a>Result：</h3><h4 id="Egg-cylinder-shaped-sEmbryos-generated-solely-from-naive-ESCs"><a href="#Egg-cylinder-shaped-sEmbryos-generated-solely-from-naive-ESCs" class="headerlink" title="Egg-cylinder-shaped sEmbryos generated solely from naive ESCs"></a>Egg-cylinder-shaped sEmbryos generated solely from naive ESCs</h4><h4 id="仅由幼稚-ESC-产生的卵圆柱形胚胎"><a href="#仅由幼稚-ESC-产生的卵圆柱形胚胎" class="headerlink" title="仅由幼稚 ESC 产生的卵圆柱形胚胎"></a>仅由幼稚 ESC 产生的卵圆柱形胚胎</h4><p>        最近的文献表明，多能性的幼稚状态可以被诱导产生TSCs和原始内胚层（PrE）谱系（Anderson等人，2017;布利杰等人，2015）。在幼稚的<strong>2i &#x2F; Lif</strong>（<strong>两种抑制剂&#x2F;白血病抑制因子</strong>）中生长的小鼠ESC以非常低的效率对胚胎外胎盘和卵黄囊做出贡献（Morgani等人，2013）。即使不需要异位转录因子过表达，也可以诱导人类幼稚多能细胞产生PrE细胞和TSCs的早期祖细胞（Bayerl等人，2021）。这表明，朴素多能细胞理论上可以作为胚胎和胚胎外组织的全部来源，因此可能通过仅从体外生长的幼稚ESC开始，从而能够产生整个晚期sEmbryos，这仍有待实验显示。</p>
+<p>        <strong>Cdx2</strong>（TSC谱系的主调节器）的过表达可导致小鼠TSC（滋养层干细胞）谱系的形成（Niwa等人，2005）。<strong>Gata4</strong>过表达在ESCs（藤仓等人，2002）和早期干细胞衍生模型中诱导PrE谱系，这些模型不能完成原肠胚形成（Amadei等人，2021）。目前，所有先前描述的原肠胚形成前胚胎样实体都是通过除ESCs之外使用eTSCs和&#x2F;或XEN细胞产生的（Amadei等人，2021;德佩等， 2013;加德纳等人，1973年;里夫隆等人，2018）。此，我们另一种目标是仅从幼稚的ESC中生成小鼠sEmbryos，其中一些短暂地过表达TSC和PrE谱系的主调控转录因子。我们的目标是优化条件，以便从朴素的ESC中快速有效地诱导TSC（图1A）。</p>
+<h5 id="1-iCdx2"><a href="#1-iCdx2" class="headerlink" title="1 iCdx2"></a>1 iCdx2</h5><p><strong>我们生成了 Cdx2 多西环素 （DOX） 诱导的胚胎干细胞 （iCdx2）（图 S1A），对其进行了另一个靶向以引入 Elf5-YFP 报告基因（本切特里特等人，2019 年），这是 TSC 的可靠标记</strong>。</p>
+<blockquote>
+<p>在TSC培养基（TSCm）条件下诱导Cdx2后，Elf5在72小时时重新激活明显（图1B）。在DOX诱导7天后，只有30%的细胞表达了Elf5-YFP报告基因（图1B）。在河马信号抑制之后，在早期胚胎中核YAP定位（香川等人，2022）是滋养外胚层（TE）命运诱导的决定因素以及Cdx2表达。尽管72小时的DOXLPA处理仍然是看到内源性Cdx2等位基因表达再激活的最短时间（图S1C），但荧光活化细胞分选（FACS）分析显示TSC诱导效率的加速，其中高达75%的人群在7天内采用TSC同一性（图1B），即使DOX在第3天停止（图S1D）。</p>
+</blockquote>
+<p><strong>不加入LPA 7天诱导只有30%，加入后7天诱导75%，抑制了Hippo 信号通路。</strong></p>
+<blockquote>
+<p>此外，在2i &#x2F; Lif条件下生长的朴素ESC产生Elf5 + TSC的效率比在血清&#x2F; Lif条件下生长的等基因ESC高14倍，并且等源启动的EpicSC未能产生小鼠TSCs（图S1F-G），与先前的结果一致（Blij等人，2015）。因此，我们专注于使用在2i &#x2F; Lif条件下生长的小鼠幼稚ESC（Hanna等人，2009;尼科尔斯和史密斯，2009）。</p>
+</blockquote>
+<p><strong>2i&#x2F;Lif 条件下效率高</strong></p>
+<blockquote>
+<p>通过RNA测序（RNA-seq）评估来自朴素电调的TSC诱导动力学（图1C）。在 Cdx2-LPA 诱导 96 小时后，体培养物显示与已创建的 eTSC 谱系聚集在一起的基因表达谱，而如果不进行 LPA 处理，Cdx2 诱导需要三次传代（13 天）才能与 eTSC 谱系聚集（图 1C 和 S1B）。^注释</p>
+</blockquote>
+<p><strong>LPA处理可以加速cdx2诱导</strong></p>
+<h5 id="2-KH2-Gata4"><a href="#2-KH2-Gata4" class="headerlink" title="2 KH2-Gata4"></a>2 KH2-Gata4</h5><p><strong>我们生成了在 DOX 诱导 (iGata4 ESC) 后过度表达 Gata4 的 KH2-Gata4 小鼠 ESC 系</strong>。</p>
+<p>与之前的结果一样（Amadei 等人，2021），Gata4 和 PrE 标记的内源性表达可以在诱导后 24 小时检测到，支持初始 PSC 向 PrE 身份的启动（图 S1H-I）。值得注意的是，当从在引发的 EpiSC 条件下生长的同基因 iGata4 细胞开始时，不存在 PrE 标记诱导（图 S1J）。</p>
+<p><strong>我们测试了在 DOX 预处理和共聚集至第 5 天后组装三个幼稚 ESC 系（WT、iGata4 和 iCdx2）是否可以在体外产生卵圆柱状结构，以及细胞是否基于它们的转基因启动而分离（图 1D）。</strong></p>
+<blockquote>
+<p>每条线都用组成性表达不同荧光标签的慢病毒转导（图 1E）<strong>iCdx2-mCherry 线正确定位到卵圆柱状胚胎的胚外外胚层 (ExE) 隔间 (图 1F-H)。 WT-蓝色荧光蛋白 (BFP) 标记的 ESC 主要对胚胎本身有贡献，而 iGata4-GFP 标记的细胞定位于 sEmbryos 周围的内脏内胚层 (VE)</strong> (图 1F-H)。</p>
+</blockquote>
+<p>第 4 天对 Oct4（外胚层 [Epi]）、Tfap2c（ExE）和 Sox17（VE）的免疫染色证实了每个供体细胞群正确表达谱系标记（图 1H）。在大约 25% 的 sEmbryos 中观察到每种细胞类型的正确分离和定位（图 1G）。初始聚集后三种细胞类型之间不成比例和异常的共组装导致未能实现适当的分离（图 S2A）。</p>
+<h4 id="sEmbryos-self-assembled-from-naive-ESCs-develop-ex-utero-up-to-early-organogenesis"><a href="#sEmbryos-self-assembled-from-naive-ESCs-develop-ex-utero-up-to-early-organogenesis" class="headerlink" title="sEmbryos self-assembled from naive ESCs develop ex utero up to early organogenesis"></a>sEmbryos self-assembled from naive ESCs develop ex utero up to early organogenesis</h4><h4 id="初始胚胎干细胞自组装形成合成胚胎在体外子宫中发育到早期器官发生"><a href="#初始胚胎干细胞自组装形成合成胚胎在体外子宫中发育到早期器官发生" class="headerlink" title="初始胚胎干细胞自组装形成合成胚胎在体外子宫中发育到早期器官发生"></a>初始胚胎干细胞自组装形成合成胚胎在体外子宫中发育到早期器官发生</h4><p>我们研究了产生能够达到晚期原肠胚形成晚期原肠胚形成阶段的蛋圆柱形sEmbryos的能力，仅由开始的幼稚ESC种群制成，然后在它们共同聚集之前根据短暂的预处理细分为三个级分：（1）在TSCm中进行DOX &#x2F; LPA处理后，朴素iCdx2细胞（优先产生TSC谱系;图 1H]），（2） 在 2i&#x2F;Lif 条件下用 DOX 预处理 24 小时后的朴素 iGata4 电调（优先产生 PrE），以及 （3） 在 2i&#x2F;Lif 条件下培养的朴素 iGata4 电调（图 2A）。</p>
+<p>进行优化以确定与相对更有效的结果兼容的DOX预处理方案，并确定最佳的细胞数量和比率（图S2C–E）。发现以下条件最优（图2A）：</p>
+<p><strong>在2i &#x2F; Lif（或聚集介质[AM]）条件下预诱导24小时Gata4，在共聚集前的TSCm-LPA条件下预诱导Cdx2长达24小时至14天，以及在聚集后的前48小时内在AM中包含DOX。在第3天，AM被修订和增强的体外培养基（IVC）取代（Bedzhov和Zernicka-Goetz，2014），称为宫外培养基2（EUCM2）。由于它们的尺寸增加，聚集体被合并并轻轻地转移到放置在EUCM2中常规组织培养箱内的振荡器上的非粘附组织培养板上，这改善了结果（图S2E和S3E）。在第5天，在先前创建的EUCM条件下手动采摘卵圆柱形sEmbryos（图2B）并将其转移到子宫外辊培养系统中（图2C和S3），这些条件最初是为了支持从E5.5到E11的自然胚胎生长而开发的（Aguilera-Castrejon等人，2021）。从第5天到第8天，sembryos继续在辊培养系统中生长（图S3;视频 S1、S2、S3、S4 和 S5）。与仅通过 Cdx2 过表达在幼天 ESC 中的 TSC 诱导能力一致（图 1B），在 iCdx2 的预诱导阶段，无需使用 LPA 即可获得第 8 天 sEmbryos，尽管效率较低且存在外胎盘锥发育不足 （EPC） 解剖结构的趋势。仅在第5-8天继续静态条件会产生有害结果（图2G和S2E）。</strong></p>
+<p>这个为期8天的方案支持了朴素的ESC衍生聚集体的自组织和生长成在胚胎外膜内生长的器官发生阶段的sEmbryos（图2D-2F），与子宫发育的天然胚胎中的E8.5相当。充分发育的第8天sEmbryos在额外培养一天后没有显示出进一步的发育进展，并且心脏异常扩大，第9天有严重的心包积液（图S2B）。在先前发表的静态和IVC基于培养基的方案中，涉及使用敲除血清替代（KSR）的第4-7天生长的合成实体没有比以前实现的进一步发展（Amadei等人，2021年），并产生空卵黄囊（YSs）（图2G和S2E）。</p>
+<h4 id="sEmbryos-recapitulate-morphological-changes-occurring-during-natural-embryo-development"><a href="#sEmbryos-recapitulate-morphological-changes-occurring-during-natural-embryo-development" class="headerlink" title="sEmbryos recapitulate morphological changes occurring during natural embryo development"></a>sEmbryos recapitulate morphological changes occurring during natural embryo development</h4><h4 id="合成胚胎概括了自然胚胎发育过程中发生的形态变化"><a href="#合成胚胎概括了自然胚胎发育过程中发生的形态变化" class="headerlink" title="合成胚胎概括了自然胚胎发育过程中发生的形态变化"></a>合成胚胎概括了自然胚胎发育过程中发生的形态变化</h4><p>合成胚胎起源于幼稚的ESC起始种群忠实地类似于植入后自然发育的所有阶段（van Maele-Fabry等人，1992;帕拉梅斯瓦兰和谭，1995年;Tam和Snow，1980年），经历光生，对称性破坏和原肠胚形成，直到早期器官形成（图2B）**。</p>
+<p>卵圆柱形sEmbryos在方案的第3天开始出现**，当聚集体开始发光并形成外层细胞层时，没有经过早期的胚泡状形态。</p>
+<p>在<strong>第4天，聚集体显示出与E5.5胚胎相似的形态，并且清楚地分离到被一层VE细胞包围的Epi和ExE区室中</strong>（图2B）。</p>
+<p><strong>在第5天，sEmbryos与E6.5胚胎非常相似，显示出杯形的Epi和ExE之间的明显差异，两者都被VE包裹</strong>（图2B）。<strong>Epi显示一个扩大的羊膜前腔（PAC）并成功打破对称性，在Eppi的一侧显示一条初始原始条纹，毗邻ExE</strong>（图2B）。</p>
+<p>6天后，<strong>s胚胎达到神经板阶段。羊膜褶皱融合形成羊膜（Am），产生羊膜腔（AC），外丘脑腔（EC）（图2B），并且在神经板另一侧的ExE室中观察到初始的异囊芽（AB）</strong>。</p>
+<p>在第7天，<strong>YS有一个重大的扩张，然后围绕胚胎，模仿天然胚胎中发生的事情，而在Epi隔室中，前外胚层开始形成一个宽板，未来的神经沟，使头到尾轴的出现变得明显（图2B）。在第7天的sEmbryos的腹侧部分，原始条纹和心脏场的迁移是显而易见的，并且开始看到前肠内插，如E8.0天然胚胎（图2B）</strong>。</p>
+<p><strong>在第8天，s胚胎类似于E8.5胚胎的形态（图2E和F）。sEmbryos的背侧轴通过面向Am背侧的神经褶皱（NF）清楚地看到，与面向腹侧YS的前肠相反（图2E和2F）（视频S2）。sEmbryos继续完全包被包膜（YS和Am）内生长，并在胚胎的另一侧呈现EPC结构（图2E）。血岛（BI）在YS的外侧可见（图2E），血液开始在YS血管中循环（卵黄素循环）。sEmbryos显示形状良好的头部褶皱，神经管（NT），内陷的前肠，跳动的心脏和多达四对somites，然后是尾巴（图2F），显示头到尾和背腹轴的完整创建（视频S2）。尿囊从sEmbryo的后部延伸，将尾部连接到EPC（图2E）</strong>。</p>
+<p>在第 5 天（图 1G）选择用于在体外滚轮培养中进一步生长直到第 8 天的正常卵柱形胚胎中，2% 发育成与 E8.5 天然胚胎相当的 sEmbryos（图 S5B 和 S5C），从产生的总初始聚集体中产生有效的 0.1%0.5% 正常第 8 天 sEmbryo 发育效率（图 S5D 和 S5E）。尽管在第 8 天充分发育的 sEmbryos 的大小存在差异，但它们与子宫内发育的天然 E8.5 胚胎相当（图 S4C）。异常第8天获得的胚胎可在前、中、后区表现出多种异常，如缺乏NF或其他体节，以及在YS之外融合或发育的NF，这与它们的大小无关。图 S4C 和 S4D）。</p>
+<h4 id="Adequate-spatiotemporal-expression-of-lineage-markers-in-advanced-sEmbryos"><a href="#Adequate-spatiotemporal-expression-of-lineage-markers-in-advanced-sEmbryos" class="headerlink" title="Adequate spatiotemporal expression of lineage markers in advanced sEmbryos"></a>Adequate spatiotemporal expression of lineage markers in advanced sEmbryos</h4><h4 id="晚期胚胎中谱系标记的充分时空表达"><a href="#晚期胚胎中谱系标记的充分时空表达" class="headerlink" title="晚期胚胎中谱系标记的充分时空表达"></a>晚期胚胎中谱系标记的充分时空表达</h4><p>我们证实了在卵圆筒阶段预计存在于小鼠胚胎中的三种细胞谱系的规范标记物的正确表达：Oct4和Otx2的杯形Epi阳性;表示 Cdx2、Tfap2c 和埃欧梅斯的 ExE（与埃皮相邻）;以及囊括两个隔室的 Gata4、Gata6、Sox17 和 Foxa2 的 VE 阳性（图 3、S4A 和 S4B）。Otx2和埃欧姆也存在于胚胎VE中（图3A，S4A和S4B）。Epi 隔室中的 Sox2 表达式以及 ExE 在 sE 中得到了正确的概括。此外，前内脏内胚层（AVE）从上腹部远端到未来前部的正确创建和迁移，通过第4天骨形态发生蛋白（BMP）拮抗剂Cer1的染色来证明，无论是在上皮的远端或不对称地位于卵圆柱体的一侧（图3B）。</p>
+<p>第 5 天，在靠近 ExE 边界的 Epi 后侧出现了一群 Brachyury 细胞，与 Cer1 和 Dkk1 相对，证实了第 5 天 sEmbryos 中原始条纹的出现和原肠胚的开始（图 3C 和 S4B） .在第 6 天，Brachyury 细胞群扩大并迁移到 VE 和 Epi 之间的 Epi 远端（图 3E）。在第 6 天的卵圆柱状胚胎中，38% 的胚胎表现出明显的前后不对称性，这可以通过 Epi 一侧的神经板形成来证明（图 3D）。如 E7.5 天然胚胎所述（图 3E），在原始条纹远端存在 Foxa2&#x2F;Brachyury 细胞，可以明显看出轴向中胚层的出现。我们在第 6 天通过 Sox17&#x2F;Foxa2 的共染色鉴定了 sEmbryos 中的定形内胚层细胞，而沿着卵圆柱远端分配的一组 Foxa2&#x2F;Sox17 细胞识别了胚胎的新兴中线（图 3F）。</p>
+<p>为了分析 sEmbryos 中原始生殖细胞 (PGC) 的出现，我们使用了在 BVSC ESC 系中发现的 Blimp1-mVenus Stella-CFP 报告基因 (Hayashi et al., 2011)。我们在第 5 天检测到 Blimp1-mVenus 荧光报告基因的激活，特别是在假定的原始条纹位置，在 Epi&#x2F;ExE 的边界（图 3G，上排）。 FACS 分析证实了在第 5 天 sEmbryos 中出现了一个 PGC 群体，该群体已知首先起源于发育等效的天然 E6.5 胚胎中的 Blimp1 Stella 细胞（图 3H）。我们通过 Sox2 免疫染色观察到 sEmbryos 中的 PGC 在第 8 天迁移到胚胎的后腹侧部分（图 3G，下排）。</p>
+<p>除了在第8天sEmbryos和E8.5天然胚胎之间观察到的形态相似性（图2B和S5A）之外，我们还通过全脂免疫荧光评估几种谱系特异性标记物的表达，证实了适当的分化和组织形态发生。来自外胚层的NF和NT呈现出强烈的Sox2表达，沿着sEmbryo的前后轴正确分配，而沿着胚胎中线发现短叶细胞，类似于细长的切口（Nc）和尾芽（图4A）。Otx2在天然E8.5胚胎中标记胚胎前脑和中脑，并在sEmbryos中NF的前部检测到（图4A和S5F），而神经特异性标记物Pax6在sEmbryos的前脑，后脑和NT中表达，与Otx2共定位在前脑区域，其模仿在天然胚胎中观察到的模式（图4A）。Foxa2仅限于E8.5胚胎中线的Nc楼板，也在第8天sembryoos中检测到（图S5F）。心脏标志物肌球蛋白重链II（MHC-II）在sEmbryo的前腹侧可见，特异性地定位于心芽（图4A和S5G），与Gata4共定位，Gata4也在心脏的尾端，确定内胚层和YS处观察到。Hox基因Hoxb4在最前半生和副轴中胚层以及尾后脑处表达，证实了iCdx2 sEmbryos中与NT相邻的声线对的形成（图4B）。Sox17的表达模式（在肠管区域和YS处标记内胚层来源组织）和Sox9（识别神经嵴和Nc（Sox9））的表达模式也在第8天sEmbryos中得到适当分配（图S5F）。</p>
+<p>为了进一步分析 sEmbryos 中组织模式的程度，我们在第 8 天 sEmbryos 的前部、中部和尾部区域进行横向平面横截面，特别是胚胎 NT 和心脏（图 4C）。 Sox1 和 Foxa2 共染色表明在 NT 中正确创建了背腹轴，特别位于腹侧部分的双阳性细胞证明了这一点，类似于天然胚胎中的底板（图 4D）。在第 8 天 sEmbryos 中观察到 NT 近端区域的折叠和完全闭合，这与天然胚胎中所描述的一致（图 4D）。对整个胚胎的组织学检查显示，iCdx2 sEmbryos 和 E8.5 在子宫控制中的组织水平上具有高度相似性，无论是在胚胎的前部还是后部（图 4E 和 S5H）。</p>
+<p>在E8.5处，原始的心脏管经历循环并发育成腔室心脏（Mandrycky等人，2020）。我们观察到功能性跳动心脏的出现，这反过来又在第8天推动了sEmbryos的血液循环（视频S2）。发育中的心脏的组织学检查显示与E8.5天然胚胎的形态相似，显示心腔的形成以及心肌和心脏内侧心内侧心内膜的发育（图4E和F），表明心脏形态发生的正确概括。我们进一步分析了发育中的心脏的不同分化和模式标志物（Gata4，Gata6，Nkx2.5和MHC-II），所有这些标志物在sEmbryos的心脏管中都显示出适当的表达（图4F）。</p>
+<h4 id="Embryo-derived-TSC-lines-can-propel-self-organization-in-advanced-sEmbryos"><a href="#Embryo-derived-TSC-lines-can-propel-self-organization-in-advanced-sEmbryos" class="headerlink" title="Embryo-derived TSC lines can propel self-organization in advanced sEmbryos"></a>Embryo-derived TSC lines can propel self-organization in advanced sEmbryos</h4><h4 id="胚胎衍生的TSC线可以推动高级合成胚胎的自组织"><a href="#胚胎衍生的TSC线可以推动高级合成胚胎的自组织" class="headerlink" title="胚胎衍生的TSC线可以推动高级合成胚胎的自组织"></a>胚胎衍生的TSC线可以推动高级合成胚胎的自组织</h4><p>我们接下来继续测试 eTSC 系 (Tanaka et al., 1998) 是否可以在功能上产生也已启动器官发生的原肠胚形成后合成胚胎，这迄今为止尚未实现。我们将野生型 (WT) 幼稚 ESC 与 Dox 处理的 iGata4 ESC 和 eTSC 共同聚合以产生 sEmbryos (图 5A)。细胞在 4 天后自组织成类似于 E5.5 植入后天然胚胎的卵圆柱阶段胚胎（图 5B）。第 5 天，sEmbryos 表现出前后不对称并开始原肠胚形成，原始条纹 (PS) 标记 Brachyury 证明了这一点（图 5B-D），因为它发生在 E6.5 天然胚胎和 iCdx2 sEmbryos 中。聚集后 6 天，PS 延伸至 Epi 的远端；羊膜襞延伸，到达卵筒前部；指定AB； PS 中出现轴向中胚层（Foxa2&#x2F;Brachyury 双阳性细胞）（图 5B-5D）。这一阶段代表了先前研究中报告的当前限制（Amadei 等人，2021 年）。通过实时成像和流式细胞术，我们在第 5 天确认了 Blimp1 PGCs 和第 6 天 sEmbryos (eTSC) 中的 Stella PGCs 的出现（图 5E）。选择适当发育的蛋筒第 5 天 sEmbryos 在 EUCM 中进行进一步的宫外培养。用 eTSC 生成的第 8 天 sEmbryos 发育到被胚外膜包围的器官发生阶段，并且在形态上与在子宫内发育的 E8.5 天然胚胎相当（图 5B）。胚层标记的免疫染色分析显示与自然阶段匹配的胚胎（图 5F）和第 8 天 iCdx2 sEmbryos（图 4）相似的模式。与 iCdx2 方法相比，使用早期传代 eTSC 的第 8 天 sEmbryo 衍生效率高 4 倍（图 S5E）；然而，发现胚胎和胚胎外发育质量相当。</p>
+<h4 id="Development-of-extraembryonic-compartments-in-postgastrulation-sEmbryos"><a href="#Development-of-extraembryonic-compartments-in-postgastrulation-sEmbryos" class="headerlink" title="Development of extraembryonic compartments in postgastrulation sEmbryos"></a>Development of extraembryonic compartments in postgastrulation sEmbryos</h4><h4 id="原肠胚后胚胎中胚外隔室的发育"><a href="#原肠胚后胚胎中胚外隔室的发育" class="headerlink" title="原肠胚后胚胎中胚外隔室的发育"></a>原肠胚后胚胎中胚外隔室的发育</h4><p>我们试图进一步表征 sEmbryos 中的胚外组织。在第 7 天，YS 开始扩大并从背侧吞噬胚胎。 Am、EPC 和 YS BI 变得明显（图 6A；视频 S2）。在第 8 天，sEmbryo 完全在 YS 和 Am 内发育，Am 是从背侧包裹胚胎的最内层膜，被血管化的 YS 包围，EPC 附着在 sEmbryo 的另一侧（图 6A 和 6B)。此外，Foxa2 和 Sox17 在第 8 天 sEmbryos（基于 iCdx2 和基于 eTSC 的）中的 YS 和 EPC 中的存在和表达模式与子宫内 E8.5 胚胎胚胎外隔室中的自然相似（图 6C）。血岛 (BIs) 在合成 YS 的发育过程中广泛可见和丰富（视频 S2），并且整个 YS 的免疫染色用于标记这些原始造血祖细胞的 Runx1，称为红骨髓祖细胞 (EMPs)，证实了它们的身份（图 6D）。 FACS 分析证实了定义表面标记的真实表达，这些表面标记描绘了 sEmbryos 胚胎 YS 隔室中的造血祖细胞内的不同亚群，如先前在天然胚胎中所述（Iturri 等人，2021）（图 6E）。我们应用了基于功能性红细胞特异性甲基纤维素的测定来验证红细胞集落形成和扩展潜力。 sEmbryos 衍生的血液祖细胞形成具有适当形态的典型红系祖细胞集落（图 6F）。</p>
+<h4 id="scRNA-seq-analysis-validates-mouse-sEmbryo-complexity"><a href="#scRNA-seq-analysis-validates-mouse-sEmbryo-complexity" class="headerlink" title="scRNA-seq analysis validates mouse sEmbryo complexity"></a>scRNA-seq analysis validates mouse sEmbryo complexity</h4><h4 id="scRNA-seq-分析验证小鼠的复杂程度"><a href="#scRNA-seq-分析验证小鼠的复杂程度" class="headerlink" title="scRNA-seq 分析验证小鼠的复杂程度"></a>scRNA-seq 分析验证小鼠的复杂程度</h4><p>为了以更定量和更公正的方式表征和注释本文生成的高级 sEmbryos（基于 iCdx2 或 eTSC）中存在的各种细胞类型，我们进行了单细胞 RNA 测序（scRNA-seq）（图 S6A）。从第 8 天的具有 E8.5 样形态的胚胎中收集了总共 40,657 个细胞：三个胚胎在短暂的 3 天基于 DOX 的诱导（第 1 天到第 1 天）后从 iCdx2 细胞发育而来，四个胚胎从 iCdx2 发育而来基于 DOX 的诱导 10 天后的细胞（第 8 天到第 1 天），以及从 eTSC 开发的两个 sEmbryos（图 7A 和 7B）。此外，从作为参考对照的天然子宫内生长的 E8.5 胚胎中收集了总共 26,948 个细胞。基于差异表达基因的聚类分析揭示了 23 种不同的细胞状态（图 7A 和 S6B）。随后，根据先前由早期小鼠胚胎的单细胞转录组学定义的主要细胞谱系的特定标记基因对簇的身份进行注释（图 S6B 和 S6C）（Ibarra-Soria 等人，2018 年）。所有三个胚层以及一个或多个簇中的所有胚外组织都被表示，表明在这些谱系中以类似方式在子宫内生长的天然胚胎和体外生长的胚胎中存在不同的细胞状态（图 7A 和 7C）。从基于 iCdx2 或 eTSC 的协议检查 sEmbryo 生物复制时，或在检查基于单个胚胎的 scRNA-seq 样本（短 iCdx2 诱导）时，获得了类似的结果（图 7B）。与 E6.5 或 E10.5 天然胚胎相比，没有观察到如此高的重叠（图 S6D）。在体外发育的第 8 天 sEmbryos 中发现的细胞类型与 E8.5 天然胚胎高度相似，表明谱系分化的复杂性和承诺在 sEmbryos 中在单细胞水平上得到了忠实的概括（图 7B 和 7C）。该分析证实，直到早期器官发生的胚胎中发育的胚胎中的细胞转录状态的组成与其天然对应物相当。比较 sEmbryos 和自然胚胎中不同细胞类型的相对细胞比例显示，大多数簇没有显着差异，而仅在 6 个细胞簇中发现了一些差异（图 7D）。某些种群丰度的这些选择性差异与将第 8 天 sEmbryo 与体外生长的 E8.5 天然胚胎（图 S6E 和 S6F）进行比较时观察到的微小丰度差异并不相似，这表明这些差异不是宫外生长平台的结果本身，而是来自分析的第 8 天 sEmbryos 的合成来源。</p>
+<p>在转录方面，与E8.5天然胚胎相比，23个细胞簇中的22个在第8天sEmbryos显示出非常高的相关性（0.93-0.98）（图S7A）。组织的特定标志物，如躯干中胚层，Nc，NT和心脏组织，在其相应的组织簇中特异性表达，无论是在sEmbryos还是在天然胚胎中（图S7B）。当关注不同胚外组织的特定标记物（Mittenzweig等人，2021）时，可以得出类似的结论（图S7B）。检查关键胎盘标记物的表达并将第8天SEmbryos与E8.5自然宫外和E8.5自然子宫外生长胚胎进行比较表明，虽然大多数标记物在所有三组中表达，包括绒毛膜和EPC祖细胞的标志物，但一些滋养层巨细胞和海绵滋养层细胞标志物（Lee等人，2016）在天然和合成的子宫前生长胚胎中都不存在或几乎不存在。后者表明，这主要是由于在涉及宫外胚胎发生的方案中没有母胎界面（图S7C）。总体而言，这些结果证明，尽管存在上述差异和异常，但第8天sEmbryos与子宫内或子宫外生长的天然E8.5对应物非常相似。</p>
+<h3 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h3><p>        我们报告说，我们最近开发的电子控制宫外胚胎培养平台和EUCM条件，可以忠实和连续地捕获小鼠自然原肠胚形成和宫外器官发生（Aguilera-Castrejon等人，2021），也可以支持通过共同聚集干细胞产生的原肠外胚形成sEmbryos的宫外自组织。聚集的幼稚多能干细胞在经历多能性和胚胎外谱系启动的同时，组装成卵圆柱形，然后形成完整的胚胎样模型，完成原肠胚形成，并显着超越大脑（包括前脑和中脑区域），NF，模式NT，肠管，跳动的心脏，somites，迁移的PGC和其他器官的祖细胞。本文中描述的sEmbryos在胚胎外膜内作为天然胚胎发育，并且不需要提供外部靶向信号通路诱导。本研究强调了幼稚多能干细胞在宫外进入先进有组织的整个胚胎样实体的休眠自组织能力。</p>
+<p>        我们的研究结果表明，高级sEmbryos 中的滋养层衍生的胚外区室可以仅从小鼠幼稚多能干细胞中产生，而不必仅从天然胚胎衍生的TSC 系中获得。鉴于先前的报告表明小鼠 ES 衍生的 TSC 没有完成其真正采用 eTSC 身份的过渡，后一个演示很重要（Cambuli 等，2014）。在我们的协议中使用 Hippo 通路抑制剂可能有助于最大限度地减少这些差异。对不同 TSC 生长条件和 eTSC 之间的异质性进行更密切的分子和功能研究（Seong 等人，2022 年）具有未来的科学意义。原肠胚后小鼠胚胎的产生，并且仅从幼稚的 ESC 开始，可以扩展可用于研究多个物种的早期胚胎发育生物学的实验平台。创建在知识、逻辑和设备的基础上，以扩展先进的完整小鼠胚胎模型，并利用人类幼稚多能性生长条件的最新进展（Gafni 等人，2013；Bayerl 等人，2021），研究人员可能会成为更接近于仅从人类幼稚 iPSC 生成人类合成胚胎模型。尽管如上所示，合成的全胚状体与胚胎不同，但它们仍可能在未来用作早期发育胚胎学研究和人类发育畸形建模期间无法访问的时间窗口的宝贵模型。后者也可以构成一个平台，通过在优化的宫外生长平台和条件下利用幼稚 iPSCs 的自组织能力进入 SWEMs，从人类幼稚 iPSCs 中诱导祖细胞群。来自这种合成的先进有组织实体的细胞和组织可能对细胞分化研究和移植生物技术有用。</p>
+<h4 id="Limitations-of-the-study"><a href="#Limitations-of-the-study" class="headerlink" title="Limitations of the study"></a>Limitations of the study</h4><h4 id="研究的局限性"><a href="#研究的局限性" class="headerlink" title="研究的局限性"></a>研究的局限性</h4><p>        利用FGF &#x2F;丝裂原活化蛋白激酶（MEK）信号抑制的幼稚多能干细胞生长条件导致印记丧失，从而扰乱这些细胞的发育潜力（Choi等人，2017）。将来，通过使用朴素条件，同时滴定抑制剂的浓度或替代幼稚条件，这种风险可能会减轻（Bayerl等人，2021;清水等人，2012）。我们注意到，eTSC系显示，在长时间传代后，sEmbryo形成中的产率降低，与延长传代时Elf5细胞分数的降低一致（图S1E）。后者可以通过诱导幼稚的ESC成为TE &#x2F; TSC来解决，这些ESC可以在每个聚集实验中短暂诱导。在sEmbryos形成过程中观察到的效率和异质性降低可能是一个复杂的因素。此外，第8天sEmbryo的形成效率在所使用的ESC线之间是可变的，并且一些测试的ESC线无法在协议的第6天之后生成sEmbryos。通过进一步的实验，未来可以提高sEmbryo形成的效率和可变性。此外，本文使用的宫外系统和条件已被证明能够支持自然胚胎的生长，直到E11（阿奎莱拉 - 卡斯特雷洪等人，2021）;然而，本文中描述的sEmbryos到目前为止只能达到E8.5。聚合协议或宫外生长平台的进一步改进是否可以克服这一障碍还有待了解。我们不能排除替代的宫外培养平台，聚合策略或生长条件可能产生与本文报道的结果相似或增强的结果。最后，虽然大多数获得的胚胎在与天然胚胎严格比较时显示出差异和异常，但产生充分完成原肠胚形成并在它们周围的合成胚胎外组织内启动神经形成和器官发生的综合胚胎模型的产生可能非常有用，因为它们仍然可以使用相对于任何其他目前可用的干细胞衍生的体外模型，以更复杂的方式评估体外干细胞分化。</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流式细胞术</title>
+    <url>/post/e3f27a88.html</url>
+    <content><![CDATA[<p>使用学院的流式细胞仪的操作步骤。</p>
+<p>准备：鞘液，超纯水，一次实验大概加入1L水。</p>
+<span id="more"></span>
+
+<p>1、打开稳压器电源，打开仪器背面的白色电源键，仪器预热20min（亮黄灯），绿灯预热结束。电脑软件左下角绿灯代表与仪器连接成功，右下角绿灯代表液流系统稳定（预热结束）。</p>
+<p>2、打开电脑，卡号不用填，填账号密码，打开软件，软件密码FACadministrator（密码小写）。点烧瓶按钮，打开自己的文件夹，save as 相关文件，开始测试。</p>
+<p>3、测试时先preview预览，可以调电压，然后acquire，接收10000个活细胞，然后next，测下一管。</p>
+<p>4、带格式化的u盘。导出数据，若是最后的同学，需要洗仪器，次氯酸钠，水，shutdown关机，关闭仪器电源，关闭电脑，关闭稳压器电源。</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么会想干点什么又懒得干，玩游戏又有罪恶感，时间“白白流失”?</title>
+    <url>/post/b652cec5.html</url>
+    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>     每次看到朋友圈里别人丰富多彩的生活，想想自己大学四年干了些什么，与别人对比起来总会有些遗憾和后悔，后悔有很多事情没有体验，后悔把时间大把大把地花费在游戏上面。这种后悔的产生是因为什么？游戏给我带来了些什么呢？玩游戏是不是就是浪费时间呢？电子游戏与体育运动以及其他娱乐活动比为什么总是感觉更加受人排斥呢？我想通过这篇文章，给自己一个满意的答案。突然觉得这就像考试答题一样，自己出题自己答，自己编答案。</p>
+<span id="more"></span>
+
+<h2 id="一、后悔的原因"><a href="#一、后悔的原因" class="headerlink" title="一、后悔的原因"></a>一、后悔的原因</h2><p>        为什么会产生后悔的这种情绪？从我自己来说，产生这种后悔情绪的原因感觉就只有一个：<strong>对比</strong>。</p>
+<p>        因为把自己与他人比较，感觉别人啊有多么厉害，拿到多高的成就，再想想自己，一事无成，一想为什么，<strong>打游戏</strong>。在潜意识里，我认为游戏是浪费时间的，这块待会再讲。因为与别人比较，让自己对自己过往的生活感觉到不满意，产生了如果我当初怎么怎么样，现在就会怎么怎么样的感觉。如果完全没有对比，只专注于自己现在过得怎么样，我认为是不大会产生这种后悔的，这种对自己打游戏的厌恶的。事实上游戏，只是自己给自己的<strong>懒惰</strong>找的一个原因。</p>
+<p>        对比，和他人对比，和自己的过往对比，可以催发自己的上进心，这应该是人在物种选择和进化过程中保留下来的一个比较重要的机制，对自身的发展和更高质量的生活有着必不可少的作用。</p>
+<h2 id="二、游戏的好处"><a href="#二、游戏的好处" class="headerlink" title="二、游戏的好处"></a>二、游戏的好处</h2><p>        回过头想想，游戏根据其类别不同带来的好处坏处也不同，其中一个共同拥有的属性是<strong>打发时间</strong><del>（浪费时间）</del>，让你能够渡过一个无聊的下午。其他好处又比如以下：</p>
+<p>        1、<strong>社交</strong>，通过游戏可以交到朋友，很多男生之间的感情靠着几款共同游玩的游戏维系着（夸张了），当然这种社交功能也不是游戏独有的，只要是一些人喜欢着共同的东西，不管是什么，都能起到社交的作用，但是由于玩游戏的群体多，所以带来的社交性更好，同时也可以是异地情侣之间远程共同做一件事的工具。</p>
+<p>        2、<strong>手眼协调能力，应变能力，计划策略能力</strong>，一些比如第一人称射击游戏（FPS），需要当你第一时间看到敌人时，用手把鼠标对准他，遇到不同的情况，之后怎么处理，为了最后的胜利，需要在什么情况作出什么判断，比如CS中的经济局等等。同时，这类电子竞技类游戏，越来越朝着传统体育类竞技比赛发展，逐渐被人们认同。而这类游戏发展出来的这些个能力，并不是一下子就能看出来的，它们的作用往往被人们所忽视，而且它们是否真的能够提升这些能力，有很多人还抱有疑问之前看到有文章说有研究证明智商高的人玩游戏好，而不是玩游戏可以提升智商，但从一些后天能够发展的这些能力来看，还是可以提升这些对生活有帮助的能力的。</p>
+<p>        3、<strong>解压，放松心情</strong>，当在现实生活中积攒了很多不愉快，心里感到压抑时，一些游戏可能可以帮助解压，转移注意力，当然这与游戏的类型也有关系，假如是竞技类的游戏没有胜利，失败得很惨，那可能反而会适得其反。</p>
+<p>        4、<strong>获得成就感，满足胜负欲、征服欲</strong>，当你擅长玩一个游戏的时候，在游戏里击败了你的对手，或者是花费了很多心思搭建了一个模型，或者是征服了整个帝国，你会得到现实生活中比较难以获得的成就感，在现实生活中不可能每个人都能走上人生巅峰，可是在电子游戏中是完全可以的。</p>
+<h2 id="三、游戏的坏处"><a href="#三、游戏的坏处" class="headerlink" title="三、游戏的坏处"></a>三、游戏的坏处</h2><p>        要说电子游戏最根源的坏处就是<strong>与现实脱节</strong>，你在游戏中的快乐和获得的成就，仅仅只能与玩这个游戏的圈子分享，再加上网络的远距离便捷性，这些你的网友可能与你相隔千里，在现实生活中的交流远远不如一起去KTV，一起打完篮球吃烧烤的朋友多。</p>
+<p>        第二个坏处就是<strong>太好玩了</strong>，给人带来的快乐，成就感什么的远远高于其他事情，让你没有动力去干其他的事情，可能会因为玩游戏错过了应该及时回复的消息，可能会让你错过饭点，不规律饮食，可能会让你对学业失去兴趣，可能会错失跟家人团聚的机会。</p>
+<p>        还有就是对自己的<strong>身体健康</strong>有一定影响，长时间保持着一个动作，会让关节僵硬，长时间得盯着屏幕，你眨眼的次数会显著地下降，你的眼睛会干涩，手长时间握着鼠标，可能会让你得上腱鞘炎，久坐又会对身体的各个地方有着不同的影响，时常会看到久坐猝死的新闻。</p>
+<h2 id="四、玩游戏是不是浪费时间呢？"><a href="#四、玩游戏是不是浪费时间呢？" class="headerlink" title="四、玩游戏是不是浪费时间呢？"></a>四、玩游戏是不是浪费时间呢？</h2><p>        这个问题怎么说呢，如果客观地讲，对于一个正在处于学业或者事业上升期的年轻人来说，对于个人的发展的影响，肯定是不如做一些其他的事情，但是由于游戏带来的<strong>即时</strong>的快乐，让你会<strong>生理性</strong>地否认玩游戏是浪费时间。那么我们该不该玩游戏呢，是不是玩游戏之后就该自责呢，从一个上帝的视角来看，你来到了这个世界上，迷上了一款游戏，这款游戏是一个游戏公司研发数年而成的，在这个游戏中你获得了快乐，但是你为了玩这个游戏，考试门门挂科，最后大学荒废四年。</p>
+<p>        其实有没有浪费时间，应该是看他有没有占用你这个阶段应该完成的主要任务的时间，比如你是个学生，那么你的主要时间总应该花费在学习上，比如你工作了，那么你的主要时间总该花在工作上，比如你成家了，那么你的工作之余的主要时间总要花在家庭上，游戏啊、追剧啊什么的总该只是你的生活中的一小部分。</p>
+<hr>
+]]></content>
+      <tags>
+        <tag>写作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>番茄肉末意面</title>
+    <url>/post/471ca101.html</url>
+    <content><![CDATA[<h3 id="材料："><a href="#材料：" class="headerlink" title="材料："></a>材料：</h3><p>食用油，大蒜2-3颗，番茄1个，肉末300g，意面170g，洋葱半个，番茄酱若干。</p>
+<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、准备食材：锅中加水，加入少许盐、油，水开加入意面煮约10min，捞出。番茄去皮，切碎；大蒜，切碎；洋葱切小块。</p>
+<p>2、锅中放油，比炒菜稍多，加入蒜末、洋葱块，炒至金黄，加入番茄丁、番茄酱，炒至浓稠出汁，加入肉末，炒熟。</p>
+<p>3、加入意面，翻拌均匀，出锅，可根据口味加生抽、番茄酱等。</p>
+<p>升级版：加入一大勺辣椒粉，翻拌均匀，再加入牛奶，成品粘稠带有辣椒香。</p>
+]]></content>
+      <tags>
+        <tag>菜谱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>聊天室-test</title>
+    <url>/post/3ad577bb.html</url>
+    <content><![CDATA[<p>来聊天啊</p>
+]]></content>
+      <tags>
+        <tag>聊天室</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蚕丝蛋白综述</title>
+    <url>/post/19afb55e.html</url>
+    <content><![CDATA[<h1 id="1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials"><a href="#1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials" class="headerlink" title="1. Structures, mechanical properties and applications of silk fibroin materials"></a>1. Structures, mechanical properties and applications of silk fibroin materials</h1><p>丝素蛋白材料的结构、力学性能及应用</p>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr1.jpg"></p>
+<blockquote>
+<p>Fig. 1. In vivo processing in silk glands and natural spinning by silkworms to produce fibroin fibers with unique features</p>
+</blockquote>
+<span id="more"></span>
+
+<hr>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr2.jpg"></p>
+<blockquote>
+<p>Fig. 2. <em>Bombyx mori</em> silkworm silk in various morphologies. (A) The raw silk consists of two fibroin fibers held together with a layer of sericin on their surfaces. After degumming to remove sericin, the fibroin fibers are dissolved in <a href="https://www.sciencedirect.com/topics/chemistry/lithium-bromide" title="Learn more about lithium bromide from ScienceDirect&#39;s AI-generated Topic Pages">lithium bromide</a> solution followed by dialyzing against ultrapure water or <a href="https://www.sciencedirect.com/topics/chemistry/poly-ethylene-glycol" title="Learn more about polyethylene glycol from ScienceDirect&#39;s AI-generated Topic Pages">polyethylene glycol</a> to obtain regenerated fibroin solution <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1015">[12]</a>, (B) Mature silkworm and produced cocoon <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1020">[13]</a>, (C) Silk braided <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1025">[14]</a>, knitted <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1030">[15]</a>, and non-woven matrices <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1035">[16]</a> constructed from the fibroin fibers, (D) Silk sponges <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1040">[17]</a>, hydrogels <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, films <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, nanofibrous mats <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, microparticles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, and microneedles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1045">[18]</a> constructed from the regenerated fibroin solution.</p>
+</blockquote>
+<h2 id="机械性能"><a href="#机械性能" class="headerlink" title="机械性能"></a>机械性能</h2><h2 id="机械性能增强"><a href="#机械性能增强" class="headerlink" title="机械性能增强"></a>机械性能增强</h2><h2 id="功能化"><a href="#功能化" class="headerlink" title="功能化"></a>功能化</h2><h4 id="1-内在功能化"><a href="#1-内在功能化" class="headerlink" title="1.内在功能化"></a>1.内在功能化</h4><h4 id="2-后修饰功能化"><a href="#2-后修饰功能化" class="headerlink" title="2.后修饰功能化"></a>2.后修饰功能化</h4><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h4 id="1-织物"><a href="#1-织物" class="headerlink" title="1.织物"></a>1.织物</h4><h4 id="2-手术缝合线"><a href="#2-手术缝合线" class="headerlink" title="2.手术缝合线"></a>2.手术缝合线</h4><h4 id="3-组织工程"><a href="#3-组织工程" class="headerlink" title="3.组织工程"></a>3.组织工程</h4><h4 id="4-药物递送"><a href="#4-药物递送" class="headerlink" title="4.药物递送"></a>4.药物递送</h4><h4 id="5-光学传感"><a href="#5-光学传感" class="headerlink" title="5.光学传感"></a>5.光学传感</h4>]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蚕茧的结构</title>
+    <url>/post/a5241a25.html</url>
+    <content><![CDATA[<h1 id="蚕茧的结构"><a href="#蚕茧的结构" class="headerlink" title="蚕茧的结构"></a>蚕茧的结构</h1><ul>
+<li><p>家蚕茧和野蚕茧的层间粘合弱于层内粘合，在风干过程中层间丝胶更容易失效形成多层结构</p>
+</li>
+<li><p>蚕茧具有明显的多层结构，各层有序相连，形态结构和力学性能差异显著</p>
+</li>
+<li><p>蚕茧外层的丝胶和草酸钙含量高于内层，丝胶具有良好的抗紫外线和抗微生物能力。</p>
+<span id="more"></span>
+</li>
+<li><p>茧层结构的差异以及丝胶和草酸钙的合理分布，使蚕茧具有单向的导气作用，具有明显的温湿减湿作用，保证了蚕茧内幼虫的正常代谢活动。</p>
+</li>
+<li><p>通过控制蚕茧空间的大小或蚕茧的数量和吐丝时间，可以获得厚度、每平方米重量、孔隙率和蚕茧层数可控的蚕茧材料，作为直接使用的复合材料。</p>
+</li>
+<li><p>与NC相比，较大的结茧空间为SFC和MFC提供了相对疏松的结构，导致纤维聚集体的密度不同；但纤维的横向分布规律基本相同，呈Y或+型格局，真丝纤维之间形成的气孔均匀。</p>
+</li>
+<li><p>蚕茧重量(无蛹)与幼虫数量有关。根据每只家蚕的产量，确定NC、SFC和MFC样品的平均重量分别为0.37g&#x2F;只、0.38g&#x2F;只和0.33g&#x2F;只，说明本试验的结茧形式不影响单蚕的吐丝质量，但同时过多的桑蚕结茧对质量有一定的影响</p>
+</li>
+<li><p>NC、SFC和MFC的蚕茧层在形态结构、丝胶和氨基酸含量、纤维细度、强度和伸长率、结晶度等方面表现出相似的规律，表明在扁平茧的构建过程中，家蚕也遵循一定的自然规律，这是一个程序过程，而不是一个随意的吐丝结茧过程。</p>
+</li>
+<li><p>应用这一规律，合理控制吐丝量、吐丝开始时间和喷丝板尺寸，可以得到不同大小、厚度和孔隙率的扁平蚕茧，从而获得结构新颖、密度可控、力学性能优良、功能完善的新型复合聚合物材料，在不破坏蚕茧结构的情况下，直接用作生物质原料，如面膜基材、防护面膜和绝缘防护材料。</p>
+</li>
+<li><p>因此，单位面积吐丝板上的蚕丝量对扁茧结构和性能的影响还有待进一步研究。扁茧的厚度、每平方米重量和孔隙率同时与结茧工具的大小和蚕茧的结茧量有关。从图2(D)可以看出，NC、SFC和MFC的厚度分别为0.3 mm、0.2 mm和2.6 mm，每平方米重量分别为135.5 g&#x2F;m2、75.6g&#x2F;m2和202.7 g&#x2F;m2，孔隙率分别为65.5%、71.3%和72.2%。较高的孔隙率也表明蚕茧结构相对蓬松，具有较好的热阻和抗冲击性能。MFC的蚕茧工具单位面积上的蚕数(600只&#x2F;m2)是SFC(200只&#x2F;m2)的三倍。因此，厚度、单位面积重量和孔隙率都有相应的变化，可以用来控制扁茧的大小和结构，产生符合要求的材料。</p>
+</li>
+<li><p>从图2(A)可以看出，NC、SFC和MFC的平均丝胶含量彼此接近，并且从外层到内层丝胶含量逐渐减少，这与丝胶良好的抗紫外线性能有关[5]。MFC的桑蚕吐丝时间存在一定的差异，部分纤维在层间存在交叉分布，导致各层纤维的丝胶含量略低于NC和SFC。由于蚕丝在SFC和MFC施工过程中的空间比NC大，纺丝的摆幅比NC大，增加了等量丝胶混合物的牵伸距离，因此SFC和MFC的纤维细度大于NC。NC、SFC和MFC的中间纤维厚于内纤维，内纤维厚于外纤维。外、中、内层的平均径向直径(μm)分别为(13.13±0.14)、(13.55±0.24)、(12.41±0.32)、(12.35±0.11)、(12.75±0.26)、(11.71±0.30)、(12.59±0.25)、(13.18±0.30)、(12.15±0.29)。</p>
+</li>
+</ul>
+<p>From* Comparative Analysis of Structure and Properties of Stereoscopic Cocoon and Flat Cocoon*</p>
+<p>平面丝更细</p>
+<p>平面丝较薄，这是因为直到排尿完成，家蚕才被放在圆盘上。这时，家蚕已经吐出了部分甚至全部的外层蚕茧丝。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>规划</title>
+    <url>/post/a99ba8c6.html</url>
+    <content><![CDATA[<p>本文为个人博客的规划，本博客主要内容可分为以下几块。</p>
+<ol>
+<li>科普，专业知识类，具有独创性，可以同步发布到公众号。</li>
+<li>技术学习类，边学边总结记录，如R语言板块、hexo博客、生物相关实验操作、mac及其附加产品使用等。</li>
+</ol>
+<p>1主要为公众号、知乎等创作提供内容，2主要记录重要信息。</p>
+<p>为了提高创作效率，设定固定时间段进行创作或记录总结，初步定在19:00-20:00</p>
+]]></content>
+      <tags>
+        <tag>规划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>静电纺丝综述</title>
+    <url>/post/1f87f6d9.html</url>
+    <content><![CDATA[<p>Electrospinning for tissue engineering applications</p>
+<p>用于组织工程应用的静电纺丝</p>
+<p>RAHMATI M, MILLS D K, URBANSKA A M, 等. Electrospinning for tissue engineering applications[J&#x2F;OL]. Progress in Materials Science, 2021, 117: 100721. DOI:<a href="https://doi.org/10.1016/j.pmatsci.2020.100721">10.1016&#x2F;j.pmatsci.2020.100721</a>.</p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th>支架制造方法</th>
+<th></th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Electrospinning</td>
+<td>静电纺丝</td>
+<td>均匀，对齐的纤维，孔隙率的互连性强，孔隙率80-95%，100-1100nm光纤直径，&lt;80%的细胞活力，ECM状结构，优越的机械性能，大表面积，易于和简单的制造</td>
+<td>需要高压设备，使用的溶剂可能有毒，并且在包装，运输和处理方面存在困难</td>
+</tr>
+<tr>
+<td>Self-assembly</td>
+<td>自组装</td>
+<td>80–90% 孔隙率，70–90% 细胞活力，5–300 nm</td>
+<td>使用肽，工艺复杂，不可扩展，纤维尺寸控制不佳</td>
+</tr>
+<tr>
+<td>Phase Separation</td>
+<td>相分离</td>
+<td>制造简单，孔隙率为 60–95%</td>
+<td>使用具有潜在毒性的溶剂，结构控制不佳，孔径范围受限</td>
+</tr>
+<tr>
+<td>Gas Foaming</td>
+<td>气体发泡</td>
+<td>无溶剂，支架基质中无生物活性分子损失</td>
+<td>需要高压，孔隙率的互连性差，支架架表面存在<strong>脱脂膜层</strong></td>
+</tr>
+<tr>
+<td>Solvent Casting</td>
+<td>溶剂浇筑</td>
+<td>制造简单，机械</td>
+<td>缺乏可重复性，结构不受控制</td>
+</tr>
+<tr>
+<td>Freeze Drying</td>
+<td>冷冻干燥</td>
+<td>30–80% 孔隙率，50–450 nm，细胞活力&lt;90%，既不需要高温，也不需要单独的浸出步骤</td>
+<td>需要冷冻干燥机，限制孔径小，孔隙不规则，加工时间长</td>
+</tr>
+<tr>
+<td>3D Printing</td>
+<td>3D打印</td>
+<td>制造所需的结构（生产灵活性）</td>
+<td>需要3D打印机，使用有毒有机溶剂，缺乏机械强度</td>
+</tr>
+</tbody></table>
+<hr>
+<p>静电纺丝的背景</p>
+<blockquote>
+<p>Nanofibrous biomaterials take their origin in four main fields, namely, the biological applications, physics underlying Taylor cone formation, material choices in electrospinning, and the impact of ambient conditions on the fabrication process. Nanofibers received remarkable attention in biomedical engineering, especially in nanoscience and nanotechnology [60]. This relatively simple and multipurpose method can make it possible to produce various fibers with beneficial features for regenerative medicine and tissue engineering uses [61], [62]. Formhals [63] reported using electrospinning technique for the first time in the 1930s [63]. However, scientists and researchers alike paid attention to its applicability for biomedical applications five decades later [64]. This technique benefits from the ability of applying a high electric field to produce ultra-fine polymeric fibers with micro- to nanometer diameters [65], [66]. A convoluted electro-physical activity between the polymer solution and the electrostatic force is the main mechanism behind this technique [67]. In electrospinning, a high-voltage electric field is generated between the injection needle and the collecting screen using a power supply and electrodes [68]. After gradually forcing out of the polymer solution, a hemispherical polymer solution droplet is shaped at the tip of the needle [69]. This polymer droplet lengthens into a conical shape, known as the Taylor cone, and the surface charge on the polymer droplet increases with time by increasing the voltage [70]. A polymer jet starts to form immediately after overcoming the surface charge of the polymer droplet. After vaporizing the solvent in the polymer jet, the surface charge on the jet increases, which destabilizes the polymer jet [70]. The polymer jet is geometrically segregated, initially into two jets and, eventually, into a large number of jets, to compensate for the instability [71], [72]. The electrostatic force, which affects the constantly splitting polymer droplets causes the nanofiber patterning [70]. In addition, a spinneret with a metallic needle, a syringe pump, a high-voltage power supply, and a grounded collector are the major constituents of a standard electrospinning system (Fig. 1) [73], [74]. The processing plasticity of the electrospinning facilitates producing various polymeric fibers [75].</p>
+</blockquote>
+<p><strong>静电纺丝就是高分子流体静电雾化的特殊形式，此时雾化分裂出的物质不是微小液滴，而是聚合物微小射流，可以运行相当长的距离，最终固化成纤维。静电纺丝是一种特殊的纤维制造工艺，聚合物溶液或熔体在强电场中进行喷射纺丝。在电场作用下，针头处的液滴会由球形变为圆锥形（即“泰勒锥”），并从圆锥尖端延展得到纤维细丝。这种方式可以生产出纳米级直径的聚合物细丝。</strong></p>
+<hr>
+<p>影响静电纺丝的参数</p>
+<blockquote>
+<p>The diameter and the morphology of electrospun nanofibers are dependent on several parameters falling into three main categories: innate properties of solution, processing, and environmental factors <a href="https://www.sciencedirect.com/science/article/pii/S0079642520300852?via=ihub#b0410">[82]</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0079642520300852?via=ihub#b0415">[83]</a>. The innate properties of the solution (such as concentration, viscosity, molecular weight, electrical <a href="https://www.sciencedirect.com/topics/materials-science/conductivity" title="Learn more about conductivity from ScienceDirect&#39;s AI-generated Topic Pages">conductivity</a>, elasticity, as well as polarity, and surface tension of the solvent) have a remarkable impact on the morphology and the ultimate diameter of the electrospun nanofibers. The concentration of the solution is a key factor governing the electrospinning process, so that only a small amount of solution is needed to run the electrospinning device <a href="https://www.sciencedirect.com/science/article/pii/S0079642520300852?via=ihub#b0420">[84]</a>.</p>
+</blockquote>
+<p>静电纺丝纳米纤维的直径和形态取决于三个主要类别的几个参数：<strong>溶液的先天性质，加工和环境因素</strong>。溶液的固有特性（如浓度、粘度、分子量、电导率、弹性以及溶剂的极性和表面张力）对静电纺丝纳米纤维的形貌和极限直径有显着影响。溶液的浓度是控制静电纺丝过程的关键因素，因此只需要少量的溶液即可运行静电纺丝装置。</p>
+<p>        在静电纺丝过程中，需要理想的溶液<strong>浓度</strong>才能获得光滑均匀的纳米纤维生物材料。当使用低浓度溶液时，可能会形成不希望的液滴，这可能是由表面张力效应引起的。然而，在高浓度下，由于溶液的高粘度，纤维结构将是有问题的。此外，<strong>纤维的直径可能随着聚合物浓度的增加而增加</strong>。</p>
+<p>        溶液的<strong>粘度</strong>也会直接影响纤维的尺寸及其形貌。</p>
+<p>        聚合物的<strong>分子量</strong>在微调纤维尺寸方面也起着关键作用均匀光滑的纳米纤维结构可以通过选择具有适当分子量的聚合物来获得。在低分子量聚合物溶液中，可能会出现珠子而不是纤维，而高分子量聚合物溶液导致纤维的平均直径相对增加</p>
+<p>        合适的<strong>表面张力</strong>是溶剂性质的函数，可以影响静电纺丝工艺和纤维制造。在具有高表面张力的溶液中，由于不稳定的射流和液滴分散，纤维的形成可能受到限制。较低的表面张力可以促进较低电场下的静电纺丝过程。</p>
+<p>        当溶液的<strong>电导率</strong>增加时，纤维直径先增加后略微减小 。电场强度随着喷嘴处电压的增加而增加，这导致由于喷射路径延长和弯曲频率增加而导致纤维直径减小。均匀的电场提供了适当的电场分布，由于较高的弯曲速度可以形成更细的纤维，从而拉伸纤维。</p>
+<p>       <strong>加工参数</strong>（如电压、喷丝头与集电极之间的距离、聚合物溶液的进料速率）属于静电纺丝工艺中的另一个重要类别。静电纺丝只有在克服了在过程中导致溶液中电荷差异的阈值电压后才能产生纤维支架。通过增加电压和随后的电荷值，可以改变纤维中液滴和磁珠的形成。</p>
+<p>        这方面的另一个重要因素是<strong>聚合物溶液的流速</strong>。降低进料速率会增加溶剂蒸发所需的时间 。在静电纺丝中，通常采用较低的流速来确保溶剂从纳米纤维支架中完全蒸发。此外，<strong>注射器尖端和收集器之间的距离</strong>是控制圆形纤维直径及其形态的关键因素。当距离较小时，纤维在到达收集器之前没有足够的时间凝固；因此，将形成具有较大平均直径的纤维。另一方面，当距离较大时，可能会形成更细的纤维。因此，选择不适当的溶液浓度、施加的电压和尖端到收集器的距离可能会导致<strong>珠粒</strong>形成。</p>
+<p>        在制造静电纺布时，<strong>环境的湿度和环境温度等环境参数</strong>也至关重要，特别是在获得均匀的纤维垫时面临严重困难时。<strong>高湿度与凝固时间呈负相关</strong>，因此高湿度会阻碍纺丝过程并延长带电喷射。<strong>温度</strong>是影响纳米纤维支架形态的另一个因素。基于温差观察到两种类型的形态：在低温下形成的珠子，以及在高温下形成的冷凝和扁平纤维。通过增加温度，聚合物溶液的粘度降低，导致产生小直径纤维。图3提供了具有主要成分的静电纺丝的现象学概述，定义的流动模式以及控制该过程的传质方程。表2还总结了静电纺丝参数对所得纤维形态的影响。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>参数对纤维形态的影响</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>应用电压↑</td>
+<td>纤维直径 ↓ 最初，然后 ↑ （非单调）</td>
+</tr>
+<tr>
+<td>流速↑</td>
+<td>纤维直径 ↑ （如果流速过高，则会发生串珠形态）</td>
+</tr>
+<tr>
+<td>毛细管和收集器之间的距离 ↑</td>
+<td>纤维直径↓（如果毛细管和收集器之间的距离太短，则会出现珠状形态）</td>
+</tr>
+<tr>
+<td>聚合物浓度（粘度）↑</td>
+<td>纤维直径↑（在最佳范围内）</td>
+</tr>
+<tr>
+<td>溶液电导率↑</td>
+<td>首先纤维直径 ↑ 然后 ↓ （宽直径分布）</td>
+</tr>
+<tr>
+<td>溶剂挥发性↑</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>2022年9月15日16:24:56</p>
+<hr>
+<h5 id="用于骨组织工程的电纺纳米纤维支架"><a href="#用于骨组织工程的电纺纳米纤维支架" class="headerlink" title="用于骨组织工程的电纺纳米纤维支架"></a>用于骨组织工程的电纺纳米纤维支架</h5><p>研究人员在设计骨支架时应考虑几个关键因素，包括</p>
+<p>        1）孔隙率大小;</p>
+<p>        2）合适的机械强度和可调生物降解动力学;</p>
+<p>        3）生长因子的相互相关的开放孔隙率;</p>
+<p>        4）细胞生长和细胞接种的无菌环境;</p>
+<p>        5）支架生物兼容性和生物降解性；</p>
+<p>来自各种天然和合成聚合物的静电纺丝纳米纤维支架用于骨骼工程，如藻酸盐，壳聚糖，胶原蛋白，PCL，聚乙醇酸（PGA），PLA和PLGA</p>
+<p>高度取向的纤维（图6D）在纤维取向的方向上诱导干细胞生长</p>
+<hr>
+<h5 id="用于软骨组织工程的静电纺丝纳米纤维支架"><a href="#用于软骨组织工程的静电纺丝纳米纤维支架" class="headerlink" title="用于软骨组织工程的静电纺丝纳米纤维支架"></a>用于软骨组织工程的静电纺丝纳米纤维支架</h5><hr>
+<h5 id="用于血管组织工程的静电纺丝纳米纤维支架"><a href="#用于血管组织工程的静电纺丝纳米纤维支架" class="headerlink" title="用于血管组织工程的静电纺丝纳米纤维支架"></a>用于血管组织工程的静电纺丝纳米纤维支架</h5><p>        血管组织工程致力于重建由内皮细胞和血管周围细胞组成的血管，用于临床应用。纳米纤维的高孔隙率和长径比增强了导致血管生成的营养和气体交换，这是血管再生的主要因素。血管有三层：外皮（外层）内膜、外膜内膜和外膜。内膜是非血栓性内皮细胞单层的最内层，可诱导血小板刺激和血栓形成。第二层是丘尼卡培养基，它由大量的平滑肌细胞组成。最外层，即外膜，由胶原ECM和成纤维细胞组成。<strong>ECM是血管系统中最重要的组成部分;因此，血管的拉伸刚度、弹性和可压缩性是设计血管支架的关键特征。纳米技术的进步确保了静电纺丝不仅能够用于开发支架，还可用于创建用于血管组织工程的管状支架</strong></p>
+<p>        Yazdanpanah等人[208]使用静电纺丝来制造基于聚（L-乳酸）（PLLA）和明胶的纳米纤维支架。拉伸试验表明，分级PLLA&#x2F;明胶支架的机械强度和估计爆破压力优于层状PLLA&#x2F;明胶支架和明胶支架。</p>
+<hr>
+<h5 id="用于心脏组织工程的静电纺丝纳米纤维支架"><a href="#用于心脏组织工程的静电纺丝纳米纤维支架" class="headerlink" title="用于心脏组织工程的静电纺丝纳米纤维支架"></a>用于心脏组织工程的静电纺丝纳米纤维支架</h5><p>心脏组织支架应具有高导电性和弹性，以模仿心脏功能</p>
+<hr>
+<h5 id="用于神经组织工程的静电纺丝纳米纤维支架"><a href="#用于神经组织工程的静电纺丝纳米纤维支架" class="headerlink" title="用于神经组织工程的静电纺丝纳米纤维支架"></a>用于神经组织工程的静电纺丝纳米纤维支架</h5><p>理想的神经组织工程支架应具有特定的特性，如适当的生物和理化特性、优异的生物兼容性、生物降解性、氧气和营养渗透性、良好的机械特性和合适的表面特征</p>
+<hr>
+<h5 id="用于皮肤组织工程的静电纺丝纳米纤维支架"><a href="#用于皮肤组织工程的静电纺丝纳米纤维支架" class="headerlink" title="用于皮肤组织工程的静电纺丝纳米纤维支架"></a><strong>用于皮肤组织工程的静电纺丝纳米纤维支架</strong></h5><p>设计的皮肤支架可以通过保护组织免受脱水和感染，以及将生长因子和基质成分输送到伤口部位来改善皮肤愈合 。此外，通过支持 ECM 再生，支架使细胞能够附着、增殖和迁移，最终导致新皮肤的发育。研究人员在设计皮肤支架时应考虑一些要点，例如血管生成、气体交换、水分维持和组织的质量运输。皮肤支架的生物降解率和机械性能也应与天然皮肤组织相匹配。几项研究报告称，由于静电纺丝纳米纤维的高表面积与体积比，它可以成为皮肤再生应用的潜在候选者</p>
+<hr>
+<h5 id="用于化合物输送的静电纺丝纳米纤维支架"><a href="#用于化合物输送的静电纺丝纳米纤维支架" class="headerlink" title="用于化合物输送的静电纺丝纳米纤维支架"></a>用于化合物输送的静电纺丝纳米纤维支架</h5><p>        许多研究报道，由聚合物基电纺纳米纤维制成的支架可以成功地为生物医学应用提供治疗剂，这是因为它们具有<strong>独特的功能、高表面体积比、纳米级形态和高孔隙连通性</strong>。经典递送系统的主要缺点是释放表面的毒性。降低药效；和昂贵的长期药物剂量 。使用基于纳米颗粒的系统控制和靶向递送药剂提供了更精确的解决方案，通过微调药物洗脱曲线来克服这些困难。<strong>纳米多孔 3D 支架的药物释放取决于聚合物降解速率和复杂的循环途径。建议使用各种配方来改善药物释放曲线，例如组合不同的聚合物和设计具有各种表面涂层的聚合物</strong>通过同轴静电纺丝方法生产的静电纺丝中空纳米纤维结构可能是一种很有前途的封装各种药物的方法。这种方法能够实现高载药能力并增强一些不溶性药物的溶解度。此外，几种类型的药物，如抗癌药物 、抗生素 和多糖 可以化学或物理地封装在电纺纳米纤维的质量相中或其表面上。 Kolambkar 等人。报道了使用负载生长因子的电纺 PCL 纳米纤维管和注入管中的肽修饰的藻酸盐水凝胶来持续释放重组骨形态发生蛋白 2 (rhBMP-2) 用于骨再生。作者报告说，设计的输送系统允许对严重骨缺损进行一致的骨桥接。然而，在没有 rhBMP-2 的情况下，支架不够坚固，无法增强新骨的形成。图13显示，通过控制生长因子的释放，该系统可以改善板层骨的形成、界面处的组织集成和骨髓空间的形成。</p>
+<hr>
+<h4 id="纳米纤维支架的表面改性"><a href="#纳米纤维支架的表面改性" class="headerlink" title="纳米纤维支架的表面改性"></a>纳米纤维支架的表面改性</h4><p>开发了几种表面改性策略来改善电纺纳米纤维支架的表面特性[330-332]。合成聚合物需要一些修饰以增强它们的亲水性和细胞附着。有特定的表面改性方法可用于改变表面的化学性质，提高表面亲水性，并为细胞粘附和增殖提供理想的环境 [333-335]。<strong>等离子处理、湿化学方法、表面接枝聚合和表面功能化的共静电纺丝</strong>是最常用的方法，将在以下各节中讨论。</p>
+<ol>
+<li><h5 id="等离子处理"><a href="#等离子处理" class="headerlink" title="等离子处理"></a>等离子处理</h5></li>
+</ol>
+<p>        等离子体处理通常用于<strong>固定极性基团，例如羧基或胺基，以改变表面的化学性质并提高表面润湿性</strong> [336]。基于等离子源，可以将不同的官能团引入表面，从而实现生物活性分子的共价固定[337-339]。<strong>用氨、氧或空气等离子处理可以在表面上产生羧基或胺基</strong>[340]。此外，<strong>多种 ECM 蛋白成分，如胶原蛋白、明胶和纤连蛋白，可以通过等离子体处理固定，从而改善细胞粘附和增殖</strong> [341-343]。例如，研究人员通过等离子体、氧气或氨对基于 PLGA 的电纺纳米纤维支架的表面进行功能化，以增强表面亲水性并评估其生物学性能 [344]。与非功能化表面相比，功能化表面可以改善成纤维细胞的粘附和增殖[344]。</p>
+<ol start="2">
+<li><h5 id="湿化学法"><a href="#湿化学法" class="headerlink" title="湿化学法"></a>湿化学法</h5></li>
+</ol>
+<p>        在酸性或碱性条件下处理表面改性的纳米纤维支架以产生反应性官能团并改善表面润湿性[346]。该方法基于<strong>表面聚合物主链中酯键的随机化学断裂，从而从降解的水不溶性聚合物片段中产生表面羟基和羧基</strong>[347]。</p>
+<ol start="3">
+<li><h5 id="表面接枝聚合"><a href="#表面接枝聚合" class="headerlink" title="表面接枝聚合"></a>表面接枝聚合</h5></li>
+</ol>
+<p>        在疏水性聚合物表面接枝亲水组分可改善分子和细胞对纳米纤维表面的反应[350，351]。表面接枝聚合不仅用于增加表面亲水性，还用于引入多功能基团，用于在表面上共价固定生物活性分子[352]。表面移植聚合从等离子体和紫外线（UV）照射处理开始，以产生自由基[353]。在典型的反应中，当丙烯酸通过紫外线照射成功接枝到PLCL支架上时，改性层会产生与hMSCs兼容的表面</p>
+<ol start="4">
+<li><h5 id="表面活性剂和聚合物的共静电纺丝"><a href="#表面活性剂和聚合物的共静电纺丝" class="headerlink" title="表面活性剂和聚合物的共静电纺丝"></a>表面活性剂和聚合物的共静电纺丝</h5></li>
+</ol>
+<p>        在初始表面改性期间，可以将纳米颗粒和&#x2F;或功能聚合物直接接枝到纳米纤维表面上。例如，PLLA 溶液可以通过共静电纺丝与 HA 纳米粒子结合，从而在表面上制造含有 HA 纳米粒子的纳米纤维支架 [355]。与纯 PLLA 纳米纤维支架相比，这些复合纳米纤维支架由于 PLLA 酯基团和 HA 的钙离子之间的离子相互作用而表现出延长的降解速率 [356]。该方法的目的是结合一系列可静电纺丝的功能聚合物和与纳米粒子共轭的聚合物，以产生生物功能化的纳米纤维表面[357]。</p>
+<hr>
+<h4 id="静电纺丝的创新方法"><a href="#静电纺丝的创新方法" class="headerlink" title="静电纺丝的创新方法"></a>静电纺丝的创新方法</h4><p>静电纺丝可用于制造各种形状的纳米纤维支架，例如核壳，空心，多孔和蜂窝[20，145，358-360]。生成的支架很有希望，因为它们在结构上与天然ECM相似。Nguyen等人[361]设计了一些3D纳米纤维水凝胶系统，用于治疗剂的递送，以指导轴突再生治疗脊髓损伤[361]。作者报告说，所得的纳米纤维比水凝胶和微米级结构更接近地模仿天然ECM的形貌性质[361]。由于<strong>高表面面积和多孔结构</strong>，细胞在纳米纤维表面上具有很高的增殖和分化倾向。此外，这种纳米纤维的高表面积使蛋白质具有更高的表面吸附性，并且还促进了更高的结合位点的形成。使用静电纺丝，研究人员正试图开发具有不同形状和性质的纳米纤维支架，例如核壳，高多孔和多层纳米纤维[20，145，358-360，362]。核壳结构用于制造纳米纤维支架[222，310]。该策略允许在核心内包含生物活性剂，例如细菌、酶、药物、病毒和蛋白质，并控制其释放动力学[363–365]。同轴核壳静电纺丝装置是用于制造此类结构的最常见装置之一[196，222，366]。该技术涉及两种独立的溶液（通常为疏水性聚合物和水溶性生物活性因子溶液），可以进行共静电纺丝，而无需使用两个单独的注射器直接混合[367]。</p>
+<blockquote>
+<p>During coaxial electrospinning, nanofibers are created by the sametechnique with which core-shell structures are produced. However, the core material is dissolved in an appropriate solvent at the end of electrospinning process [370]. In addition, coaxial electrospinning is useful for creating highly porous hollow nanofiber scaffolds for applications in the fields of optoelectronics, catalysis, nanofluidics, biosensor systems, drug delivery, and tissue engineering [371,372].</p>
+</blockquote>
+<p>在同轴静电纺丝过程中，纳米纤维是由生产核壳结构的相同技术产生的。然而，在静电纺丝过程结束时，将芯材溶解在适当的溶剂中。此外，同轴静电纺丝可用于制造高孔中空纳米纤维支架，用于光电子学、催化、纳米流体、生物传感器系统、药物输送和组织工程等领域的应用。</p>
+<p>        高度多孔的纳米纤维比中空纳米纤维更适用于各种应用[373]。它们可以通过选择特殊的溶剂或聚合物复合材料以特定的拓扑结构制造。这些结构也可以使用用于不混溶聚合物的通用溶剂进行静电纺丝，然后将其溶解产生完美的多孔材料[374]。该方法基于相分离，相分离取决于溶液的蒸发速率[375]。当使用常见的静电纺丝技术生成 3D 纤维结构时，纺丝时间越长，制造的垫子越厚。这可以<strong>产生具有可变厚度的 3D 纳米纤维结构</strong> [376]。 3D 纤维结构可以通过将纳米纤维层与另一个纤维微层或纳米层（称为<strong>多层静电纺丝</strong>）相结合来设计 [31,328,377,378]。在多层静电纺丝过程中可以控制一些关键的支架参数，包括混合、纤维直径、层孔隙率和静电纺丝纤维层的数量，这些对于指导细胞反应都是必不可少的 [379]。</p>
+<p>由于传统方法存在一些缺点（药物加载效率低、可扩展性差、亲水性药物掺入效率低下等），许多研究建议将静电纺丝与<strong>电喷雾</strong>相结合[380，381]。电喷雾是静电纺丝工艺的高级版本，可用于纳米纤维毡和纳米颗粒的产生[382]。使用这种方法，可以通过在导电性充分的溶剂中施用聚合物和药物溶液来合成纳米纤维。由于静电纺丝和电喷雾方法在调节其参数方面具有相似的原理，因此可以将它们组合在一起设计高度先进的纳米纤维。<strong>静电纺丝和电喷雾结合</strong>可以通过逐层沉积由各种聚合物制成的不同垫子来制造多层脚手架[383，384]。此外，通过将<strong>3D打印与静电纺丝相结合</strong>，可以合成更好的微纳米结构支架&#x2F;设备和柔性电子&#x2F;柔性电路，用于治疗剂的受控输送以及组织工程应用。</p>
+<p>        使用先进的生物材料，以及更有前景的工程策略，开辟了组织工程和再生医学领域的创新之路。静电纺丝是生产一系列纤维垫的最适用和最有前途的技术之一[82]。它可以以不同的方法使用，将材料特征与各种形态特征相结合，用于高级组织工程用途。通过静电纺丝生产的纳米纤维支架是与 ECM 微结构非常相似的生物材料。多项研究表明，这些先进的纳米纤维支架可改善细胞附着、分化和增殖。考虑到这些特征，静电纺丝纳米纤维支架能够在不久的将来提供组织工程和生物医学应用所需的广泛功能[388]。测试了一些新技术以生成电纺 3D 纤维结构，包括多层电纺 [389]、自组装 [390]、使用 3D 收集模板 [380] 以及折叠或累积 2D 纤维膜 [391,392]。在这些技术中，连续静电纺丝或多层静电纺丝成为最简单和最有用的技术。它允许在微尺度范围内制造具有定义厚度和精确 3D 结构的电纺纤维层。通过控制静电纺丝过程的一些关键参数，例如聚合物溶液浓度、粘度、环境湿度和静电场，可以实现 3D 纳米纤维结构的快速生长 [393]。然而，<strong>需要进一步的体外和体内研究来详细描述先前制造的微米级和纳米级纤维的特征。此外，如本综述的技术表格中所述，一些纳米纤维支架在体外进行了广泛的研究，我们认为是时候关注它们与体内天然组织的相互作用了</strong>。</p>
+<blockquote>
+<p>Instead of generally considering designed nanofibrous scaffolds for biomedical applications, scientists are about to introduce specific applications for these scaffolds by precisely adjusting system features to match the targeted cells and&#x2F;or tissues.</p>
+</blockquote>
+<p><strong>科学家们该去通过精确调整系统特征以匹配目标细胞和&#x2F;或组织来引入这些支架的特定应用，而不是为生物医学应用设计通用的纳米纤维支架。</strong></p>
+<p>为了增强所生产的电纺纳米纤维支架的性能，将天然和合成聚合物与表面改性相结合可能构成另一个挑战。很明显，这些先进的 3D 支架将成为未来组织工程和再生医学的关键参与者。</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蚕丝蛋白羟基磷灰石柚皮素文献阅读</title>
+    <url>/post/80156f75.html</url>
+    <content><![CDATA[<p>Sustained release of naringin from silk-fibroin-nanohydroxyapatite scaffold for the enhancement of bone regeneration</p>
+<p>丝素蛋白纳米羟基磷灰石支架持续释放柚皮素，促进骨再生</p>
+<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>骨缺损是临床环境中的常见挑战。骨组织工程（BTE）是治疗大骨缺损临床问题的有效方法。在这项研究中，我们制备了镶嵌柚皮素蛋白聚乳酰乙醇酸（PLGA）微球的丝素蛋白（SF）&#x2F;羟基磷灰石（HAp）支架，研究了它们在BTE中的应用可行性。柚皮苷PLGA微球被制造并粘附在SF &#x2F; HAp支架上。将骨间充质干细胞（BMSCs）接种到含有柚皮蛋白PLGA微球的SF &#x2F; HAp支架上，以检查SF &#x2F; HAp支架的生物兼容性。采用兔股骨远端骨缺损模型评估含有柚皮素PLGA微球的SF&#x2F;HAp支架的体内功能。目前的研究表明，含有柚皮苷负载PLGA微球的SF &#x2F; HAp支架显示出作为骨再生的骨调节生物材料的希望。</p>
+<span id="more"></span>
+
+<p><strong>柚皮苷</strong>：是由水龙骨科植物槲蕨根茎(骨碎补)中提取的主要有效成分，能够促进成骨细胞增殖、促进血管生成、抑制破骨细胞生长的功能。</p>
+<p>BMSCs：骨髓间充质干细胞（bone marrow mesenchymal stem cells）</p>
+<p><strong>PLGA</strong>：聚乳酸-羟基乙酸共聚物，乳酸和羟基乙酸随机聚合而成，是一种可降解的功能高分子有机化合物，具有良好的生物相容性、无毒、良好的成囊和成膜的性能，被广泛应用于制药、医用工程材料和现代化工业领域。</p>
+<p><strong>PVA</strong>：聚乙烯醇，它是一种极安全的高分子有机物，对人体无毒，无副作用，具有良好的生物相容性，尤其在医疗中的如其水性凝胶在眼科、伤口敷料和人工关节方面的有广泛应用，同时在<a href="https://baike.baidu.com/item/%E8%81%9A%E4%B9%99%E7%83%AF%E9%86%87%E8%96%84%E8%86%9C?fromModule=lemma_inlink">聚乙烯醇薄膜</a>在药用膜，<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E8%82%BE%E8%86%9C/6646879?fromModule=lemma_inlink">人工肾膜</a>等方面也有使用。其安全性可以从用于伤口皮肤修复，和眼部滴眼液产品可见一斑。</p>
+<p><strong>ALP</strong>: 碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。这种酶能催化核酸分子脱掉5’磷酸基团，从而使DNA或RNA片段的5’-P末端转换成5’-OH末端。但它不是单一的酶，而是一组同工酶 [1]  。已发现有AKP1、AKP2、AKP3、AKP4、AKP5与AKP6六种同功酶。其中第1、2、6种均来自肝脏，第3种来自骨细胞，第4种产生于胎盘及癌细胞，而第5种则来自小肠绒毛上皮与成纤维细胞。</p>
+<p><strong>GO分析</strong>：Gene ontology，GO数据库分别从功能、参与的生物途径及细胞中的定位对基因产物进行了标准化描述，即对基因产物进行简单注释，通过GO富集分析可以粗略了解差异基因富集在哪些生物学功能、途径或者细胞定位。</p>
+<h3 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h3><p>大的骨缺损难以自行修复，并且经常需要特殊且昂贵的管理 [1,2]。此外，自体或异体骨移植物具有某些缺点。骨组织工程 (BTE) 具有修复骨缺损的潜力，因此引起了相当大的关注 [3,4]。 BTE 需要三个组成部分：结合生物材料、适当的生物活性分子和细胞。尽管已经取得了令人满意的结果，但由于各种原因，将 BTE 升级为临床应用受到限制。理想的骨缺损愈合生物材料应该是可生物降解的、生物兼容的，并具有良好的骨促进微环境[5]。这些支架特性可以促进干细胞的生长和分化。因此，为 BTE 设计的支架必须具有生物兼容性并具有合适的材料特性 [6,7]。因此，一些研究已经通过不同的方法制造了用于 BTE 的丝素蛋白 (SF)&#x2F;羟基磷灰石 (HAp) 复合支架 [8,9]。 SF是一种天然蛋白质，在生物材料领域具有广阔的应用前景[10]。 HAp是哺乳动物骨骼中的主要矿物质成分，被认为是理想的骨修复材料。 SF 与HAp 结合以获得多孔复合支架材料[11]。在我们之前的研究中，设计并制造了一种与柚皮苷混合的SF&#x2F;HAp生物复合支架，作为人脐带间充质干细胞的载体，以有效修复骨缺损[12]。在制造过程中，丝绸溶解在有机溶剂六氟异丙酯中。然而，六氟异丙基对人体有毒并引起其他不良副作用。因此，开发用于溶解SF和HAp的无毒溶剂对于临床应用是必要的。</p>
+<p>柚皮苷是骨碎补的主要成分，具有促进间充质干细胞和成骨细胞前体细胞分化的潜力[13，14]。此外，柚皮苷可诱导破骨细胞凋亡，因此可用于预防和治疗骨质疏松症[15，16]。因此，柚皮苷被广泛用于骨质疏松症及相关骨骼疾病的预防和治疗[17-20]。原文发现柚皮苷通过调节炎症和生长因子表达来促进大鼠糖尿病足溃疡的血管生成[21]。据报道，柚皮苷在骨质疏松性骨折模型中使用时可潜在地促进血管形成和骨再生[21，22]。柚皮苷还可以通过CXCR4调控的PI3K&#x2F;Akt信号通路调节内皮祖细胞分化的分化[23]。柚皮苷具有修复大节段骨缺损的特征特性，包括骨刺激（促进新骨形成）和血管刺激（诱导血管形成）。我们之前的研究报道，柚皮苷镶嵌SF&#x2F;HAp支架可增强人脐带间充质干细胞的成骨分化，可用于治疗骨缺损[12]。支架还增强了人脐内皮细胞（HUVEC）的血管生成。这些发现表明，柚皮苷可能是治疗最常见的骨骼疾病和缺陷的有效候选药物。</p>
+<p>然而，柚皮苷&#x2F; SF &#x2F; HAp支架导致20小时内超过70%的柚皮苷突然释放。突发性释放可能导致全身毒性[24，25]。此外，柚皮苷由于其水溶性差而显示出低的生物利用度[26，27]。最后，药物从骨缺损区域迅速清除，这促使开发了一种用于释放柚皮苷的长效控释系统。聚乳酸-共乙醇酸（PLGA）微球被认为非常适合作为医疗材料、药物和细胞因子的缓释载体[28，29]。PLGA微球已被用作可注射载体，以促进骨缺损愈合修复[30]。<strong>在本研究中，我们开发了一种能够以受控方式释放柚皮苷的新型SF &#x2F; HAp支架。采用SF和HAp多孔支架的复合物，采用乳化-溶剂蒸发法制备柚皮素包封的PLGA微球，达到柚皮苷的高包封效果。采用骨间充质干细胞（BMSCs）评价SF&#x2F;HAp复合支架对BMSC成骨分化的影响，并进一步研究兔股骨髁缺陷模型中SF&#x2F;HAp复合支架体内骨缺损修复特征。</strong></p>
+<h3 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h3><p>2.1 含有柚皮苷的PLGA微球的制备</p>
+<p>PLGA（丙交酯&#x2F;乙交酯1&#x2F;4 50：50，分子量1&#x2F;4 94，000 Da）购自济南大港生物材料有限公司（中国山东省济南市）。聚乙烯醇（PVA）是从西格玛奥德里奇（中国上海）购买的。柚皮苷（纯度98%）来自西格玛-奥尔德里奇（美国密苏里州圣路易斯）。使用水包油（w&#x2F;o&#x2F;w）乳液溶剂蒸发法制备掺入柚皮苷的PLGA微球（图1）。简言之，将<strong>500毫克PLGA</strong>（丙交酯：乙交酯1&#x2F;4 50：50，Mw 1&#x2F;4 94，000 Da）<strong>溶于3 mL二氯甲烷</strong>（化学纯度为99.9%，中国天津市化学试剂有限公司第三分公司）中，形成<strong>PLGA溶液</strong>。将<strong>柚皮苷</strong>（10mg）溶于<strong>0.1mL甲醇</strong>（100mg&#x2F;mL，化学纯度99.9%，中国天津天大化学试剂厂）中，得到<strong>柚皮苷溶液</strong>。使用<strong>均质机</strong>以10，000 rpm的速度行驶1分钟，形成<strong>初级乳液</strong>。将该溶液在室温下滴入300mL的0.25%（w &#x2F; v）<strong>PVA溶液</strong>中，并使用<strong>均质机</strong>转速为10，000 rpm。将<strong>PVA溶解在80°C去离子水中搅拌6 h</strong>，制备0.25%（w&#x2F;v）PVA溶液（Mw 9000–10，000，80%由奥尔德里奇水解）。形成乳液并在室温下连续<strong>搅拌8小时</strong>以蒸发有机溶剂。将微球悬浮液以6000rpm<strong>离心</strong>15 min，并用<strong>蒸馏水洗涤微球3</strong>次。最后，将微球冷冻至80°C，使用<strong>冻干</strong>剂（α 1-2 LDplus，德国基督）在80°C下冻干24小时。</p>
+<p>2.2. 微球表征 通过<strong>扫描电子显微镜检查微球的表面外观和内部结构</strong>（SEM，S-4300，日立。日本东京）。使用纳米测量软件（Nano Measure 1.2）计算100张随机选择的纳米棒SEM图像的粒度。尺寸分布是使用Origin 7.5软件获得的（奥里根实验室公司，北安普顿，马萨诸塞州，美国）。</p>
+<p>2.3. <strong>柚皮苷加载效率和包封效率试验</strong>将PLGA微球（500mg）<strong>分散在1 mL NaOH（0.04 M）溶液</strong>中，将柚皮苷加载到PLGA微球中。接下来，根据之前的报告，使用**微孔板荧光计在282nm处测定溶液中柚皮苷的浓度[**31]。柚皮苷加载效率和包封效率采用以下公式计算：</p>
+<p>2.4. 将柚皮苷PLGA微球（500mg）或SF &#x2F; HAp支架的<strong>体外释放曲线</strong>与PLGA微球（500mg）溶解在<strong>50 mL磷酸盐缓冲盐水（PBS，pH 1 &#x2F; 4 7.4）溶液中</strong>，并在<strong>气浴恒温振荡器</strong>（KYC-1102C）中保持在37 C和75 rpm。在3，6，12，24，72，96，120，144，192，240，288，360，432，504，576，648，720，792和864小时，使用282 cm1的紫外分光光度计收集<strong>0.5 mL用于吸光度测定，并用新鲜的0.5 mL PBS</strong>代替。释放率是使用标准曲线计算的：</p>
+<p>2.5. 从司马特（中国苏州）购买脚手架制造 Bombyx 森蚕丝。SF溶液的制备如前所述[12]。简而言之，通过将蚕茧在0.02M Na 2CO 3溶液中煮沸30分钟来除去丝胶蛋白。然后将所得纤维在60°C下溶解在9.3M LiBr中4小时，随后在透析袋中透析（Cat No.YA1078，中国北京Solarbio，分子量截止1&#x2F;4 3500 Da）与超纯水反应48 h，每6小时换水一次以除去残留的LiBr。最后，将SF溶液与聚乙二醇（PEG，Mw 20，000，中国上海生物港）粉末透析，<strong>以产生浓度为15%的SF溶液</strong>。HAp是从索比奥（中国北京）获得的。</p>
+<p>        将SF&#x2F;HAp支架的制备方法如下：将羧化纤维素纳米原纤维（cCNF，中国广州中山纳贤科技有限公司）以4：1（v&#x2F;v）的比例加入到HAp溶液（300 mg&#x2F;mL）中，以保持HAp在水中的稳定性。然后将HAp &#x2F; cCNF悬浮液在磁力搅拌下以1：9（v &#x2F; v）的比例加入SF溶液（10%w &#x2F; v）中。最后，将含有<strong>柚皮苷</strong>（5 mg&#x2F;mL）或<strong>空白微球</strong>的PLGA微球加载到悬浮液中，分别形成<strong>MSN&#x2F;SF&#x2F;HAp</strong>和<strong>MSB&#x2F;SF&#x2F;HAp</strong>。将制备的悬浮液（50μL）转移到模具板上，并使用冻干机（α 1-2 LDplus，德国基督）在80°C下冷冻干燥24小时。一旦支架凝固，用甲醇处理1天以诱导β片形成。将支架切割并取芯成直径6 mm，厚10 mm的圆柱体，并在闪烁小瓶中灭菌环氧乙烷。表1总结了本研究中使用的缩写和脚手架制备方法。用于测量盘的试样直径为6 mm，厚度为10 mm，支架的抗压强度是使用电动3230系统（BOSE，明尼苏达州明尼通卡，美国）测量的。简而言之，将顺丰&#x2F;高频、MSB&#x2F;超高频&#x2F;高速和超高频&#x2F;超高频支架以 0.5 mm&#x2F;min 的恒定十字头速度加载，直到发生故障。支架的孔隙率如前所述计算。简而言之，称量干重（V1）。然后浸入PBS以确定其重量（V2）。最后，去除表面的水以重新称量湿重（V3）。最终孔隙率使用以下等式计算：</p>
+<p>从SEM图像中随机选择10个视野，并使用Nano Measure 1.2图像处理软件计算支架的孔径。孔隙互连率（体积吸附比）如前所述计算</p>
+<p>2.6. 细胞培养和鉴定 人<strong>BMSC</strong>在<strong>DMEM中培养，并补充10%胎牛血清和1%链霉素 - 青霉素</strong>。如前所述，进行了BMSC鉴定[33]。用于表面标记的抗体是人CD34-APC，CD45-FITC，CD13-APC，CD44-FITC，CD73-PE和CD90-PE（天津昊阳生物制造有限公司，天津，中国天津）。为了鉴定BMSC的三系分化潜力，采用致骨、致脂和软骨培养基（富源生物有限公司，中国上海）分别诱导BMSC进行成骨、软骨和脂肪分化。对于成骨和脂肪分化，第3代BMSC以2 104细胞&#x2F; cm 2的密度接种到6孔培养板中。当细胞汇合度达到70%-80%时，培养基被完全替换，然后每三天更换一次成骨或致脂培养基。21天后，通过用<strong>0.2%茜素红S染色来检测成骨能力</strong>（Solarbio，中国）。10天后，通过用<strong>油红O（Solarbio）染色来检测脂肪分化</strong>。为了确定BMSC的软骨潜力，使用沉淀培养系统进行软骨诱导。简而言之，将1 106个BMSC悬浮在15mL离心管中，以800g离心5分钟，然后将细胞沉淀在软骨诱导培养基中培养4周。为了评估软骨分化，将沉淀用<strong>Alcian蓝溶液染色30分钟</strong>。</p>
+<p>2.7. 细胞计数试剂盒-8 （CCK-8） CCK-8测定用于按照标准方案评估<strong>细胞代谢活性</strong>。将200μL培养基中的BMSC（3 103）移植到96孔板中。在SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架中培养1，3，7，14和21 d后，将CCK-8溶液（10μL，中国北京Solarbio）加入到含有100μL培养基混合物的每个孔中。孵育2小时后，使用酶标仪（BioTek酶标仪）在282nm处测量吸光度。2.8. 通过流式细胞术对膜联蛋白V &#x2F; PI染色使用膜联蛋白V-PI细胞凋亡检测试剂盒（Invitrogen;赛默飞世尔科技公司）根据制造商的协议。来自对照组的骨髓增生物质干细胞、血清白热&#x2F;酶链氨基酸、质谱节&#x2F;超肝素和质链纤维&#x2F;酶链纤维&#x2F;五氢大麻酚支架被采摘并用冷PBS清洗两次三次。将不同处理组的BMSC重悬于1X结合缓冲液中，浓度为1 106个细胞&#x2F; mL，并将5μLFITC膜联蛋白V和5μLPI加入到100μL细胞悬液中。然后将混合物在黑暗中孵育15分钟。使用流式细胞术分析制剂（BD FACSAria III，加利福尼亚州圣何塞，美国）。<strong>细胞凋亡率</strong>计算如下：</p>
+<p>2.9. <strong>碱性磷酸酶活性</strong> 培养7天后，将BMSC固定在4%多聚甲醛中10分钟，加入ALP染色液（中国上海北洋时间）20分钟。去除ALP溶液后，使用尼康显微镜（日本港区尼康）可视化ALP染色。如上所述，在正常和骨诱导性培养基中，在存在 SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 或 MSN&#x2F;SF&#x2F;HAp 支架的情况下，将 BMSC 培养。培养7天后，使用100μL RIPA裂解缓冲液裂解BMSC。根据制造商的说明，使用<strong>ALP测定试剂盒（中国北洋时间生物技术）对ALP活性进行定量</strong>。</p>
+<p>2.10. <strong>钙含量</strong> 通过组织学染色分析MSN&#x2F;SF&#x2F;HAp支架上BMSC向成骨细胞的分化。简而言之，将3个BMSC（1 107个细胞&#x2F;毫升，100μL）接种到SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架上。孵育8小时后，向每个孔中加入2mL培养基。每两天更换一次培养基，获得支架，并在21天后使用<strong>组织切片进行von Kossa染色</strong>。如前所述，对冯·科萨阳性区域（%）进行了定量分析[34]。<strong>ARS染色用于评估磷酸钙的沉积水平</strong>（索拉里比奥，中国北京）。培养21天后，弃去培养基，并用PBS洗涤细胞三次。然后将BMSC用4%多聚甲醛（中国北京Solarbio）固定10分钟，并用0.1%ARS溶液（pH 4.2）染色15分钟。反应终止于PBS处理。这些细胞在显微镜下可视化。然后使用醋酸提取对ARS染色进行洗脱和定量，如前所述[35]。</p>
+<p>2.11. 对<strong>转录组RNA测序</strong>（RNA-Seq）和生物信息学分析进行了进一步<strong>探讨SF&#x2F;HAp支架与柚皮苷PLGA微球的机制</strong>。第7天从MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp制备样品用于RNAseq。根据制造商的说明，使用NEBNext® Ultra™ II定向RNA库制备试剂盒（美国马萨诸塞州新英格兰生物实验室公司）构建了测序库。使用 BioAnalyzer 2100 系统（美国安捷伦科技公司）对文库进行质量控制和定量，并使用 Illumina HiSeq 仪器进行 150 bp 配对末端测序。使用HISAT2软件（v2.0.4）将高质量读数与人类参考基因组（UCSC HG19）进行比较。基因本体（GO）富集分析包括生物过程（BP），细胞组分（CC）和分子功能（MF）。GO和京都基因和基因组百科全书（KEGG）途径是使用用于注释，可视化和综合发现的数据库构建的（DAVID，<a href="http://david.abcc.nci/">http://david.abcc.nci</a> fcrf.gov&#x2F;）。</p>
+<p>2.12. RNA 分离和实时定量聚合酶链反应 (<strong>RT-qPCR</strong>) 根据制造商的说明，使用 TRIzol 试剂 (Invitrogen) 进行 RNA 提取。接下来，使用 ReverTra Ace qPCR RT 试剂盒（Toyobo Co. Ltd.，Osaka，Japan），使用 5 μg RNA 模板通过逆转录为 cDNA 模板合成互补 DNA。 RT-qPCR 使用 SYBR® Green Real-Time PCR Master Mix（Toyobo Co. Ltd.，Osaka，Japan）在 LightCycler&amp; Reg 480II 实时 PCR 仪器（Roche，Switzerland）上进行。 RT-qPCR 结果使用比较阈值循环法计算，甘油醛-3-磷酸脱氢酶 (GAPDH) 作为内部控制。<strong>OSX RUNX2 COl1A</strong></p>
+<p>2.13. <strong>蛋白质印迹测定</strong>简要地，使用冰冷的RIPA裂解缓冲液（中国上海北洋时间）裂解BMSC，然后进行十二烷基硫酸钠聚丙烯酰胺凝胶电泳。然后，进行湿电泳转移方法，将分离的蛋白质转移到硝酸纤维素膜（Bio-Rad）上，然后用5%脱脂牛奶溶液阻断。与特异性一抗孵育后，在室温下用抗兔IgG（#7074 S; 1：2000稀释液）探查膜1.5小时。最后，通过增强型化学发光检测试剂盒（皮尔斯生物技术，罗克福德，美国）分析抗体结合。相关抗体信息如表2所示。</p>
+<p>2.14 <strong>免疫荧光</strong> 根据不同的处理方法，将骨髓增生干细胞分为对照组、血细胞增多组、脑脊液组&#x2F;血细胞计数酶组和甲基溴化激素组&#x2F;血细胞计数酶链球菌组。.用4%多聚甲醛固定在盖玻片上的BMSC并用PBS洗涤三次。为了透化细胞膜，将细胞在室温下在Triton（0.5%在磷酸盐缓冲盐水[PBS]中）中孵育25分钟。将样品在含有1%牛血清白蛋白（BSA）的PBS中封闭30分钟。然后将样品与小鼠单克隆IgG-抗runt相关转录因子2（Runx2，稀释1：200，阿比卡姆，剑桥，马萨诸塞州，美国），骨钙素（Ocn，稀释1：200，阿伯康），Notch1（1：200，美国阿伯康）和Hes1（1：200，美国阿卡姆）在4 C过夜过夜。洗涤后，将细胞与FITC或TRITC偶联的二抗在37°C下以1：200的稀释度孵育1小时，并用PBS洗涤三次。最后，将样品与DAPI（10微克&#x2F;毫升，第号）一起孵育。C0065;Solarbio，中国北京）进行3分钟的核染色，并使用奥林巴斯Fluoview FV1000<strong>共聚焦激光扫描显微镜</strong>（奥林巴斯生命科学木卫二，日本东京）检测信号。</p>
+<p>2.15。手术进程 研究方案经天津医院伦理委员会批准（IRB No. 2021YLS197），并符合动物研究：体内实验报告（ARRIVE）动物研究指南（<a href="https://arriveguidelines.org/arrive-guidelines%EF%BC%89">https://arriveguidelines.org/arrive-guidelines）</a> )[36]。新西兰大白兔2月龄，体重2.3-2.5kg，购自天津医院实验动物中心。如前所述 [12] 诱发<strong>股骨远端骨骺（直径 6 毫米，深度 10 毫米）的临界尺寸缺陷</strong>。通过肌肉注射甲苯噻嗪盐酸盐（0.2 mL&#x2F;kg，中国吉林省盛达市）麻醉兔子。消毒后，外侧入路暴露股骨外侧髁。用慢速电钻用冰盐水溶液冲洗双皮质信道逐渐加宽至直径 6.0 mm，以避免热坏死。<strong>兔股骨远端随机分配到对照组（n ¼ 3, 6 条腿）、SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）、MSB&#x2F;SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）和 MSN&#x2F; SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）</strong>。伤口用生理盐水冲洗后，逐层缝合。为了避免伤口感染，每只动物在手术后三天内每天肌肉注射青霉素（100,000 U&#x2F;天）。</p>
+<p>2.16. 植入后<strong>六周，将植入物收获</strong>，固定在4%的多聚甲醛中，用15%EDTA脱钙，并嵌入石蜡中。<strong>Micro-CT分析</strong>（西门子，德国柏林）在缺陷区域对每组的五个样本进行，以确定骨缺损愈合的程度。自动执行3D重建和建模技术。<strong>ROI中愈伤组织特性的测量包括骨体积（BV，mm3）&#x2F;总体积（TV，mm3），小梁厚度（TB.TH），小梁分离（TB）。SP）、骨表面 （BS）&#x2F;BV 和骨矿物质密度（骨密度，毫克&#x2F;立方厘米）。</strong></p>
+<p>2.17. 组织学处理和组织形态学 经过micro-CT扫描和分析后，将收获的样品用15%EDTA脱钙（北京索瑞生物科技有限公司，中国北京，pH 7.4），并用70-100%乙醇脱水（天津富宇精细化工有限公司，天津，中国天津）。将组织处理，包埋在石蜡中，并使用常规进程切成5μm切片。使用二甲苯I和二甲苯II（西安化学试剂仪器公司，中国西安，每个5秒）使脱水切片透明。将样品分别用30%、50%、70%、80%和95%乙醇（中国天津富宇精细化工有限公司）在4 C下脱水10分钟和100%1 h。为了分析组织的COL1A1表达，对石蜡切片进行了免疫组化染色。简而言之，用3%H 2O2处理10 min淬灭内源性过氧化物酶活性（中国天津天利化学试剂有限公司）。对于免疫组织学分析，使用柠檬酸缓冲液（10 mM柠檬酸）在98 C下进行最佳抗原检索，骨切片10分钟，用PBS将H2O2（30%）稀释至终浓度为3%H 2O2。</p>
+<p>通过添加5%BSA阻断非特异性蛋白质结合，然后与针对COL1A1的一抗一抗一起孵育（小鼠抗兔，1：2500;蛋白质科技，中国武汉）在4°C过夜。信号是使用3，3-二氨基联苯胺四盐酸盐试剂盒（博斯特，中国武汉）开发的。使用显微镜（尼康）拍摄图像。</p>
+<p>2.18. 统计分析 使用SPSS软件（版本22.0;美国纽约州阿蒙克市。.多组比较的统计学显着性通过单向方差分析（ANOVA）确定，然后通过Tukey的事后测试来比较治疗。显着性水平设置为P&lt;0.05。</p>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>3.1. 微球表征和释放测试 通过扫描电镜观察PLGA微球的形貌（图2A）。<strong>微球呈规则的球形，微球直径为53.0 15.1 μm</strong>（图2B）。柚皮苷浓度曲线如图1所示。2C.<strong>柚皮苷浓度与吸光度值呈线性相关</strong>（Y 1&#x2F;4 0.0233 X0.0083，R2 1&#x2F;4 0.9996）。柚皮苷在PLGA微球中的负荷效率为0.01634 0.0008（mg柚皮苷&#x2F;mg PLGA）。包封效率为78.5 3.6%。柚皮苷从微球和MSN &#x2F; SF &#x2F; HAp支架中的体外释放曲线如图2 D所示。在孵育的前24小时，约11.2%的柚皮苷从PLGA微球中释放出来，8.62%的柚皮苷从支架中释放出来。PLGA微球的释放速度减慢，经过36天的孵育，分别有约83.9%和71.9%的PLGA微球释放。如图2 E所示，采用扫描电镜进一步观察了支架的微观结构，SF&#x2F;HAp支架具有多孔性，孔隙连接。微球均匀分散在小微室&#x2F;超细&#x2F;肝素和质谱链&#x2F;顺丰&#x2F;肝素支架中。微球的加入不影响多孔结构的形成。SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和 MSN&#x2F;SF&#x2F;HAp 支架的抗压强度之间无统计学意义差异（图 2 F，P &amp;gt; 0.05）。水相&#x2F;华氏体、小白蛋白&#x2F;超细&#x2F;酶平衡和超细化酶&#x2F;超单抗和超细化酶&#x2F;顺化酶&#x2F;氢化酶链反应平均直径分别为100.5 4.5 μm、98.7 4.2 μm和99.4 3.6 μm。如图2 F所示，三组SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp支架的<strong>直径无统计学意义差异</strong>（P &amp;gt;0.05）。制备后的支架的<strong>孔隙率</strong>分别为85.2 2.32%、82.4 1.32%和80.6 1.21%（MSB&#x2F;SF&#x2F;HAp）和MSN&#x2F;SF&#x2F;HAp（图2 F）。SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp的孔隙相互依赖性分别为96.2 0.59%、95.0、1.47%和94.4 1.23%，<strong>表明孔隙的相互连接性均极好</strong>。</p>
+<p>3.2.骨髓间充质干细胞的鉴定 为了进一步表征人骨髓间充质干细胞，通过流式细胞术检查第三代细胞的细胞表面标志物。 BMSCs显示MSC表面标志物CD13（98.5%）、CD44（97.7%）、CD73（95.5%）和CD90（96.6%）阳性表达，CD34（2.21%）和CD45（1.98%）阴性表达国际细胞治疗学会的标准（补充图1A）。</p>
+<p>对人骨髓间充质干细胞的多向分化能力的分析揭示了成骨培养基中类骨质基质样结构的茜素红染色、成脂培养基中细胞周围的脂滴形成以及软骨形成培养基中蛋白聚糖的阿尔新蓝染色（补充图 1B）。这些结果表明，从人骨髓中提取的细胞主要是<strong>hBMSCs</strong>。</p>
+<p>3.3.在 MSN&#x2F;SF&#x2F;HAp 支架上培养的 hBMSCs 的增殖和活力使用 CCK-8 检测试剂盒评估对照、SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和 MSN&#x2F;SF&#x2F;HAp 支架的细胞增殖效果（补充图 2）。如补充图所示。 2、第1天、第3天、第7天和第21天，由于细胞增殖需要时间，<strong>不同支架之间的细胞增殖性能没有显着差异</strong>。 14天时，MSN&#x2F;SF&#x2F;HAp组细胞增殖率高于SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组（P &lt; 0.05）。流式细胞仪用于研究不同处理后的细胞凋亡率。 BMSCs在各支架上培养1、3、5、7天，1、3、5、7天各<strong>支架细胞凋亡率差异无统计学意义****（图3，P＞0.05）。细胞培养1、3、5、7天后，活&#x2F;死染色结果显示支架上的细胞均呈现绿色荧光（活细胞），但7天后仅观察到部分红色荧光（死细胞）细胞培养。对于所有支架，活细胞的数量也随着从 1 到 7 天的孵育时间而增加。可以看出，</strong>细胞在支架孔壁上分布均匀，生长良好<strong>（图4，P＞0.05）。如图 5 所示，每个样品中的 BMSCs 均表现出多极纺锤样形态和组织良好的细胞骨架。这些结果表明，SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp或MSN&#x2F;SF&#x2F;HAp支架处理细胞对BMSCs</strong>没有细胞毒性，表明这些支架具有良好的生物兼容性和生物学可靠性，适合组织工程修复。**.这些结果表明，<strong>本研究中镶嵌柚皮苷PLGA微球的SF&#x2F;HAp支架具有合适的生物兼容性，可以增强细胞活力</strong>。</p>
+<p>3.4. 体外MSN&#x2F;SF&#x2F;HAp支架中BMSC的成骨分化 理想的骨修复材料应具有良好的生物兼容性、机械强度和成骨诱导能力。使用ALP活性，ALP染色和茜素红S染色检查MSN &#x2F; SF &#x2F; HAp支架内BMSC的成骨分化。在成骨培养基中培养7天后，与正常培养基组中相同细胞类型的SF &#x2F; HAp和MSB &#x2F; SF &#x2F; HAp组相比，两个BMSC的SF &#x2F; HAp组显示出增强的ALP染色（图6）。此外，<strong>MSN &#x2F; SF &#x2F; HAp显着增强了成骨作用</strong>，如ALP染色和定量所示（补充图3）。通过对照组，SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp基团中的茜素红染色，证实了BMSC在孵育3周后的<strong>钙盐沉积</strong>（图7和补充图4）。在所有组中的三周时观察到钙沉积;然而，MSN&#x2F;SF&#x2F;HAp组的钙沉积量远高于MSB&#x2F;SF&#x2F;HAp组、SF&#x2F;HAp组和对照组（均磷&amp;lt;0.05）。为评价MSN&#x2F;SF&#x2F;HAp对BMSC体外成骨分化的影响，在成骨诱导21 d后用冯科萨染色支架。结果表明，冯·科萨阳性区相当，MSN&#x2F;SF&#x2F;HAp组的产量显着高于SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组（补充图5）。</p>
+<p>为了揭示MSN &#x2F; SF &#x2F; HAp支架对BMSC体外成骨分化的影响，我们将细胞接种在对照，SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架上。为探讨MSN&#x2F;SF&#x2F;HAp对BMSC分化的影响，在MSN&#x2F;SF&#x2F;HAp存在或不存在MSN&#x2F;HAp的情况下，在成骨培养基中培养细胞14 d，<strong>采用RT-PCR和蛋白质印迹法分析BMSC中的成骨标志物蛋白</strong>（补充图6 A和B）。结果表明，SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组均优于对照组（P &lt;0.01）。与 SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和对照组相比，MSN&#x2F;SF&#x2F;HAp 支架对<strong>成骨标志物（Runx2、BMP2、OCN）的表达更能促进其表</strong>达。这些结果表明，镶嵌在SF &#x2F; HAp支架中的柚皮苷微球可以促进BMSC的成骨分化。造骨标志物的<strong>蛋白质印迹结果与RT-PCR结果一致</strong>。</p>
+<p>3.5. MSN&#x2F;SF&#x2F;HAp支架激活了缺口信号通路 我们对对照组和MSN&#x2F;SF&#x2F;HAp支架处理的BMSC之间的RNA测序数据进行了差异基因表达分析。我们鉴定了710个差异表达的RNA：323个基因下调，387个上调（图8 A和B）。使用<strong>GO分析</strong>检查了三个亚个体，血压，MF和CC（图8C）。BP主要包括缺口信号通路、缺口信号通路调控、细胞分化调控、细胞过程正调控、细胞发育调控等。CC主要包括转录复合物、核质、蛋白质包含复合物、细胞内细胞器管腔和细胞核。MF主要包括β-连环蛋白结合、蛋白质结构域特异性结合、转录因子结合、酶结合和蛋白质结合。<strong>MSN&#x2F;SF&#x2F;HAp 诱导的BMSC成骨分化的前五名GO术语包括核质、核、酶结合、转录因子和Notch信号通路（图8 D）</strong>。<strong>前十大富集KEGG通路包括缺口信号通路、癌症通路、内分泌耐药通路、PI3K&#x2F;Akt信号通路、Wnt信号通路、HIF-1信号通路、细胞周期、TGF-β信号通路、肾细胞癌和乳腺癌（图8E）</strong>。为了检测BMSC中缺口信号通路中基因的蛋白表达，将BMSC在对照组SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp中培养7 d，并通过蛋白质印迹分析检测蛋白。使用实时荧光定量PCR检测缺口信号通路组分的表达，包括缺口1、锯齿状1和NICD（补充图7 A和B）。结果显示，MSN&#x2F;SF&#x2F;HAp组的缺口1、锯齿状1和NICD表达水平均高于对照组（磷&amp;lt;0.05）和MSB&#x2F;SF&#x2F;HAp组和SF&#x2F;HAp组（P &amp;lt; 0.05）。与对照组相比，沙吞&#x2F;血细胞计数组、MSB&#x2F;SF&#x2F;HAp组和MSN&#x2F;SF&#x2F;HAp组的缺口1、锯齿状1和NICD表达水平显着提高（P &amp;lt;0.05）。MSN&#x2F;SF&#x2F;HAp 组与缺口信号通路相关的蛋白表达高于 SF&#x2F;HAp 组和 MSB&#x2F;SF&#x2F;HAp 组（补充图 7C）。通过免疫荧光进一步检查了14天后接种在不同支架上的BMSC中Notch1，Hes1，RUNX2和OCN的表达。缺口1和Hes1染色显示为细胞质模式（补充图8）。此外，与其他组相比，MSN&#x2F;SF&#x2F;HAp 的 RUNX2 和 OCN 表达增幅最高（补充图 8）。</p>
+<p>3.6. MSN&#x2F;SF&#x2F;HAp支架体内骨再生 6周后，micro-CT对股骨远端骨小梁结构的三维重建如图9所示。如图9所示，<strong>在对照组中，在缺损边缘仅观察到一些纤维组织和少量新骨形成。在 SF&#x2F;HAp 和 MSB&#x2F;SF&#x2F;HAp 组中观察到比对照组更多的新骨形成。与SF&#x2F;HAp或MSB&#x2F;SF&#x2F;HAp相比，MSN&#x2F;SF&#x2F;HAp在骨缺损修复方面表现出更优越的治疗效果</strong>。 MSN&#x2F;SF&#x2F;HAp 组的 BMD 显着增加，其次是 MSB&#x2F;SF&#x2F;HAp、SF&#x2F;HAp 和对照组（图 9）。对照组的骨密度是最低的骨矿物质密度。<strong>HE 染色显示 MSN&#x2F;SF&#x2F;HAp 组的骨缺损显示出明显的骨修复迹象。与对照组和 MSB&#x2F;SF&#x2F;HAp 组相比，在 MSN&#x2F;SF&#x2F;HAp 组的缺损部位观察到胶原纤维组织的积累</strong>*（图 10）。在 SF&#x2F;HAp 和 MSB&#x2F;SF&#x2F;HAp 组中观察到少量新骨组织。此外，与其他组相比，MSN&#x2F;SF&#x2F;HAp 组的<strong>骨形成量最大</strong>。<strong>甲苯胺蓝（图 11）和番红 O</strong>（图 12）染色进一步确定<strong>MSN&#x2F;SF&#x2F;HAp 组比其他组与更多的新骨形成相关</strong>。使用 COL1A 的免疫组织化学染色确认骨基质形成。我们进行了免疫组织化学以鉴定所有组中的 COL1A 表达。结果表明 MSN&#x2F;SF&#x2F;HAp 支架中的 <strong>COL1A 阳性细胞</strong>比其他组多得多（图 13）。结果表明，MSN&#x2F;SF&#x2F;HAp支架<strong>显着促进了兔股骨远端骨缺损的修复，并表现出较高的骨再生效率</strong>。</p>
+<h3 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h3><p>近年来，研究人员在使用组织工程技术生产骨移植替代品方面取得了重大努力[37-40]。不幸的是，骨修复支架仍然存在许多问题，例如骨修复速度和血管生成能力低[41]。骨骼是一种钙化组织，由35%的有机物和65%的无机物组成[42]。</p>
+<p>无机物的主要成分是I型胶原蛋白，无机物的主要成分是弱结晶HAp[43]。 <strong>SF 提供生物兼容性、可控的降解速率和优异的机械性能</strong> [44-46]。 <strong>HAp 因其优异的生物兼容性、生物活性和骨传导性而被广泛用作生物材料</strong> [47,48]。在我们之前的研究中，我们通过<strong>盐浸制备了 SF&#x2F;HAp 支架，并在其上镶嵌柚皮苷用于骨形成</strong>[12]。然而，这项研究仍然存在三个问题。首先，柚皮苷从支架中的<strong>高初始突释可能导致药物以毒性剂量释放</strong>，并且大量药物的损失不能用于以后的释放。此外，六氟异丙醇被用作溶剂来生产 SF 溶液，这可能具有一些潜在的<strong>毒性作用</strong> [49]。第三，<strong>当 SF 溶液中 HAp 的质量增加时，悬浮液的稳定性下降</strong>。</p>
+<p>为此，首先<strong>通过w&#x2F; o &#x2F; w溶剂蒸发法生产含有柚皮苷的PLGA微球</strong>。将获得的微球用于体外柚皮苷释放实验和成骨分化测定，随后植入兔股骨远端骨缺损模型。我们的主要研究结果表明，SF &#x2F; HAp与含有柚皮苷的PLGA微球结合作为有效的柚皮苷载体，提供扩散控制的柚皮苷释放曲线。因此，我们生成了柚皮苷包封的PLGA微球并维持柚皮苷的释放。<strong>此外，还生成了水溶性SF，避免了六氟异丙醇作为溶剂</strong>。我们添加了 <strong>cCNF 以提高 SF 解决方案中 HAp 的稳定性</strong>。柚皮苷与PLGA微球显示柚皮苷从微球中持续释放30天。这项研究表明，在掺入SF &#x2F; HAp支架之前将柚皮苷包封到PLGA微球中是以长期和持续释放方式提供柚皮苷的有效策略。此前，加载到PLGA&#x2F;HAp中的辛伐他汀微球被开发为治疗严重骨缺损的骨诱导剂[50]。Wang等人[51]构建了SF &#x2F; HAp支架，并发现它适用于骨再生。SF &#x2F; HAp支架的微观结构与天然人松质骨相似，SF &#x2F; HAp支架的平均直径约为100μm[52]。骨向内生长所需的孔径大于40μmis;类骨形成需要100μm的最小孔径[53]。最后，我们生成了一种新型的SF&#x2F;HAp支架，其柚皮苷释放促进BMSC的成骨分化和骨再生。在我们的研究中，ALP和ARS染色，qRT-PCR和蛋白质印迹测定表明，带有柚皮苷微球的SF &#x2F; HAp支架可以积极调节BMSC的成骨分化，并促进BMSC分化成成成骨细胞。Ge等人[20]发现柚皮苷通过PI3K &#x2F; AKT &#x2F; mTOR途径对糖皮质激素诱导的骨质疏松症具有保护作用。我们小组发现柚皮苷通过PI3K&#x2F;Akt信号通路增强骨折愈合[22，23，54]。此外，我们测试了这种新型支架对BMSC成骨分化的机制。我们发现MSN &#x2F; SF &#x2F; HAp支架正向调节缺口信号通路。此前，我们研究了柚皮苷在镶嵌有柚皮苷的SF&#x2F;HAp支架中对人脐带间充质干细胞进行成骨分化的机制[12]。主要的富集途径是PI3K&#x2F;Akt信号通路。这表明MSN &#x2F; SF &#x2F; HAp的机制与柚皮素镶嵌SF &#x2F; HAp支架的机制不同。缺口信号传导关键调节许多细胞类型的命运，包括BMSC和成骨细胞[55-58]。一些研究发现，缺口信号通路在BMSC的成骨分化和成骨性疾病的治疗中起重要作用[59-61]。Notch家族成员及其配体平衡成骨细胞的分化[62]。此外，缺口信号通路被认为是血管生成的调节因子[63]。此外，缺口信号传导指导发芽血管生成的启动和稳定[64]。植入6周后，MSN&#x2F;SF&#x2F;HAp显着增加了兔股骨远端骨缺损模型中的骨形成。HAp通常用于临床实践中促进骨再生，因为它具有合适的骨诱导特性[65]。MSN&#x2F;SF&#x2F;HAp 支架提高了 RUNX2、COL1A1 和 OCN 的表达水平。MSN &#x2F; SF &#x2F; HAp支架在体内显示出更高的骨诱导性，正如显着更高的BV &#x2F; TV和结核病所证明的那样。TH 值。我们进行了HE，甲苯胺蓝和沙夫胺O染色，以评估兔子远端股骨缺损的骨再生。HE染色显示，MSN&#x2F;SF&#x2F;HAp支架显着增加了缺损区域的新骨形成。在MSN &#x2F; SF &#x2F; HAp中，在骨缺损的边缘观察到比在MSB &#x2F; SF &#x2F; HAp和SF &#x2F; HAp组中观察到更多矿物组织的甲苯胺蓝染色更多。 此外，MSN&#x2F;SF&#x2F;HAp 显着增加了骨缺损区域的 COL1A 表达。<strong>COL1A</strong>在成骨细胞分化过程中提供坚固而灵活的骨骼结构。Shao等人先前进行的一项研究[66]检查了GelMA掺入的金红石纳米棒薄膜中的柚皮素，发现这些新薄膜调节MSCs的成骨分化。本研究有几个局限性。<strong>首先，没有对兔远端股骨缺损进行长期观察。此外，它还涉及一个小动物模型，并且有必要进一步研究实验动物研究的结果是否可以推广到人类。</strong></p>
+<h3 id="5-结论"><a href="#5-结论" class="headerlink" title="5.结论"></a>5.结论</h3><p><strong>制备载柚皮苷的PLGA微球，然后将其掺入SF&#x2F;HAp支架中，得到载柚皮苷的复合支架（MSN&#x2F;SF&#x2F;HAp支架）。体外评估表明，MSN&#x2F;SF&#x2F;HAp 支架表现出柚皮苷的缓释作用，并支持 BMSCs 的附着、增殖和成骨分化。体内分析表明 MSN&#x2F;SF&#x2F;HAp 促进骨缺损的修复，从而为 BTE 提供潜在的临床候选者。</strong></p>
+<hr>
+<p>附：来源网络</p>
+<p><strong>1.HE染色</strong></p>
+<p>HE染色是组织学中最基础、使用最广泛的染色手段，相信大家对此都不陌生。HE染色可以区分一般的骨组织结构和细胞，如下图所示。<strong>其中，五角星和白色箭头表示大量炎症细胞，三角形表示新骨小梁，黑色箭头表示骨髓。</strong>但单一的HE染色并不能区分新生骨组织的数量、胶原以及其他细胞状态，大多数都需要配合其他染色技术共同观察骨愈合状态。特别的，现在都需要对新生组织进行量化研究，HE染色显然是不能满足要求的。（DOI：10.1002&#x2F;adfm.202009189）</p>
+<p><img src="https://pic4.zhimg.com/80/v2-01426852d9f208e9d669698d8b914db7_720w.jpg"></p>
+<p><strong>2.Masson染色</strong></p>
+<p>Masson染色的颜色对比鲜明，可见明显的胶原纤维网（<strong>甲苯胺蓝染色则为蓝色，甲基绿则为绿色</strong>），能较好地反映纤维组织的形态。其中，蓝色表示新形成的骨，红色表示成熟的骨组织。图中很明显可以看到，对比组及水凝胶组治疗的的骨缺损被板层骨和骨髓替代，并且骨的一些区域高度成熟。当然，不同修复时期的胶原纤维数量是不一样的，随着修复时间增长，染色区域逐渐增大表明成熟的骨组织逐渐增加。（DOI：10.1002&#x2F;adfm.202009189）</p>
+<p><img src="https://pic4.zhimg.com/80/v2-82c458d9a462938379ca27d284127cfb_720w.jpg"></p>
+<p><strong>3.亚甲基蓝-酸性品红染色</strong></p>
+<p><strong>亚甲基蓝-酸性品红染色可以清晰的显示成骨细胞、细胞基质以及类骨质。染色后，植入体表面的羟基磷灰石涂层为紫色，成骨细胞核为深蓝色或深紫色，细胞质基质为淡紫色，紫灰色为新生骨组织。</strong>图片展示了不同时期骨修复的状态，在牵张成骨早期，可见浅紫色的细胞分泌的细胞外基质，深紫色的细胞核，未见明显骨小梁结构。中期，可见骨小梁较细小，骨小梁区比结缔组织区颜色更紫。在牵张成骨后期，见骨小梁较粗壮，周围一圈可见深蓝色成骨细胞，骨小梁边缘处为紫灰色新生骨组织，中心为深紫色的较成熟骨组织。（DOI：10.3969&#x2F;j.issn.1674-3806.2022.04.08）</p>
+<p><img src="https://pic1.zhimg.com/80/v2-004c053d63a85670985e51aaed0deb70_720w.jpg"></p>
+<p><strong>4.Von Kossa染色</strong></p>
+<p>钙结节的形成为成骨细胞特有，<strong>钙沉积是表明新骨生成的一个证据。钙盐沉积区域为黑色或棕黑色，细胞核表现为蓝色。</strong>Von Kossa染色证实，与无颗粒对照相比，在所有颗粒植入的股骨中有钙沉积的证据。与对照组相比，明显看出植入HUVEC和HBMSC颗粒的缺损内和周围有钙沉积，颗粒周围有同心堆积，夹杂着类骨质形成(粉红色&#x2F;紫色，箭头)，部分是原有骨的残余。（DOI：10.1096&#x2F;fj.201801114R）</p>
+<p><img src="https://pic3.zhimg.com/80/v2-44ebacc37acb2f5cc5b8959c56adc9b6_720w.jpg"></p>
+<p><strong>5.Trap染色</strong></p>
+<p><strong>Trap染色是用于检测骨组织、骨细胞中特征物质的染色，使破骨细胞呈红色，背景呈绿色或蓝色。</strong>抗酒石酸酸性磷酸酶（Trap）为破骨细胞的标志酶，特异地分布于破骨细胞中，为破骨细胞所特有，通常作为鉴别破骨细胞的重要标志物。如图可见随着浓度增高，显著刺激破骨细胞分化（RANKL+组）。<strong>总之，Trap染色可直接鉴别及分析破骨细胞的状态。</strong>（DOI：10.1038&#x2F;ncomms12794）</p>
+<p><img src="https://pic3.zhimg.com/80/v2-086a7afe7d080d5cc8dc6fc55bdd79f2_720w.jpg"></p>
+<p><strong>6.茜素红染色</strong></p>
+<p>茜素红可以与钙发生显色反应，生成深红色的化合物，这样成骨诱导的细胞外面沉积的<strong>钙结节也就被染成了深红色</strong>。如图示，下面红色即为茜素红染色后的结果。很明显观察到，钙结节逐渐增加，表明了材料更优异的成骨能力。（DOI: 10.1002&#x2F;adfm.202201067）</p>
+<p><img src="https://pic4.zhimg.com/80/v2-6c69483ffa0a71691b6d39320e8f9707_720w.jpg"></p>
+<p><strong>7.番红O-固绿染色</strong></p>
+<p>番红O-固绿染色可直观反映关节软骨、软骨下的骨组织结构，<strong>嗜碱性的软骨与碱性染料番红 O 结合呈现红色，嗜酸性的骨和酸性染料固绿结合而成蓝色</strong>，在关节软骨及软骨下骨的形态学研究中受到了欢迎。与下图表现的一致，代表软骨的红色部分从左至右依次增加，说明材料可以有效促进软骨修复。（DOI：10.1002&#x2F;adfm.202105084）</p>
+<p><img src="https://pic3.zhimg.com/80/v2-4127dba0eba020f7c3c0738e82b6af2e_720w.jpg"></p>
+<p>其中，<strong>HE染色是最常用的染色方法；Masson染色是结缔组织染色的最经典方法，以选择性地显示胶原纤维和肌纤维；番红Ｏ⁃固绿染色常用于区分软骨组织和骨组织区；Von Kossa染色法中的银溶液作用于含有不溶性钙盐的切片；亚甲基蓝⁃酸性品红染色主要用于区分新生骨质，多用于评估种植体骨界面成骨效果以及血管化程度；TRAP染色能够特异性展示破骨细胞的状态。</strong></p>
+<p>根据材料的设计方案和修复机制不同，我们可以选择其中的一种或者几种组合探究骨修复的状态，深入了解骨修复的机制及动态。以上就是为大家总结的7种骨修复中常用的染色方法啦，希望能够为大家的实验进展助力一小步，离成功更进一步~**</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+</search>
