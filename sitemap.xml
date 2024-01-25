@@ -221,13 +221,6 @@
   </url>
   
   <url>
-    <loc>https://ruixi.fun/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2024-01-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ruixi.fun/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2024-01-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,7 +235,7 @@
   </url>
   
   <url>
-    <loc>https://ruixi.fun/tags/%E5%86%99%E4%BD%9C/</loc>
+    <loc>https://ruixi.fun/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2024-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -250,6 +243,13 @@
   
   <url>
     <loc>https://ruixi.fun/tags/%E8%8F%9C%E8%B0%B1/</loc>
+    <lastmod>2024-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ruixi.fun/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2024-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -78,48 +78,12 @@ End Sub
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo博客迁移</title>
     <url>/post/ae40b68b.html</url>
     <content><![CDATA[<p>近期完成了拖延已久的博客迁移，实际方法很简单，将原电脑中的hexo文件夹拷贝到新电脑，终端输入几个指令，就可以重新在新电脑进行部署，推送。</p>
 ]]></content>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习记录</title>
-    <url>/post/8ad1a2bc.html</url>
-    <content><![CDATA[<ul>
-<li><p>2022年8月12日22:25:33 <a href="https://www.runoob.com/html/html-head.html">HTML 头部 | 菜鸟教程 (runoob.com)</a></p>
-</li>
-<li><p>2022年8月13日16:42:22 利用valine及<a href="https://console.leancloud.cn/apps">LeanCloud</a>搭建评论系统（无备案）</p>
-</li>
-<li><p>2022年9月11日17:15:08  插入&lt;!-- more --&gt;控制hexo next主页文章预览范围</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -134,67 +98,6 @@ End Sub
 ]]></content>
       <tags>
         <tag>小知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习日记 Day-2</title>
-    <url>/post/db90e617.html</url>
-    <content><![CDATA[<p>今天听了第一次组会，从中知道了自己需要学习的内容，以及一些文献汇报中的注意点。</p>
-<span id="more"></span>
-
-<p>需要学习的点：</p>
-<ul>
-<li><p><input disabled="" type="checkbox"> 
-免疫</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-细胞间接触</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-细胞培养</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-应力，应变</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-杨氏模量</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-电镜</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-成骨分化特异性标志物</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-材料@材料代表什么意思</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-EDS 分析</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-骨修复ct和micro ct</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-he染色</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-文献汇报注意点 创新点 认为怎么样</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习日记 Day-3</title>
-    <url>/post/ac97d681.html</url>
-    <content><![CDATA[<p>1、EDS分析：<strong>X射线能谱分析，简写EDS，通常通过配合扫描电子显微镜与透射电子显微镜的使用，是用来对材料微区成分元素种类与含量进行分析：利用电子束与物质作用时产生的特征X射线，来提供样品化学组成方面的信息，可定性、半定量检测大部分元素（Be4-PU94），可进行表面污染物的分析。</strong>  </p>
-<p>(1)定性分析<br>EDS的谱图中谱峰代表样品中存在的元素。定性分析是分析未知样品的第一步，即鉴别所含的元素。如果不能正确地鉴别元素的种类，最后定量分析的精度就毫无意义。  </p>
-<p>(2)定量分析<br>定量分析是通过X射线强度来获取组成样品材料的各种元素的浓度。根据实际情况，人们寻求并提出了测量未知样品和标样的强度比方法，再把强度比经过定量修正换算成浓度比。最广泛使用的一种定量修正技术是ZAF修正。</p>
-]]></content>
-      <tags>
-        <tag>科研</tag>
       </tags>
   </entry>
   <entry>
@@ -263,6 +166,83 @@ he染色</p>
 <h3 id="3-5-药物缓释载体"><a href="#3-5-药物缓释载体" class="headerlink" title="3.5  药物缓释载体"></a>3.5  药物缓释载体</h3><p>药物缓释是指使药物缓慢进入血液以降低血液中的药物浓度，所以制备能使被承载的药物缓慢释放的载体材料是非常必要的。现今常见的材料包括壳聚糖、水凝胶、聚羟基丁酸酯等。丝素蛋白也因其优良特性在药物缓释中得到应用。张海云团队以丝素蛋白与 Fe3O4纳米颗粒为主要材料，制备成一种具有磁靶向的复合微球药物载体，其具有药物靶向释放能力，可以有效提高药物利用率和控制药物缓释，并证明了具备良好流动性后的丝素蛋白水凝胶的药物传递效率较高。</p>
 <h3 id="3-6-水凝胶"><a href="#3-6-水凝胶" class="headerlink" title="3.6  水凝胶"></a>3.6  水凝胶</h3><p>丝素蛋白通过氢键、亲疏水性、静电及剪切力等相互作用，使得分子链之间相互作用形成 β-折叠结构，导致大分子链之间相互缠绕、集聚，形成蛋白微球胶束，并进一步物理交联形成水凝胶。聚氨酯基丝素蛋白水凝胶是丝素蛋白复合水凝胶中的一种，因为同时具有水凝胶的优异生物相容性和聚氨酯材料在性能方面的可调性，一直受到研究人员的青睐。现有的工艺技术已将聚氨酯与丝素蛋白的优异性能结合起来，优化合成工艺，制备出力学性能较好的聚氨酯-丝素蛋白水凝胶材料，在生物工程材料领域有着广泛的应用前景。</p>
 <h2 id="4-丝素蛋白未来的发展前景"><a href="#4-丝素蛋白未来的发展前景" class="headerlink" title="4.丝素蛋白未来的发展前景"></a><strong>4</strong>.<strong>丝素蛋白未来的发展前景</strong></h2><p>丝素蛋白目前最广泛的应用于在骨修复领域。主要包括丝素蛋白骨修复材料的制备工艺研究、体内外生物相容性研究、丝素蛋白生物材料对干细胞的成骨和成软骨诱导能力研究以及丝素组织工程骨在体内骨缺失修复效果研究几个方面。可以根据临床的实际需要，将丝素蛋白制备成不同形式的骨修复材料，如丝素膜、丝素纳米纤维、丝素水凝胶以及丝素多孔支架。此外，丝素蛋白生物材料能够通过化学修饰、负载生物活性因子以及复合无机物的等方式来增强骨修复的效果。虽然研究者对丝素蛋白在骨修复的应用进行了体内体外等一系列研究，但是离临床应用要求还一定差距，仍有一些问题需要解决，如: 丝素蛋白骨修复材料如何更好地调控种子细胞的成骨分化; 如何构建出更高机械强度的丝素蛋白骨修复材料; 如何确保丝素蛋白骨修复材料的降解速度与骨组织的生长相匹配等等。如果仅期望于通过优化丝素蛋白材料的加工工艺解决上述所有问题，其难度很大。因此，利用转基因技术得到适合于骨修复的具有优良性能的重组丝素蛋白，再通过化学修饰、组分复合等手段得到性能优良，具有临床应用价值的骨修复材料，将成为今后该领域研究的热点。此外，利用3D打印技术制备出完全模拟骨组织内部结构的丝素骨修复材料，以及对丝素生物材料体内外诱导成骨机理的研究，也是今后值得关注的课题。</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记 Day-2</title>
+    <url>/post/db90e617.html</url>
+    <content><![CDATA[<p>今天听了第一次组会，从中知道了自己需要学习的内容，以及一些文献汇报中的注意点。</p>
+<span id="more"></span>
+
+<p>需要学习的点：</p>
+<ul>
+<li><p><input disabled="" type="checkbox"> 
+免疫</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+细胞间接触</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+细胞培养</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+应力，应变</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+杨氏模量</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+电镜</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+成骨分化特异性标志物</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+材料@材料代表什么意思</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+EDS 分析</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+骨修复ct和micro ct</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+he染色</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+文献汇报注意点 创新点 认为怎么样</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习记录</title>
+    <url>/post/8ad1a2bc.html</url>
+    <content><![CDATA[<ul>
+<li><p>2022年8月12日22:25:33 <a href="https://www.runoob.com/html/html-head.html">HTML 头部 | 菜鸟教程 (runoob.com)</a></p>
+</li>
+<li><p>2022年8月13日16:42:22 利用valine及<a href="https://console.leancloud.cn/apps">LeanCloud</a>搭建评论系统（无备案）</p>
+</li>
+<li><p>2022年9月11日17:15:08  插入&lt;!-- more --&gt;控制hexo next主页文章预览范围</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记 Day-3</title>
+    <url>/post/ac97d681.html</url>
+    <content><![CDATA[<p>1、EDS分析：<strong>X射线能谱分析，简写EDS，通常通过配合扫描电子显微镜与透射电子显微镜的使用，是用来对材料微区成分元素种类与含量进行分析：利用电子束与物质作用时产生的特征X射线，来提供样品化学组成方面的信息，可定性、半定量检测大部分元素（Be4-PU94），可进行表面污染物的分析。</strong>  </p>
+<p>(1)定性分析<br>EDS的谱图中谱峰代表样品中存在的元素。定性分析是分析未知样品的第一步，即鉴别所含的元素。如果不能正确地鉴别元素的种类，最后定量分析的精度就毫无意义。  </p>
+<p>(2)定量分析<br>定量分析是通过X射线强度来获取组成样品材料的各种元素的浓度。根据实际情况，人们寻求并提出了测量未知样品和标样的强度比方法，再把强度比经过定量修正换算成浓度比。最广泛使用的一种定量修正技术是ZAF修正。</p>
 ]]></content>
       <tags>
         <tag>科研</tag>
@@ -349,19 +329,36 @@ he染色</p>
       </tags>
   </entry>
   <entry>
-    <title>流式细胞术</title>
-    <url>/post/e3f27a88.html</url>
-    <content><![CDATA[<p>使用学院的流式细胞仪的操作步骤。</p>
-<p>准备：鞘液，超纯水，一次实验大概加入1L水。</p>
+    <title>Hello World</title>
+    <url>/post/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <span id="more"></span>
 
-<p>1、打开稳压器电源，打开仪器背面的白色电源键，仪器预热20min（亮黄灯），绿灯预热结束。电脑软件左下角绿灯代表与仪器连接成功，右下角绿灯代表液流系统稳定（预热结束）。</p>
-<p>2、打开电脑，卡号不用填，填账号密码，打开软件，软件密码FACadministrator（密码小写）。点烧瓶按钮，打开自己的文件夹，save as 相关文件，开始测试。</p>
-<p>3、测试时先preview预览，可以调电压，然后acquire，接收10000个活细胞，然后next，测下一管。</p>
-<p>4、带格式化的u盘。导出数据，若是最后的同学，需要洗仪器，次氯酸钠，水，shutdown关机，关闭仪器电源，关闭电脑，关闭稳压器电源。</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>番茄肉末意面</title>
+    <url>/post/471ca101.html</url>
+    <content><![CDATA[<h3 id="材料："><a href="#材料：" class="headerlink" title="材料："></a>材料：</h3><p>食用油，大蒜2-3颗，番茄1个，肉末300g，意面170g，洋葱半个，番茄酱若干。</p>
+<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、准备食材：锅中加水，加入少许盐、油，水开加入意面煮约10min，捞出。番茄去皮，切碎；大蒜，切碎；洋葱切小块。</p>
+<p>2、锅中放油，比炒菜稍多，加入蒜末、洋葱块，炒至金黄，加入番茄丁、番茄酱，炒至浓稠出汁，加入肉末，炒熟。</p>
+<p>3、加入意面，翻拌均匀，出锅，可根据口味加生抽、番茄酱等。</p>
+<p>升级版：加入一大勺辣椒粉，翻拌均匀，再加入牛奶，成品粘稠带有辣椒香。</p>
 ]]></content>
       <tags>
-        <tag>科研</tag>
+        <tag>菜谱</tag>
       </tags>
   </entry>
   <entry>
@@ -390,19 +387,6 @@ he染色</p>
       </tags>
   </entry>
   <entry>
-    <title>番茄肉末意面</title>
-    <url>/post/471ca101.html</url>
-    <content><![CDATA[<h3 id="材料："><a href="#材料：" class="headerlink" title="材料："></a>材料：</h3><p>食用油，大蒜2-3颗，番茄1个，肉末300g，意面170g，洋葱半个，番茄酱若干。</p>
-<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、准备食材：锅中加水，加入少许盐、油，水开加入意面煮约10min，捞出。番茄去皮，切碎；大蒜，切碎；洋葱切小块。</p>
-<p>2、锅中放油，比炒菜稍多，加入蒜末、洋葱块，炒至金黄，加入番茄丁、番茄酱，炒至浓稠出汁，加入肉末，炒熟。</p>
-<p>3、加入意面，翻拌均匀，出锅，可根据口味加生抽、番茄酱等。</p>
-<p>升级版：加入一大勺辣椒粉，翻拌均匀，再加入牛奶，成品粘稠带有辣椒香。</p>
-]]></content>
-      <tags>
-        <tag>菜谱</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>聊天室-test</title>
     <url>/post/3ad577bb.html</url>
     <content><![CDATA[<p>来聊天啊</p>
@@ -412,21 +396,17 @@ he染色</p>
       </tags>
   </entry>
   <entry>
-    <title>蚕丝蛋白综述</title>
-    <url>/post/19afb55e.html</url>
-    <content><![CDATA[<h1 id="1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials"><a href="#1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials" class="headerlink" title="1. Structures, mechanical properties and applications of silk fibroin materials"></a>1. Structures, mechanical properties and applications of silk fibroin materials</h1><p>丝素蛋白材料的结构、力学性能及应用</p>
-<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr1.jpg"></p>
-<blockquote>
-<p>Fig. 1. In vivo processing in silk glands and natural spinning by silkworms to produce fibroin fibers with unique features</p>
-</blockquote>
+    <title>流式细胞术</title>
+    <url>/post/e3f27a88.html</url>
+    <content><![CDATA[<p>使用学院的流式细胞仪的操作步骤。</p>
+<p>准备：鞘液，超纯水，一次实验大概加入1L水。</p>
 <span id="more"></span>
 
-<hr>
-<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr2.jpg"></p>
-<blockquote>
-<p>Fig. 2. <em>Bombyx mori</em> silkworm silk in various morphologies. (A) The raw silk consists of two fibroin fibers held together with a layer of sericin on their surfaces. After degumming to remove sericin, the fibroin fibers are dissolved in <a href="https://www.sciencedirect.com/topics/chemistry/lithium-bromide" title="Learn more about lithium bromide from ScienceDirect&#39;s AI-generated Topic Pages">lithium bromide</a> solution followed by dialyzing against ultrapure water or <a href="https://www.sciencedirect.com/topics/chemistry/poly-ethylene-glycol" title="Learn more about polyethylene glycol from ScienceDirect&#39;s AI-generated Topic Pages">polyethylene glycol</a> to obtain regenerated fibroin solution <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1015">[12]</a>, (B) Mature silkworm and produced cocoon <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1020">[13]</a>, (C) Silk braided <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1025">[14]</a>, knitted <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1030">[15]</a>, and non-woven matrices <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1035">[16]</a> constructed from the fibroin fibers, (D) Silk sponges <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1040">[17]</a>, hydrogels <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, films <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, nanofibrous mats <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, microparticles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, and microneedles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1045">[18]</a> constructed from the regenerated fibroin solution.</p>
-</blockquote>
-<h2 id="机械性能"><a href="#机械性能" class="headerlink" title="机械性能"></a>机械性能</h2><h2 id="机械性能增强"><a href="#机械性能增强" class="headerlink" title="机械性能增强"></a>机械性能增强</h2><h2 id="功能化"><a href="#功能化" class="headerlink" title="功能化"></a>功能化</h2><h4 id="1-内在功能化"><a href="#1-内在功能化" class="headerlink" title="1.内在功能化"></a>1.内在功能化</h4><h4 id="2-后修饰功能化"><a href="#2-后修饰功能化" class="headerlink" title="2.后修饰功能化"></a>2.后修饰功能化</h4><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h4 id="1-织物"><a href="#1-织物" class="headerlink" title="1.织物"></a>1.织物</h4><h4 id="2-手术缝合线"><a href="#2-手术缝合线" class="headerlink" title="2.手术缝合线"></a>2.手术缝合线</h4><h4 id="3-组织工程"><a href="#3-组织工程" class="headerlink" title="3.组织工程"></a>3.组织工程</h4><h4 id="4-药物递送"><a href="#4-药物递送" class="headerlink" title="4.药物递送"></a>4.药物递送</h4><h4 id="5-光学传感"><a href="#5-光学传感" class="headerlink" title="5.光学传感"></a>5.光学传感</h4>]]></content>
+<p>1、打开稳压器电源，打开仪器背面的白色电源键，仪器预热20min（亮黄灯），绿灯预热结束。电脑软件左下角绿灯代表与仪器连接成功，右下角绿灯代表液流系统稳定（预热结束）。</p>
+<p>2、打开电脑，卡号不用填，填账号密码，打开软件，软件密码FACadministrator（密码小写）。点烧瓶按钮，打开自己的文件夹，save as 相关文件，开始测试。</p>
+<p>3、测试时先preview预览，可以调电压，然后acquire，接收10000个活细胞，然后next，测下一管。</p>
+<p>4、带格式化的u盘。导出数据，若是最后的同学，需要洗仪器，次氯酸钠，水，shutdown关机，关闭仪器电源，关闭电脑，关闭稳压器电源。</p>
+]]></content>
       <tags>
         <tag>科研</tag>
       </tags>
@@ -463,6 +443,106 @@ he染色</p>
 <p>平面丝更细</p>
 <p>平面丝较薄，这是因为直到排尿完成，家蚕才被放在圆盘上。这时，家蚕已经吐出了部分甚至全部的外层蚕茧丝。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>蚕丝蛋白综述</title>
+    <url>/post/19afb55e.html</url>
+    <content><![CDATA[<h1 id="1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials"><a href="#1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials" class="headerlink" title="1. Structures, mechanical properties and applications of silk fibroin materials"></a>1. Structures, mechanical properties and applications of silk fibroin materials</h1><p>丝素蛋白材料的结构、力学性能及应用</p>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr1.jpg"></p>
+<blockquote>
+<p>Fig. 1. In vivo processing in silk glands and natural spinning by silkworms to produce fibroin fibers with unique features</p>
+</blockquote>
+<span id="more"></span>
+
+<hr>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr2.jpg"></p>
+<blockquote>
+<p>Fig. 2. <em>Bombyx mori</em> silkworm silk in various morphologies. (A) The raw silk consists of two fibroin fibers held together with a layer of sericin on their surfaces. After degumming to remove sericin, the fibroin fibers are dissolved in <a href="https://www.sciencedirect.com/topics/chemistry/lithium-bromide" title="Learn more about lithium bromide from ScienceDirect&#39;s AI-generated Topic Pages">lithium bromide</a> solution followed by dialyzing against ultrapure water or <a href="https://www.sciencedirect.com/topics/chemistry/poly-ethylene-glycol" title="Learn more about polyethylene glycol from ScienceDirect&#39;s AI-generated Topic Pages">polyethylene glycol</a> to obtain regenerated fibroin solution <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1015">[12]</a>, (B) Mature silkworm and produced cocoon <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1020">[13]</a>, (C) Silk braided <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1025">[14]</a>, knitted <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1030">[15]</a>, and non-woven matrices <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1035">[16]</a> constructed from the fibroin fibers, (D) Silk sponges <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1040">[17]</a>, hydrogels <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, films <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, nanofibrous mats <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, microparticles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, and microneedles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1045">[18]</a> constructed from the regenerated fibroin solution.</p>
+</blockquote>
+<h2 id="机械性能"><a href="#机械性能" class="headerlink" title="机械性能"></a>机械性能</h2><h2 id="机械性能增强"><a href="#机械性能增强" class="headerlink" title="机械性能增强"></a>机械性能增强</h2><h2 id="功能化"><a href="#功能化" class="headerlink" title="功能化"></a>功能化</h2><h4 id="1-内在功能化"><a href="#1-内在功能化" class="headerlink" title="1.内在功能化"></a>1.内在功能化</h4><h4 id="2-后修饰功能化"><a href="#2-后修饰功能化" class="headerlink" title="2.后修饰功能化"></a>2.后修饰功能化</h4><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h4 id="1-织物"><a href="#1-织物" class="headerlink" title="1.织物"></a>1.织物</h4><h4 id="2-手术缝合线"><a href="#2-手术缝合线" class="headerlink" title="2.手术缝合线"></a>2.手术缝合线</h4><h4 id="3-组织工程"><a href="#3-组织工程" class="headerlink" title="3.组织工程"></a>3.组织工程</h4><h4 id="4-药物递送"><a href="#4-药物递送" class="headerlink" title="4.药物递送"></a>4.药物递送</h4><h4 id="5-光学传感"><a href="#5-光学传感" class="headerlink" title="5.光学传感"></a>5.光学传感</h4>]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蚕丝蛋白羟基磷灰石柚皮素文献阅读</title>
+    <url>/post/80156f75.html</url>
+    <content><![CDATA[<p>Sustained release of naringin from silk-fibroin-nanohydroxyapatite scaffold for the enhancement of bone regeneration</p>
+<p>丝素蛋白纳米羟基磷灰石支架持续释放柚皮素，促进骨再生</p>
+<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>骨缺损是临床环境中的常见挑战。骨组织工程（BTE）是治疗大骨缺损临床问题的有效方法。在这项研究中，我们制备了镶嵌柚皮素蛋白聚乳酰乙醇酸（PLGA）微球的丝素蛋白（SF）&#x2F;羟基磷灰石（HAp）支架，研究了它们在BTE中的应用可行性。柚皮苷PLGA微球被制造并粘附在SF &#x2F; HAp支架上。将骨间充质干细胞（BMSCs）接种到含有柚皮蛋白PLGA微球的SF &#x2F; HAp支架上，以检查SF &#x2F; HAp支架的生物兼容性。采用兔股骨远端骨缺损模型评估含有柚皮素PLGA微球的SF&#x2F;HAp支架的体内功能。目前的研究表明，含有柚皮苷负载PLGA微球的SF &#x2F; HAp支架显示出作为骨再生的骨调节生物材料的希望。</p>
+<span id="more"></span>
+
+<p><strong>柚皮苷</strong>：是由水龙骨科植物槲蕨根茎(骨碎补)中提取的主要有效成分，能够促进成骨细胞增殖、促进血管生成、抑制破骨细胞生长的功能。</p>
+<p>BMSCs：骨髓间充质干细胞（bone marrow mesenchymal stem cells）</p>
+<p><strong>PLGA</strong>：聚乳酸-羟基乙酸共聚物，乳酸和羟基乙酸随机聚合而成，是一种可降解的功能高分子有机化合物，具有良好的生物相容性、无毒、良好的成囊和成膜的性能，被广泛应用于制药、医用工程材料和现代化工业领域。</p>
+<p><strong>PVA</strong>：聚乙烯醇，它是一种极安全的高分子有机物，对人体无毒，无副作用，具有良好的生物相容性，尤其在医疗中的如其水性凝胶在眼科、伤口敷料和人工关节方面的有广泛应用，同时在<a href="https://baike.baidu.com/item/%E8%81%9A%E4%B9%99%E7%83%AF%E9%86%87%E8%96%84%E8%86%9C?fromModule=lemma_inlink">聚乙烯醇薄膜</a>在药用膜，<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E8%82%BE%E8%86%9C/6646879?fromModule=lemma_inlink">人工肾膜</a>等方面也有使用。其安全性可以从用于伤口皮肤修复，和眼部滴眼液产品可见一斑。</p>
+<p><strong>ALP</strong>: 碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。这种酶能催化核酸分子脱掉5’磷酸基团，从而使DNA或RNA片段的5’-P末端转换成5’-OH末端。但它不是单一的酶，而是一组同工酶 [1]  。已发现有AKP1、AKP2、AKP3、AKP4、AKP5与AKP6六种同功酶。其中第1、2、6种均来自肝脏，第3种来自骨细胞，第4种产生于胎盘及癌细胞，而第5种则来自小肠绒毛上皮与成纤维细胞。</p>
+<p><strong>GO分析</strong>：Gene ontology，GO数据库分别从功能、参与的生物途径及细胞中的定位对基因产物进行了标准化描述，即对基因产物进行简单注释，通过GO富集分析可以粗略了解差异基因富集在哪些生物学功能、途径或者细胞定位。</p>
+<h3 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h3><p>大的骨缺损难以自行修复，并且经常需要特殊且昂贵的管理 [1,2]。此外，自体或异体骨移植物具有某些缺点。骨组织工程 (BTE) 具有修复骨缺损的潜力，因此引起了相当大的关注 [3,4]。 BTE 需要三个组成部分：结合生物材料、适当的生物活性分子和细胞。尽管已经取得了令人满意的结果，但由于各种原因，将 BTE 升级为临床应用受到限制。理想的骨缺损愈合生物材料应该是可生物降解的、生物兼容的，并具有良好的骨促进微环境[5]。这些支架特性可以促进干细胞的生长和分化。因此，为 BTE 设计的支架必须具有生物兼容性并具有合适的材料特性 [6,7]。因此，一些研究已经通过不同的方法制造了用于 BTE 的丝素蛋白 (SF)&#x2F;羟基磷灰石 (HAp) 复合支架 [8,9]。 SF是一种天然蛋白质，在生物材料领域具有广阔的应用前景[10]。 HAp是哺乳动物骨骼中的主要矿物质成分，被认为是理想的骨修复材料。 SF 与HAp 结合以获得多孔复合支架材料[11]。在我们之前的研究中，设计并制造了一种与柚皮苷混合的SF&#x2F;HAp生物复合支架，作为人脐带间充质干细胞的载体，以有效修复骨缺损[12]。在制造过程中，丝绸溶解在有机溶剂六氟异丙酯中。然而，六氟异丙基对人体有毒并引起其他不良副作用。因此，开发用于溶解SF和HAp的无毒溶剂对于临床应用是必要的。</p>
+<p>柚皮苷是骨碎补的主要成分，具有促进间充质干细胞和成骨细胞前体细胞分化的潜力[13，14]。此外，柚皮苷可诱导破骨细胞凋亡，因此可用于预防和治疗骨质疏松症[15，16]。因此，柚皮苷被广泛用于骨质疏松症及相关骨骼疾病的预防和治疗[17-20]。原文发现柚皮苷通过调节炎症和生长因子表达来促进大鼠糖尿病足溃疡的血管生成[21]。据报道，柚皮苷在骨质疏松性骨折模型中使用时可潜在地促进血管形成和骨再生[21，22]。柚皮苷还可以通过CXCR4调控的PI3K&#x2F;Akt信号通路调节内皮祖细胞分化的分化[23]。柚皮苷具有修复大节段骨缺损的特征特性，包括骨刺激（促进新骨形成）和血管刺激（诱导血管形成）。我们之前的研究报道，柚皮苷镶嵌SF&#x2F;HAp支架可增强人脐带间充质干细胞的成骨分化，可用于治疗骨缺损[12]。支架还增强了人脐内皮细胞（HUVEC）的血管生成。这些发现表明，柚皮苷可能是治疗最常见的骨骼疾病和缺陷的有效候选药物。</p>
+<p>然而，柚皮苷&#x2F; SF &#x2F; HAp支架导致20小时内超过70%的柚皮苷突然释放。突发性释放可能导致全身毒性[24，25]。此外，柚皮苷由于其水溶性差而显示出低的生物利用度[26，27]。最后，药物从骨缺损区域迅速清除，这促使开发了一种用于释放柚皮苷的长效控释系统。聚乳酸-共乙醇酸（PLGA）微球被认为非常适合作为医疗材料、药物和细胞因子的缓释载体[28，29]。PLGA微球已被用作可注射载体，以促进骨缺损愈合修复[30]。<strong>在本研究中，我们开发了一种能够以受控方式释放柚皮苷的新型SF &#x2F; HAp支架。采用SF和HAp多孔支架的复合物，采用乳化-溶剂蒸发法制备柚皮素包封的PLGA微球，达到柚皮苷的高包封效果。采用骨间充质干细胞（BMSCs）评价SF&#x2F;HAp复合支架对BMSC成骨分化的影响，并进一步研究兔股骨髁缺陷模型中SF&#x2F;HAp复合支架体内骨缺损修复特征。</strong></p>
+<h3 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h3><p>2.1 含有柚皮苷的PLGA微球的制备</p>
+<p>PLGA（丙交酯&#x2F;乙交酯1&#x2F;4 50：50，分子量1&#x2F;4 94，000 Da）购自济南大港生物材料有限公司（中国山东省济南市）。聚乙烯醇（PVA）是从西格玛奥德里奇（中国上海）购买的。柚皮苷（纯度98%）来自西格玛-奥尔德里奇（美国密苏里州圣路易斯）。使用水包油（w&#x2F;o&#x2F;w）乳液溶剂蒸发法制备掺入柚皮苷的PLGA微球（图1）。简言之，将<strong>500毫克PLGA</strong>（丙交酯：乙交酯1&#x2F;4 50：50，Mw 1&#x2F;4 94，000 Da）<strong>溶于3 mL二氯甲烷</strong>（化学纯度为99.9%，中国天津市化学试剂有限公司第三分公司）中，形成<strong>PLGA溶液</strong>。将<strong>柚皮苷</strong>（10mg）溶于<strong>0.1mL甲醇</strong>（100mg&#x2F;mL，化学纯度99.9%，中国天津天大化学试剂厂）中，得到<strong>柚皮苷溶液</strong>。使用<strong>均质机</strong>以10，000 rpm的速度行驶1分钟，形成<strong>初级乳液</strong>。将该溶液在室温下滴入300mL的0.25%（w &#x2F; v）<strong>PVA溶液</strong>中，并使用<strong>均质机</strong>转速为10，000 rpm。将<strong>PVA溶解在80°C去离子水中搅拌6 h</strong>，制备0.25%（w&#x2F;v）PVA溶液（Mw 9000–10，000，80%由奥尔德里奇水解）。形成乳液并在室温下连续<strong>搅拌8小时</strong>以蒸发有机溶剂。将微球悬浮液以6000rpm<strong>离心</strong>15 min，并用<strong>蒸馏水洗涤微球3</strong>次。最后，将微球冷冻至80°C，使用<strong>冻干</strong>剂（α 1-2 LDplus，德国基督）在80°C下冻干24小时。</p>
+<p>2.2. 微球表征 通过<strong>扫描电子显微镜检查微球的表面外观和内部结构</strong>（SEM，S-4300，日立。日本东京）。使用纳米测量软件（Nano Measure 1.2）计算100张随机选择的纳米棒SEM图像的粒度。尺寸分布是使用Origin 7.5软件获得的（奥里根实验室公司，北安普顿，马萨诸塞州，美国）。</p>
+<p>2.3. <strong>柚皮苷加载效率和包封效率试验</strong>将PLGA微球（500mg）<strong>分散在1 mL NaOH（0.04 M）溶液</strong>中，将柚皮苷加载到PLGA微球中。接下来，根据之前的报告，使用**微孔板荧光计在282nm处测定溶液中柚皮苷的浓度[**31]。柚皮苷加载效率和包封效率采用以下公式计算：</p>
+<p>2.4. 将柚皮苷PLGA微球（500mg）或SF &#x2F; HAp支架的<strong>体外释放曲线</strong>与PLGA微球（500mg）溶解在<strong>50 mL磷酸盐缓冲盐水（PBS，pH 1 &#x2F; 4 7.4）溶液中</strong>，并在<strong>气浴恒温振荡器</strong>（KYC-1102C）中保持在37 C和75 rpm。在3，6，12，24，72，96，120，144，192，240，288，360，432，504，576，648，720，792和864小时，使用282 cm1的紫外分光光度计收集<strong>0.5 mL用于吸光度测定，并用新鲜的0.5 mL PBS</strong>代替。释放率是使用标准曲线计算的：</p>
+<p>2.5. 从司马特（中国苏州）购买脚手架制造 Bombyx 森蚕丝。SF溶液的制备如前所述[12]。简而言之，通过将蚕茧在0.02M Na 2CO 3溶液中煮沸30分钟来除去丝胶蛋白。然后将所得纤维在60°C下溶解在9.3M LiBr中4小时，随后在透析袋中透析（Cat No.YA1078，中国北京Solarbio，分子量截止1&#x2F;4 3500 Da）与超纯水反应48 h，每6小时换水一次以除去残留的LiBr。最后，将SF溶液与聚乙二醇（PEG，Mw 20，000，中国上海生物港）粉末透析，<strong>以产生浓度为15%的SF溶液</strong>。HAp是从索比奥（中国北京）获得的。</p>
+<p>        将SF&#x2F;HAp支架的制备方法如下：将羧化纤维素纳米原纤维（cCNF，中国广州中山纳贤科技有限公司）以4：1（v&#x2F;v）的比例加入到HAp溶液（300 mg&#x2F;mL）中，以保持HAp在水中的稳定性。然后将HAp &#x2F; cCNF悬浮液在磁力搅拌下以1：9（v &#x2F; v）的比例加入SF溶液（10%w &#x2F; v）中。最后，将含有<strong>柚皮苷</strong>（5 mg&#x2F;mL）或<strong>空白微球</strong>的PLGA微球加载到悬浮液中，分别形成<strong>MSN&#x2F;SF&#x2F;HAp</strong>和<strong>MSB&#x2F;SF&#x2F;HAp</strong>。将制备的悬浮液（50μL）转移到模具板上，并使用冻干机（α 1-2 LDplus，德国基督）在80°C下冷冻干燥24小时。一旦支架凝固，用甲醇处理1天以诱导β片形成。将支架切割并取芯成直径6 mm，厚10 mm的圆柱体，并在闪烁小瓶中灭菌环氧乙烷。表1总结了本研究中使用的缩写和脚手架制备方法。用于测量盘的试样直径为6 mm，厚度为10 mm，支架的抗压强度是使用电动3230系统（BOSE，明尼苏达州明尼通卡，美国）测量的。简而言之，将顺丰&#x2F;高频、MSB&#x2F;超高频&#x2F;高速和超高频&#x2F;超高频支架以 0.5 mm&#x2F;min 的恒定十字头速度加载，直到发生故障。支架的孔隙率如前所述计算。简而言之，称量干重（V1）。然后浸入PBS以确定其重量（V2）。最后，去除表面的水以重新称量湿重（V3）。最终孔隙率使用以下等式计算：</p>
+<p>从SEM图像中随机选择10个视野，并使用Nano Measure 1.2图像处理软件计算支架的孔径。孔隙互连率（体积吸附比）如前所述计算</p>
+<p>2.6. 细胞培养和鉴定 人<strong>BMSC</strong>在<strong>DMEM中培养，并补充10%胎牛血清和1%链霉素 - 青霉素</strong>。如前所述，进行了BMSC鉴定[33]。用于表面标记的抗体是人CD34-APC，CD45-FITC，CD13-APC，CD44-FITC，CD73-PE和CD90-PE（天津昊阳生物制造有限公司，天津，中国天津）。为了鉴定BMSC的三系分化潜力，采用致骨、致脂和软骨培养基（富源生物有限公司，中国上海）分别诱导BMSC进行成骨、软骨和脂肪分化。对于成骨和脂肪分化，第3代BMSC以2 104细胞&#x2F; cm 2的密度接种到6孔培养板中。当细胞汇合度达到70%-80%时，培养基被完全替换，然后每三天更换一次成骨或致脂培养基。21天后，通过用<strong>0.2%茜素红S染色来检测成骨能力</strong>（Solarbio，中国）。10天后，通过用<strong>油红O（Solarbio）染色来检测脂肪分化</strong>。为了确定BMSC的软骨潜力，使用沉淀培养系统进行软骨诱导。简而言之，将1 106个BMSC悬浮在15mL离心管中，以800g离心5分钟，然后将细胞沉淀在软骨诱导培养基中培养4周。为了评估软骨分化，将沉淀用<strong>Alcian蓝溶液染色30分钟</strong>。</p>
+<p>2.7. 细胞计数试剂盒-8 （CCK-8） CCK-8测定用于按照标准方案评估<strong>细胞代谢活性</strong>。将200μL培养基中的BMSC（3 103）移植到96孔板中。在SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架中培养1，3，7，14和21 d后，将CCK-8溶液（10μL，中国北京Solarbio）加入到含有100μL培养基混合物的每个孔中。孵育2小时后，使用酶标仪（BioTek酶标仪）在282nm处测量吸光度。2.8. 通过流式细胞术对膜联蛋白V &#x2F; PI染色使用膜联蛋白V-PI细胞凋亡检测试剂盒（Invitrogen;赛默飞世尔科技公司）根据制造商的协议。来自对照组的骨髓增生物质干细胞、血清白热&#x2F;酶链氨基酸、质谱节&#x2F;超肝素和质链纤维&#x2F;酶链纤维&#x2F;五氢大麻酚支架被采摘并用冷PBS清洗两次三次。将不同处理组的BMSC重悬于1X结合缓冲液中，浓度为1 106个细胞&#x2F; mL，并将5μLFITC膜联蛋白V和5μLPI加入到100μL细胞悬液中。然后将混合物在黑暗中孵育15分钟。使用流式细胞术分析制剂（BD FACSAria III，加利福尼亚州圣何塞，美国）。<strong>细胞凋亡率</strong>计算如下：</p>
+<p>2.9. <strong>碱性磷酸酶活性</strong> 培养7天后，将BMSC固定在4%多聚甲醛中10分钟，加入ALP染色液（中国上海北洋时间）20分钟。去除ALP溶液后，使用尼康显微镜（日本港区尼康）可视化ALP染色。如上所述，在正常和骨诱导性培养基中，在存在 SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 或 MSN&#x2F;SF&#x2F;HAp 支架的情况下，将 BMSC 培养。培养7天后，使用100μL RIPA裂解缓冲液裂解BMSC。根据制造商的说明，使用<strong>ALP测定试剂盒（中国北洋时间生物技术）对ALP活性进行定量</strong>。</p>
+<p>2.10. <strong>钙含量</strong> 通过组织学染色分析MSN&#x2F;SF&#x2F;HAp支架上BMSC向成骨细胞的分化。简而言之，将3个BMSC（1 107个细胞&#x2F;毫升，100μL）接种到SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架上。孵育8小时后，向每个孔中加入2mL培养基。每两天更换一次培养基，获得支架，并在21天后使用<strong>组织切片进行von Kossa染色</strong>。如前所述，对冯·科萨阳性区域（%）进行了定量分析[34]。<strong>ARS染色用于评估磷酸钙的沉积水平</strong>（索拉里比奥，中国北京）。培养21天后，弃去培养基，并用PBS洗涤细胞三次。然后将BMSC用4%多聚甲醛（中国北京Solarbio）固定10分钟，并用0.1%ARS溶液（pH 4.2）染色15分钟。反应终止于PBS处理。这些细胞在显微镜下可视化。然后使用醋酸提取对ARS染色进行洗脱和定量，如前所述[35]。</p>
+<p>2.11. 对<strong>转录组RNA测序</strong>（RNA-Seq）和生物信息学分析进行了进一步<strong>探讨SF&#x2F;HAp支架与柚皮苷PLGA微球的机制</strong>。第7天从MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp制备样品用于RNAseq。根据制造商的说明，使用NEBNext® Ultra™ II定向RNA库制备试剂盒（美国马萨诸塞州新英格兰生物实验室公司）构建了测序库。使用 BioAnalyzer 2100 系统（美国安捷伦科技公司）对文库进行质量控制和定量，并使用 Illumina HiSeq 仪器进行 150 bp 配对末端测序。使用HISAT2软件（v2.0.4）将高质量读数与人类参考基因组（UCSC HG19）进行比较。基因本体（GO）富集分析包括生物过程（BP），细胞组分（CC）和分子功能（MF）。GO和京都基因和基因组百科全书（KEGG）途径是使用用于注释，可视化和综合发现的数据库构建的（DAVID，<a href="http://david.abcc.nci/">http://david.abcc.nci</a> fcrf.gov&#x2F;）。</p>
+<p>2.12. RNA 分离和实时定量聚合酶链反应 (<strong>RT-qPCR</strong>) 根据制造商的说明，使用 TRIzol 试剂 (Invitrogen) 进行 RNA 提取。接下来，使用 ReverTra Ace qPCR RT 试剂盒（Toyobo Co. Ltd.，Osaka，Japan），使用 5 μg RNA 模板通过逆转录为 cDNA 模板合成互补 DNA。 RT-qPCR 使用 SYBR® Green Real-Time PCR Master Mix（Toyobo Co. Ltd.，Osaka，Japan）在 LightCycler&amp; Reg 480II 实时 PCR 仪器（Roche，Switzerland）上进行。 RT-qPCR 结果使用比较阈值循环法计算，甘油醛-3-磷酸脱氢酶 (GAPDH) 作为内部控制。<strong>OSX RUNX2 COl1A</strong></p>
+<p>2.13. <strong>蛋白质印迹测定</strong>简要地，使用冰冷的RIPA裂解缓冲液（中国上海北洋时间）裂解BMSC，然后进行十二烷基硫酸钠聚丙烯酰胺凝胶电泳。然后，进行湿电泳转移方法，将分离的蛋白质转移到硝酸纤维素膜（Bio-Rad）上，然后用5%脱脂牛奶溶液阻断。与特异性一抗孵育后，在室温下用抗兔IgG（#7074 S; 1：2000稀释液）探查膜1.5小时。最后，通过增强型化学发光检测试剂盒（皮尔斯生物技术，罗克福德，美国）分析抗体结合。相关抗体信息如表2所示。</p>
+<p>2.14 <strong>免疫荧光</strong> 根据不同的处理方法，将骨髓增生干细胞分为对照组、血细胞增多组、脑脊液组&#x2F;血细胞计数酶组和甲基溴化激素组&#x2F;血细胞计数酶链球菌组。.用4%多聚甲醛固定在盖玻片上的BMSC并用PBS洗涤三次。为了透化细胞膜，将细胞在室温下在Triton（0.5%在磷酸盐缓冲盐水[PBS]中）中孵育25分钟。将样品在含有1%牛血清白蛋白（BSA）的PBS中封闭30分钟。然后将样品与小鼠单克隆IgG-抗runt相关转录因子2（Runx2，稀释1：200，阿比卡姆，剑桥，马萨诸塞州，美国），骨钙素（Ocn，稀释1：200，阿伯康），Notch1（1：200，美国阿伯康）和Hes1（1：200，美国阿卡姆）在4 C过夜过夜。洗涤后，将细胞与FITC或TRITC偶联的二抗在37°C下以1：200的稀释度孵育1小时，并用PBS洗涤三次。最后，将样品与DAPI（10微克&#x2F;毫升，第号）一起孵育。C0065;Solarbio，中国北京）进行3分钟的核染色，并使用奥林巴斯Fluoview FV1000<strong>共聚焦激光扫描显微镜</strong>（奥林巴斯生命科学木卫二，日本东京）检测信号。</p>
+<p>2.15。手术进程 研究方案经天津医院伦理委员会批准（IRB No. 2021YLS197），并符合动物研究：体内实验报告（ARRIVE）动物研究指南（<a href="https://arriveguidelines.org/arrive-guidelines%EF%BC%89">https://arriveguidelines.org/arrive-guidelines）</a> )[36]。新西兰大白兔2月龄，体重2.3-2.5kg，购自天津医院实验动物中心。如前所述 [12] 诱发<strong>股骨远端骨骺（直径 6 毫米，深度 10 毫米）的临界尺寸缺陷</strong>。通过肌肉注射甲苯噻嗪盐酸盐（0.2 mL&#x2F;kg，中国吉林省盛达市）麻醉兔子。消毒后，外侧入路暴露股骨外侧髁。用慢速电钻用冰盐水溶液冲洗双皮质信道逐渐加宽至直径 6.0 mm，以避免热坏死。<strong>兔股骨远端随机分配到对照组（n ¼ 3, 6 条腿）、SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）、MSB&#x2F;SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）和 MSN&#x2F; SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）</strong>。伤口用生理盐水冲洗后，逐层缝合。为了避免伤口感染，每只动物在手术后三天内每天肌肉注射青霉素（100,000 U&#x2F;天）。</p>
+<p>2.16. 植入后<strong>六周，将植入物收获</strong>，固定在4%的多聚甲醛中，用15%EDTA脱钙，并嵌入石蜡中。<strong>Micro-CT分析</strong>（西门子，德国柏林）在缺陷区域对每组的五个样本进行，以确定骨缺损愈合的程度。自动执行3D重建和建模技术。<strong>ROI中愈伤组织特性的测量包括骨体积（BV，mm3）&#x2F;总体积（TV，mm3），小梁厚度（TB.TH），小梁分离（TB）。SP）、骨表面 （BS）&#x2F;BV 和骨矿物质密度（骨密度，毫克&#x2F;立方厘米）。</strong></p>
+<p>2.17. 组织学处理和组织形态学 经过micro-CT扫描和分析后，将收获的样品用15%EDTA脱钙（北京索瑞生物科技有限公司，中国北京，pH 7.4），并用70-100%乙醇脱水（天津富宇精细化工有限公司，天津，中国天津）。将组织处理，包埋在石蜡中，并使用常规进程切成5μm切片。使用二甲苯I和二甲苯II（西安化学试剂仪器公司，中国西安，每个5秒）使脱水切片透明。将样品分别用30%、50%、70%、80%和95%乙醇（中国天津富宇精细化工有限公司）在4 C下脱水10分钟和100%1 h。为了分析组织的COL1A1表达，对石蜡切片进行了免疫组化染色。简而言之，用3%H 2O2处理10 min淬灭内源性过氧化物酶活性（中国天津天利化学试剂有限公司）。对于免疫组织学分析，使用柠檬酸缓冲液（10 mM柠檬酸）在98 C下进行最佳抗原检索，骨切片10分钟，用PBS将H2O2（30%）稀释至终浓度为3%H 2O2。</p>
+<p>通过添加5%BSA阻断非特异性蛋白质结合，然后与针对COL1A1的一抗一抗一起孵育（小鼠抗兔，1：2500;蛋白质科技，中国武汉）在4°C过夜。信号是使用3，3-二氨基联苯胺四盐酸盐试剂盒（博斯特，中国武汉）开发的。使用显微镜（尼康）拍摄图像。</p>
+<p>2.18. 统计分析 使用SPSS软件（版本22.0;美国纽约州阿蒙克市。.多组比较的统计学显着性通过单向方差分析（ANOVA）确定，然后通过Tukey的事后测试来比较治疗。显着性水平设置为P&lt;0.05。</p>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>3.1. 微球表征和释放测试 通过扫描电镜观察PLGA微球的形貌（图2A）。<strong>微球呈规则的球形，微球直径为53.0 15.1 μm</strong>（图2B）。柚皮苷浓度曲线如图1所示。2C.<strong>柚皮苷浓度与吸光度值呈线性相关</strong>（Y 1&#x2F;4 0.0233 X0.0083，R2 1&#x2F;4 0.9996）。柚皮苷在PLGA微球中的负荷效率为0.01634 0.0008（mg柚皮苷&#x2F;mg PLGA）。包封效率为78.5 3.6%。柚皮苷从微球和MSN &#x2F; SF &#x2F; HAp支架中的体外释放曲线如图2 D所示。在孵育的前24小时，约11.2%的柚皮苷从PLGA微球中释放出来，8.62%的柚皮苷从支架中释放出来。PLGA微球的释放速度减慢，经过36天的孵育，分别有约83.9%和71.9%的PLGA微球释放。如图2 E所示，采用扫描电镜进一步观察了支架的微观结构，SF&#x2F;HAp支架具有多孔性，孔隙连接。微球均匀分散在小微室&#x2F;超细&#x2F;肝素和质谱链&#x2F;顺丰&#x2F;肝素支架中。微球的加入不影响多孔结构的形成。SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和 MSN&#x2F;SF&#x2F;HAp 支架的抗压强度之间无统计学意义差异（图 2 F，P &amp;gt; 0.05）。水相&#x2F;华氏体、小白蛋白&#x2F;超细&#x2F;酶平衡和超细化酶&#x2F;超单抗和超细化酶&#x2F;顺化酶&#x2F;氢化酶链反应平均直径分别为100.5 4.5 μm、98.7 4.2 μm和99.4 3.6 μm。如图2 F所示，三组SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp支架的<strong>直径无统计学意义差异</strong>（P &amp;gt;0.05）。制备后的支架的<strong>孔隙率</strong>分别为85.2 2.32%、82.4 1.32%和80.6 1.21%（MSB&#x2F;SF&#x2F;HAp）和MSN&#x2F;SF&#x2F;HAp（图2 F）。SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp的孔隙相互依赖性分别为96.2 0.59%、95.0、1.47%和94.4 1.23%，<strong>表明孔隙的相互连接性均极好</strong>。</p>
+<p>3.2.骨髓间充质干细胞的鉴定 为了进一步表征人骨髓间充质干细胞，通过流式细胞术检查第三代细胞的细胞表面标志物。 BMSCs显示MSC表面标志物CD13（98.5%）、CD44（97.7%）、CD73（95.5%）和CD90（96.6%）阳性表达，CD34（2.21%）和CD45（1.98%）阴性表达国际细胞治疗学会的标准（补充图1A）。</p>
+<p>对人骨髓间充质干细胞的多向分化能力的分析揭示了成骨培养基中类骨质基质样结构的茜素红染色、成脂培养基中细胞周围的脂滴形成以及软骨形成培养基中蛋白聚糖的阿尔新蓝染色（补充图 1B）。这些结果表明，从人骨髓中提取的细胞主要是<strong>hBMSCs</strong>。</p>
+<p>3.3.在 MSN&#x2F;SF&#x2F;HAp 支架上培养的 hBMSCs 的增殖和活力使用 CCK-8 检测试剂盒评估对照、SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和 MSN&#x2F;SF&#x2F;HAp 支架的细胞增殖效果（补充图 2）。如补充图所示。 2、第1天、第3天、第7天和第21天，由于细胞增殖需要时间，<strong>不同支架之间的细胞增殖性能没有显着差异</strong>。 14天时，MSN&#x2F;SF&#x2F;HAp组细胞增殖率高于SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组（P &lt; 0.05）。流式细胞仪用于研究不同处理后的细胞凋亡率。 BMSCs在各支架上培养1、3、5、7天，1、3、5、7天各<strong>支架细胞凋亡率差异无统计学意义****（图3，P＞0.05）。细胞培养1、3、5、7天后，活&#x2F;死染色结果显示支架上的细胞均呈现绿色荧光（活细胞），但7天后仅观察到部分红色荧光（死细胞）细胞培养。对于所有支架，活细胞的数量也随着从 1 到 7 天的孵育时间而增加。可以看出，</strong>细胞在支架孔壁上分布均匀，生长良好<strong>（图4，P＞0.05）。如图 5 所示，每个样品中的 BMSCs 均表现出多极纺锤样形态和组织良好的细胞骨架。这些结果表明，SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp或MSN&#x2F;SF&#x2F;HAp支架处理细胞对BMSCs</strong>没有细胞毒性，表明这些支架具有良好的生物兼容性和生物学可靠性，适合组织工程修复。**.这些结果表明，<strong>本研究中镶嵌柚皮苷PLGA微球的SF&#x2F;HAp支架具有合适的生物兼容性，可以增强细胞活力</strong>。</p>
+<p>3.4. 体外MSN&#x2F;SF&#x2F;HAp支架中BMSC的成骨分化 理想的骨修复材料应具有良好的生物兼容性、机械强度和成骨诱导能力。使用ALP活性，ALP染色和茜素红S染色检查MSN &#x2F; SF &#x2F; HAp支架内BMSC的成骨分化。在成骨培养基中培养7天后，与正常培养基组中相同细胞类型的SF &#x2F; HAp和MSB &#x2F; SF &#x2F; HAp组相比，两个BMSC的SF &#x2F; HAp组显示出增强的ALP染色（图6）。此外，<strong>MSN &#x2F; SF &#x2F; HAp显着增强了成骨作用</strong>，如ALP染色和定量所示（补充图3）。通过对照组，SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp基团中的茜素红染色，证实了BMSC在孵育3周后的<strong>钙盐沉积</strong>（图7和补充图4）。在所有组中的三周时观察到钙沉积;然而，MSN&#x2F;SF&#x2F;HAp组的钙沉积量远高于MSB&#x2F;SF&#x2F;HAp组、SF&#x2F;HAp组和对照组（均磷&amp;lt;0.05）。为评价MSN&#x2F;SF&#x2F;HAp对BMSC体外成骨分化的影响，在成骨诱导21 d后用冯科萨染色支架。结果表明，冯·科萨阳性区相当，MSN&#x2F;SF&#x2F;HAp组的产量显着高于SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组（补充图5）。</p>
+<p>为了揭示MSN &#x2F; SF &#x2F; HAp支架对BMSC体外成骨分化的影响，我们将细胞接种在对照，SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架上。为探讨MSN&#x2F;SF&#x2F;HAp对BMSC分化的影响，在MSN&#x2F;SF&#x2F;HAp存在或不存在MSN&#x2F;HAp的情况下，在成骨培养基中培养细胞14 d，<strong>采用RT-PCR和蛋白质印迹法分析BMSC中的成骨标志物蛋白</strong>（补充图6 A和B）。结果表明，SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组均优于对照组（P &lt;0.01）。与 SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和对照组相比，MSN&#x2F;SF&#x2F;HAp 支架对<strong>成骨标志物（Runx2、BMP2、OCN）的表达更能促进其表</strong>达。这些结果表明，镶嵌在SF &#x2F; HAp支架中的柚皮苷微球可以促进BMSC的成骨分化。造骨标志物的<strong>蛋白质印迹结果与RT-PCR结果一致</strong>。</p>
+<p>3.5. MSN&#x2F;SF&#x2F;HAp支架激活了缺口信号通路 我们对对照组和MSN&#x2F;SF&#x2F;HAp支架处理的BMSC之间的RNA测序数据进行了差异基因表达分析。我们鉴定了710个差异表达的RNA：323个基因下调，387个上调（图8 A和B）。使用<strong>GO分析</strong>检查了三个亚个体，血压，MF和CC（图8C）。BP主要包括缺口信号通路、缺口信号通路调控、细胞分化调控、细胞过程正调控、细胞发育调控等。CC主要包括转录复合物、核质、蛋白质包含复合物、细胞内细胞器管腔和细胞核。MF主要包括β-连环蛋白结合、蛋白质结构域特异性结合、转录因子结合、酶结合和蛋白质结合。<strong>MSN&#x2F;SF&#x2F;HAp 诱导的BMSC成骨分化的前五名GO术语包括核质、核、酶结合、转录因子和Notch信号通路（图8 D）</strong>。<strong>前十大富集KEGG通路包括缺口信号通路、癌症通路、内分泌耐药通路、PI3K&#x2F;Akt信号通路、Wnt信号通路、HIF-1信号通路、细胞周期、TGF-β信号通路、肾细胞癌和乳腺癌（图8E）</strong>。为了检测BMSC中缺口信号通路中基因的蛋白表达，将BMSC在对照组SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp中培养7 d，并通过蛋白质印迹分析检测蛋白。使用实时荧光定量PCR检测缺口信号通路组分的表达，包括缺口1、锯齿状1和NICD（补充图7 A和B）。结果显示，MSN&#x2F;SF&#x2F;HAp组的缺口1、锯齿状1和NICD表达水平均高于对照组（磷&amp;lt;0.05）和MSB&#x2F;SF&#x2F;HAp组和SF&#x2F;HAp组（P &amp;lt; 0.05）。与对照组相比，沙吞&#x2F;血细胞计数组、MSB&#x2F;SF&#x2F;HAp组和MSN&#x2F;SF&#x2F;HAp组的缺口1、锯齿状1和NICD表达水平显着提高（P &amp;lt;0.05）。MSN&#x2F;SF&#x2F;HAp 组与缺口信号通路相关的蛋白表达高于 SF&#x2F;HAp 组和 MSB&#x2F;SF&#x2F;HAp 组（补充图 7C）。通过免疫荧光进一步检查了14天后接种在不同支架上的BMSC中Notch1，Hes1，RUNX2和OCN的表达。缺口1和Hes1染色显示为细胞质模式（补充图8）。此外，与其他组相比，MSN&#x2F;SF&#x2F;HAp 的 RUNX2 和 OCN 表达增幅最高（补充图 8）。</p>
+<p>3.6. MSN&#x2F;SF&#x2F;HAp支架体内骨再生 6周后，micro-CT对股骨远端骨小梁结构的三维重建如图9所示。如图9所示，<strong>在对照组中，在缺损边缘仅观察到一些纤维组织和少量新骨形成。在 SF&#x2F;HAp 和 MSB&#x2F;SF&#x2F;HAp 组中观察到比对照组更多的新骨形成。与SF&#x2F;HAp或MSB&#x2F;SF&#x2F;HAp相比，MSN&#x2F;SF&#x2F;HAp在骨缺损修复方面表现出更优越的治疗效果</strong>。 MSN&#x2F;SF&#x2F;HAp 组的 BMD 显着增加，其次是 MSB&#x2F;SF&#x2F;HAp、SF&#x2F;HAp 和对照组（图 9）。对照组的骨密度是最低的骨矿物质密度。<strong>HE 染色显示 MSN&#x2F;SF&#x2F;HAp 组的骨缺损显示出明显的骨修复迹象。与对照组和 MSB&#x2F;SF&#x2F;HAp 组相比，在 MSN&#x2F;SF&#x2F;HAp 组的缺损部位观察到胶原纤维组织的积累</strong>*（图 10）。在 SF&#x2F;HAp 和 MSB&#x2F;SF&#x2F;HAp 组中观察到少量新骨组织。此外，与其他组相比，MSN&#x2F;SF&#x2F;HAp 组的<strong>骨形成量最大</strong>。<strong>甲苯胺蓝（图 11）和番红 O</strong>（图 12）染色进一步确定<strong>MSN&#x2F;SF&#x2F;HAp 组比其他组与更多的新骨形成相关</strong>。使用 COL1A 的免疫组织化学染色确认骨基质形成。我们进行了免疫组织化学以鉴定所有组中的 COL1A 表达。结果表明 MSN&#x2F;SF&#x2F;HAp 支架中的 <strong>COL1A 阳性细胞</strong>比其他组多得多（图 13）。结果表明，MSN&#x2F;SF&#x2F;HAp支架<strong>显着促进了兔股骨远端骨缺损的修复，并表现出较高的骨再生效率</strong>。</p>
+<h3 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h3><p>近年来，研究人员在使用组织工程技术生产骨移植替代品方面取得了重大努力[37-40]。不幸的是，骨修复支架仍然存在许多问题，例如骨修复速度和血管生成能力低[41]。骨骼是一种钙化组织，由35%的有机物和65%的无机物组成[42]。</p>
+<p>无机物的主要成分是I型胶原蛋白，无机物的主要成分是弱结晶HAp[43]。 <strong>SF 提供生物兼容性、可控的降解速率和优异的机械性能</strong> [44-46]。 <strong>HAp 因其优异的生物兼容性、生物活性和骨传导性而被广泛用作生物材料</strong> [47,48]。在我们之前的研究中，我们通过<strong>盐浸制备了 SF&#x2F;HAp 支架，并在其上镶嵌柚皮苷用于骨形成</strong>[12]。然而，这项研究仍然存在三个问题。首先，柚皮苷从支架中的<strong>高初始突释可能导致药物以毒性剂量释放</strong>，并且大量药物的损失不能用于以后的释放。此外，六氟异丙醇被用作溶剂来生产 SF 溶液，这可能具有一些潜在的<strong>毒性作用</strong> [49]。第三，<strong>当 SF 溶液中 HAp 的质量增加时，悬浮液的稳定性下降</strong>。</p>
+<p>为此，首先<strong>通过w&#x2F; o &#x2F; w溶剂蒸发法生产含有柚皮苷的PLGA微球</strong>。将获得的微球用于体外柚皮苷释放实验和成骨分化测定，随后植入兔股骨远端骨缺损模型。我们的主要研究结果表明，SF &#x2F; HAp与含有柚皮苷的PLGA微球结合作为有效的柚皮苷载体，提供扩散控制的柚皮苷释放曲线。因此，我们生成了柚皮苷包封的PLGA微球并维持柚皮苷的释放。<strong>此外，还生成了水溶性SF，避免了六氟异丙醇作为溶剂</strong>。我们添加了 <strong>cCNF 以提高 SF 解决方案中 HAp 的稳定性</strong>。柚皮苷与PLGA微球显示柚皮苷从微球中持续释放30天。这项研究表明，在掺入SF &#x2F; HAp支架之前将柚皮苷包封到PLGA微球中是以长期和持续释放方式提供柚皮苷的有效策略。此前，加载到PLGA&#x2F;HAp中的辛伐他汀微球被开发为治疗严重骨缺损的骨诱导剂[50]。Wang等人[51]构建了SF &#x2F; HAp支架，并发现它适用于骨再生。SF &#x2F; HAp支架的微观结构与天然人松质骨相似，SF &#x2F; HAp支架的平均直径约为100μm[52]。骨向内生长所需的孔径大于40μmis;类骨形成需要100μm的最小孔径[53]。最后，我们生成了一种新型的SF&#x2F;HAp支架，其柚皮苷释放促进BMSC的成骨分化和骨再生。在我们的研究中，ALP和ARS染色，qRT-PCR和蛋白质印迹测定表明，带有柚皮苷微球的SF &#x2F; HAp支架可以积极调节BMSC的成骨分化，并促进BMSC分化成成成骨细胞。Ge等人[20]发现柚皮苷通过PI3K &#x2F; AKT &#x2F; mTOR途径对糖皮质激素诱导的骨质疏松症具有保护作用。我们小组发现柚皮苷通过PI3K&#x2F;Akt信号通路增强骨折愈合[22，23，54]。此外，我们测试了这种新型支架对BMSC成骨分化的机制。我们发现MSN &#x2F; SF &#x2F; HAp支架正向调节缺口信号通路。此前，我们研究了柚皮苷在镶嵌有柚皮苷的SF&#x2F;HAp支架中对人脐带间充质干细胞进行成骨分化的机制[12]。主要的富集途径是PI3K&#x2F;Akt信号通路。这表明MSN &#x2F; SF &#x2F; HAp的机制与柚皮素镶嵌SF &#x2F; HAp支架的机制不同。缺口信号传导关键调节许多细胞类型的命运，包括BMSC和成骨细胞[55-58]。一些研究发现，缺口信号通路在BMSC的成骨分化和成骨性疾病的治疗中起重要作用[59-61]。Notch家族成员及其配体平衡成骨细胞的分化[62]。此外，缺口信号通路被认为是血管生成的调节因子[63]。此外，缺口信号传导指导发芽血管生成的启动和稳定[64]。植入6周后，MSN&#x2F;SF&#x2F;HAp显着增加了兔股骨远端骨缺损模型中的骨形成。HAp通常用于临床实践中促进骨再生，因为它具有合适的骨诱导特性[65]。MSN&#x2F;SF&#x2F;HAp 支架提高了 RUNX2、COL1A1 和 OCN 的表达水平。MSN &#x2F; SF &#x2F; HAp支架在体内显示出更高的骨诱导性，正如显着更高的BV &#x2F; TV和结核病所证明的那样。TH 值。我们进行了HE，甲苯胺蓝和沙夫胺O染色，以评估兔子远端股骨缺损的骨再生。HE染色显示，MSN&#x2F;SF&#x2F;HAp支架显着增加了缺损区域的新骨形成。在MSN &#x2F; SF &#x2F; HAp中，在骨缺损的边缘观察到比在MSB &#x2F; SF &#x2F; HAp和SF &#x2F; HAp组中观察到更多矿物组织的甲苯胺蓝染色更多。 此外，MSN&#x2F;SF&#x2F;HAp 显着增加了骨缺损区域的 COL1A 表达。<strong>COL1A</strong>在成骨细胞分化过程中提供坚固而灵活的骨骼结构。Shao等人先前进行的一项研究[66]检查了GelMA掺入的金红石纳米棒薄膜中的柚皮素，发现这些新薄膜调节MSCs的成骨分化。本研究有几个局限性。<strong>首先，没有对兔远端股骨缺损进行长期观察。此外，它还涉及一个小动物模型，并且有必要进一步研究实验动物研究的结果是否可以推广到人类。</strong></p>
+<h3 id="5-结论"><a href="#5-结论" class="headerlink" title="5.结论"></a>5.结论</h3><p><strong>制备载柚皮苷的PLGA微球，然后将其掺入SF&#x2F;HAp支架中，得到载柚皮苷的复合支架（MSN&#x2F;SF&#x2F;HAp支架）。体外评估表明，MSN&#x2F;SF&#x2F;HAp 支架表现出柚皮苷的缓释作用，并支持 BMSCs 的附着、增殖和成骨分化。体内分析表明 MSN&#x2F;SF&#x2F;HAp 促进骨缺损的修复，从而为 BTE 提供潜在的临床候选者。</strong></p>
+<hr>
+<p>附：来源网络</p>
+<p><strong>1.HE染色</strong></p>
+<p>HE染色是组织学中最基础、使用最广泛的染色手段，相信大家对此都不陌生。HE染色可以区分一般的骨组织结构和细胞，如下图所示。<strong>其中，五角星和白色箭头表示大量炎症细胞，三角形表示新骨小梁，黑色箭头表示骨髓。</strong>但单一的HE染色并不能区分新生骨组织的数量、胶原以及其他细胞状态，大多数都需要配合其他染色技术共同观察骨愈合状态。特别的，现在都需要对新生组织进行量化研究，HE染色显然是不能满足要求的。（DOI：10.1002&#x2F;adfm.202009189）</p>
+<p><img src="https://pic4.zhimg.com/80/v2-01426852d9f208e9d669698d8b914db7_720w.jpg"></p>
+<p><strong>2.Masson染色</strong></p>
+<p>Masson染色的颜色对比鲜明，可见明显的胶原纤维网（<strong>甲苯胺蓝染色则为蓝色，甲基绿则为绿色</strong>），能较好地反映纤维组织的形态。其中，蓝色表示新形成的骨，红色表示成熟的骨组织。图中很明显可以看到，对比组及水凝胶组治疗的的骨缺损被板层骨和骨髓替代，并且骨的一些区域高度成熟。当然，不同修复时期的胶原纤维数量是不一样的，随着修复时间增长，染色区域逐渐增大表明成熟的骨组织逐渐增加。（DOI：10.1002&#x2F;adfm.202009189）</p>
+<p><img src="https://pic4.zhimg.com/80/v2-82c458d9a462938379ca27d284127cfb_720w.jpg"></p>
+<p><strong>3.亚甲基蓝-酸性品红染色</strong></p>
+<p><strong>亚甲基蓝-酸性品红染色可以清晰的显示成骨细胞、细胞基质以及类骨质。染色后，植入体表面的羟基磷灰石涂层为紫色，成骨细胞核为深蓝色或深紫色，细胞质基质为淡紫色，紫灰色为新生骨组织。</strong>图片展示了不同时期骨修复的状态，在牵张成骨早期，可见浅紫色的细胞分泌的细胞外基质，深紫色的细胞核，未见明显骨小梁结构。中期，可见骨小梁较细小，骨小梁区比结缔组织区颜色更紫。在牵张成骨后期，见骨小梁较粗壮，周围一圈可见深蓝色成骨细胞，骨小梁边缘处为紫灰色新生骨组织，中心为深紫色的较成熟骨组织。（DOI：10.3969&#x2F;j.issn.1674-3806.2022.04.08）</p>
+<p><img src="https://pic1.zhimg.com/80/v2-004c053d63a85670985e51aaed0deb70_720w.jpg"></p>
+<p><strong>4.Von Kossa染色</strong></p>
+<p>钙结节的形成为成骨细胞特有，<strong>钙沉积是表明新骨生成的一个证据。钙盐沉积区域为黑色或棕黑色，细胞核表现为蓝色。</strong>Von Kossa染色证实，与无颗粒对照相比，在所有颗粒植入的股骨中有钙沉积的证据。与对照组相比，明显看出植入HUVEC和HBMSC颗粒的缺损内和周围有钙沉积，颗粒周围有同心堆积，夹杂着类骨质形成(粉红色&#x2F;紫色，箭头)，部分是原有骨的残余。（DOI：10.1096&#x2F;fj.201801114R）</p>
+<p><img src="https://pic3.zhimg.com/80/v2-44ebacc37acb2f5cc5b8959c56adc9b6_720w.jpg"></p>
+<p><strong>5.Trap染色</strong></p>
+<p><strong>Trap染色是用于检测骨组织、骨细胞中特征物质的染色，使破骨细胞呈红色，背景呈绿色或蓝色。</strong>抗酒石酸酸性磷酸酶（Trap）为破骨细胞的标志酶，特异地分布于破骨细胞中，为破骨细胞所特有，通常作为鉴别破骨细胞的重要标志物。如图可见随着浓度增高，显著刺激破骨细胞分化（RANKL+组）。<strong>总之，Trap染色可直接鉴别及分析破骨细胞的状态。</strong>（DOI：10.1038&#x2F;ncomms12794）</p>
+<p><img src="https://pic3.zhimg.com/80/v2-086a7afe7d080d5cc8dc6fc55bdd79f2_720w.jpg"></p>
+<p><strong>6.茜素红染色</strong></p>
+<p>茜素红可以与钙发生显色反应，生成深红色的化合物，这样成骨诱导的细胞外面沉积的<strong>钙结节也就被染成了深红色</strong>。如图示，下面红色即为茜素红染色后的结果。很明显观察到，钙结节逐渐增加，表明了材料更优异的成骨能力。（DOI: 10.1002&#x2F;adfm.202201067）</p>
+<p><img src="https://pic4.zhimg.com/80/v2-6c69483ffa0a71691b6d39320e8f9707_720w.jpg"></p>
+<p><strong>7.番红O-固绿染色</strong></p>
+<p>番红O-固绿染色可直观反映关节软骨、软骨下的骨组织结构，<strong>嗜碱性的软骨与碱性染料番红 O 结合呈现红色，嗜酸性的骨和酸性染料固绿结合而成蓝色</strong>，在关节软骨及软骨下骨的形态学研究中受到了欢迎。与下图表现的一致，代表软骨的红色部分从左至右依次增加，说明材料可以有效促进软骨修复。（DOI：10.1002&#x2F;adfm.202105084）</p>
+<p><img src="https://pic3.zhimg.com/80/v2-4127dba0eba020f7c3c0738e82b6af2e_720w.jpg"></p>
+<p>其中，<strong>HE染色是最常用的染色方法；Masson染色是结缔组织染色的最经典方法，以选择性地显示胶原纤维和肌纤维；番红Ｏ⁃固绿染色常用于区分软骨组织和骨组织区；Von Kossa染色法中的银溶液作用于含有不溶性钙盐的切片；亚甲基蓝⁃酸性品红染色主要用于区分新生骨质，多用于评估种植体骨界面成骨效果以及血管化程度；TRAP染色能够特异性展示破骨细胞的状态。</strong></p>
+<p>根据材料的设计方案和修复机制不同，我们可以选择其中的一种或者几种组合探究骨修复的状态，深入了解骨修复的机制及动态。以上就是为大家总结的7种骨修复中常用的染色方法啦，希望能够为大家的实验进展助力一小步，离成功更进一步~**</p>
+]]></content>
+      <tags>
+        <tag>科研</tag>
+      </tags>
   </entry>
   <entry>
     <title>规划</title>
@@ -645,86 +725,6 @@ he染色</p>
 </blockquote>
 <p><strong>科学家们该去通过精确调整系统特征以匹配目标细胞和&#x2F;或组织来引入这些支架的特定应用，而不是为生物医学应用设计通用的纳米纤维支架。</strong></p>
 <p>为了增强所生产的电纺纳米纤维支架的性能，将天然和合成聚合物与表面改性相结合可能构成另一个挑战。很明显，这些先进的 3D 支架将成为未来组织工程和再生医学的关键参与者。</p>
-]]></content>
-      <tags>
-        <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蚕丝蛋白羟基磷灰石柚皮素文献阅读</title>
-    <url>/post/80156f75.html</url>
-    <content><![CDATA[<p>Sustained release of naringin from silk-fibroin-nanohydroxyapatite scaffold for the enhancement of bone regeneration</p>
-<p>丝素蛋白纳米羟基磷灰石支架持续释放柚皮素，促进骨再生</p>
-<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>骨缺损是临床环境中的常见挑战。骨组织工程（BTE）是治疗大骨缺损临床问题的有效方法。在这项研究中，我们制备了镶嵌柚皮素蛋白聚乳酰乙醇酸（PLGA）微球的丝素蛋白（SF）&#x2F;羟基磷灰石（HAp）支架，研究了它们在BTE中的应用可行性。柚皮苷PLGA微球被制造并粘附在SF &#x2F; HAp支架上。将骨间充质干细胞（BMSCs）接种到含有柚皮蛋白PLGA微球的SF &#x2F; HAp支架上，以检查SF &#x2F; HAp支架的生物兼容性。采用兔股骨远端骨缺损模型评估含有柚皮素PLGA微球的SF&#x2F;HAp支架的体内功能。目前的研究表明，含有柚皮苷负载PLGA微球的SF &#x2F; HAp支架显示出作为骨再生的骨调节生物材料的希望。</p>
-<span id="more"></span>
-
-<p><strong>柚皮苷</strong>：是由水龙骨科植物槲蕨根茎(骨碎补)中提取的主要有效成分，能够促进成骨细胞增殖、促进血管生成、抑制破骨细胞生长的功能。</p>
-<p>BMSCs：骨髓间充质干细胞（bone marrow mesenchymal stem cells）</p>
-<p><strong>PLGA</strong>：聚乳酸-羟基乙酸共聚物，乳酸和羟基乙酸随机聚合而成，是一种可降解的功能高分子有机化合物，具有良好的生物相容性、无毒、良好的成囊和成膜的性能，被广泛应用于制药、医用工程材料和现代化工业领域。</p>
-<p><strong>PVA</strong>：聚乙烯醇，它是一种极安全的高分子有机物，对人体无毒，无副作用，具有良好的生物相容性，尤其在医疗中的如其水性凝胶在眼科、伤口敷料和人工关节方面的有广泛应用，同时在<a href="https://baike.baidu.com/item/%E8%81%9A%E4%B9%99%E7%83%AF%E9%86%87%E8%96%84%E8%86%9C?fromModule=lemma_inlink">聚乙烯醇薄膜</a>在药用膜，<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E8%82%BE%E8%86%9C/6646879?fromModule=lemma_inlink">人工肾膜</a>等方面也有使用。其安全性可以从用于伤口皮肤修复，和眼部滴眼液产品可见一斑。</p>
-<p><strong>ALP</strong>: 碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。这种酶能催化核酸分子脱掉5’磷酸基团，从而使DNA或RNA片段的5’-P末端转换成5’-OH末端。但它不是单一的酶，而是一组同工酶 [1]  。已发现有AKP1、AKP2、AKP3、AKP4、AKP5与AKP6六种同功酶。其中第1、2、6种均来自肝脏，第3种来自骨细胞，第4种产生于胎盘及癌细胞，而第5种则来自小肠绒毛上皮与成纤维细胞。</p>
-<p><strong>GO分析</strong>：Gene ontology，GO数据库分别从功能、参与的生物途径及细胞中的定位对基因产物进行了标准化描述，即对基因产物进行简单注释，通过GO富集分析可以粗略了解差异基因富集在哪些生物学功能、途径或者细胞定位。</p>
-<h3 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h3><p>大的骨缺损难以自行修复，并且经常需要特殊且昂贵的管理 [1,2]。此外，自体或异体骨移植物具有某些缺点。骨组织工程 (BTE) 具有修复骨缺损的潜力，因此引起了相当大的关注 [3,4]。 BTE 需要三个组成部分：结合生物材料、适当的生物活性分子和细胞。尽管已经取得了令人满意的结果，但由于各种原因，将 BTE 升级为临床应用受到限制。理想的骨缺损愈合生物材料应该是可生物降解的、生物兼容的，并具有良好的骨促进微环境[5]。这些支架特性可以促进干细胞的生长和分化。因此，为 BTE 设计的支架必须具有生物兼容性并具有合适的材料特性 [6,7]。因此，一些研究已经通过不同的方法制造了用于 BTE 的丝素蛋白 (SF)&#x2F;羟基磷灰石 (HAp) 复合支架 [8,9]。 SF是一种天然蛋白质，在生物材料领域具有广阔的应用前景[10]。 HAp是哺乳动物骨骼中的主要矿物质成分，被认为是理想的骨修复材料。 SF 与HAp 结合以获得多孔复合支架材料[11]。在我们之前的研究中，设计并制造了一种与柚皮苷混合的SF&#x2F;HAp生物复合支架，作为人脐带间充质干细胞的载体，以有效修复骨缺损[12]。在制造过程中，丝绸溶解在有机溶剂六氟异丙酯中。然而，六氟异丙基对人体有毒并引起其他不良副作用。因此，开发用于溶解SF和HAp的无毒溶剂对于临床应用是必要的。</p>
-<p>柚皮苷是骨碎补的主要成分，具有促进间充质干细胞和成骨细胞前体细胞分化的潜力[13，14]。此外，柚皮苷可诱导破骨细胞凋亡，因此可用于预防和治疗骨质疏松症[15，16]。因此，柚皮苷被广泛用于骨质疏松症及相关骨骼疾病的预防和治疗[17-20]。原文发现柚皮苷通过调节炎症和生长因子表达来促进大鼠糖尿病足溃疡的血管生成[21]。据报道，柚皮苷在骨质疏松性骨折模型中使用时可潜在地促进血管形成和骨再生[21，22]。柚皮苷还可以通过CXCR4调控的PI3K&#x2F;Akt信号通路调节内皮祖细胞分化的分化[23]。柚皮苷具有修复大节段骨缺损的特征特性，包括骨刺激（促进新骨形成）和血管刺激（诱导血管形成）。我们之前的研究报道，柚皮苷镶嵌SF&#x2F;HAp支架可增强人脐带间充质干细胞的成骨分化，可用于治疗骨缺损[12]。支架还增强了人脐内皮细胞（HUVEC）的血管生成。这些发现表明，柚皮苷可能是治疗最常见的骨骼疾病和缺陷的有效候选药物。</p>
-<p>然而，柚皮苷&#x2F; SF &#x2F; HAp支架导致20小时内超过70%的柚皮苷突然释放。突发性释放可能导致全身毒性[24，25]。此外，柚皮苷由于其水溶性差而显示出低的生物利用度[26，27]。最后，药物从骨缺损区域迅速清除，这促使开发了一种用于释放柚皮苷的长效控释系统。聚乳酸-共乙醇酸（PLGA）微球被认为非常适合作为医疗材料、药物和细胞因子的缓释载体[28，29]。PLGA微球已被用作可注射载体，以促进骨缺损愈合修复[30]。<strong>在本研究中，我们开发了一种能够以受控方式释放柚皮苷的新型SF &#x2F; HAp支架。采用SF和HAp多孔支架的复合物，采用乳化-溶剂蒸发法制备柚皮素包封的PLGA微球，达到柚皮苷的高包封效果。采用骨间充质干细胞（BMSCs）评价SF&#x2F;HAp复合支架对BMSC成骨分化的影响，并进一步研究兔股骨髁缺陷模型中SF&#x2F;HAp复合支架体内骨缺损修复特征。</strong></p>
-<h3 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h3><p>2.1 含有柚皮苷的PLGA微球的制备</p>
-<p>PLGA（丙交酯&#x2F;乙交酯1&#x2F;4 50：50，分子量1&#x2F;4 94，000 Da）购自济南大港生物材料有限公司（中国山东省济南市）。聚乙烯醇（PVA）是从西格玛奥德里奇（中国上海）购买的。柚皮苷（纯度98%）来自西格玛-奥尔德里奇（美国密苏里州圣路易斯）。使用水包油（w&#x2F;o&#x2F;w）乳液溶剂蒸发法制备掺入柚皮苷的PLGA微球（图1）。简言之，将<strong>500毫克PLGA</strong>（丙交酯：乙交酯1&#x2F;4 50：50，Mw 1&#x2F;4 94，000 Da）<strong>溶于3 mL二氯甲烷</strong>（化学纯度为99.9%，中国天津市化学试剂有限公司第三分公司）中，形成<strong>PLGA溶液</strong>。将<strong>柚皮苷</strong>（10mg）溶于<strong>0.1mL甲醇</strong>（100mg&#x2F;mL，化学纯度99.9%，中国天津天大化学试剂厂）中，得到<strong>柚皮苷溶液</strong>。使用<strong>均质机</strong>以10，000 rpm的速度行驶1分钟，形成<strong>初级乳液</strong>。将该溶液在室温下滴入300mL的0.25%（w &#x2F; v）<strong>PVA溶液</strong>中，并使用<strong>均质机</strong>转速为10，000 rpm。将<strong>PVA溶解在80°C去离子水中搅拌6 h</strong>，制备0.25%（w&#x2F;v）PVA溶液（Mw 9000–10，000，80%由奥尔德里奇水解）。形成乳液并在室温下连续<strong>搅拌8小时</strong>以蒸发有机溶剂。将微球悬浮液以6000rpm<strong>离心</strong>15 min，并用<strong>蒸馏水洗涤微球3</strong>次。最后，将微球冷冻至80°C，使用<strong>冻干</strong>剂（α 1-2 LDplus，德国基督）在80°C下冻干24小时。</p>
-<p>2.2. 微球表征 通过<strong>扫描电子显微镜检查微球的表面外观和内部结构</strong>（SEM，S-4300，日立。日本东京）。使用纳米测量软件（Nano Measure 1.2）计算100张随机选择的纳米棒SEM图像的粒度。尺寸分布是使用Origin 7.5软件获得的（奥里根实验室公司，北安普顿，马萨诸塞州，美国）。</p>
-<p>2.3. <strong>柚皮苷加载效率和包封效率试验</strong>将PLGA微球（500mg）<strong>分散在1 mL NaOH（0.04 M）溶液</strong>中，将柚皮苷加载到PLGA微球中。接下来，根据之前的报告，使用**微孔板荧光计在282nm处测定溶液中柚皮苷的浓度[**31]。柚皮苷加载效率和包封效率采用以下公式计算：</p>
-<p>2.4. 将柚皮苷PLGA微球（500mg）或SF &#x2F; HAp支架的<strong>体外释放曲线</strong>与PLGA微球（500mg）溶解在<strong>50 mL磷酸盐缓冲盐水（PBS，pH 1 &#x2F; 4 7.4）溶液中</strong>，并在<strong>气浴恒温振荡器</strong>（KYC-1102C）中保持在37 C和75 rpm。在3，6，12，24，72，96，120，144，192，240，288，360，432，504，576，648，720，792和864小时，使用282 cm1的紫外分光光度计收集<strong>0.5 mL用于吸光度测定，并用新鲜的0.5 mL PBS</strong>代替。释放率是使用标准曲线计算的：</p>
-<p>2.5. 从司马特（中国苏州）购买脚手架制造 Bombyx 森蚕丝。SF溶液的制备如前所述[12]。简而言之，通过将蚕茧在0.02M Na 2CO 3溶液中煮沸30分钟来除去丝胶蛋白。然后将所得纤维在60°C下溶解在9.3M LiBr中4小时，随后在透析袋中透析（Cat No.YA1078，中国北京Solarbio，分子量截止1&#x2F;4 3500 Da）与超纯水反应48 h，每6小时换水一次以除去残留的LiBr。最后，将SF溶液与聚乙二醇（PEG，Mw 20，000，中国上海生物港）粉末透析，<strong>以产生浓度为15%的SF溶液</strong>。HAp是从索比奥（中国北京）获得的。</p>
-<p>        将SF&#x2F;HAp支架的制备方法如下：将羧化纤维素纳米原纤维（cCNF，中国广州中山纳贤科技有限公司）以4：1（v&#x2F;v）的比例加入到HAp溶液（300 mg&#x2F;mL）中，以保持HAp在水中的稳定性。然后将HAp &#x2F; cCNF悬浮液在磁力搅拌下以1：9（v &#x2F; v）的比例加入SF溶液（10%w &#x2F; v）中。最后，将含有<strong>柚皮苷</strong>（5 mg&#x2F;mL）或<strong>空白微球</strong>的PLGA微球加载到悬浮液中，分别形成<strong>MSN&#x2F;SF&#x2F;HAp</strong>和<strong>MSB&#x2F;SF&#x2F;HAp</strong>。将制备的悬浮液（50μL）转移到模具板上，并使用冻干机（α 1-2 LDplus，德国基督）在80°C下冷冻干燥24小时。一旦支架凝固，用甲醇处理1天以诱导β片形成。将支架切割并取芯成直径6 mm，厚10 mm的圆柱体，并在闪烁小瓶中灭菌环氧乙烷。表1总结了本研究中使用的缩写和脚手架制备方法。用于测量盘的试样直径为6 mm，厚度为10 mm，支架的抗压强度是使用电动3230系统（BOSE，明尼苏达州明尼通卡，美国）测量的。简而言之，将顺丰&#x2F;高频、MSB&#x2F;超高频&#x2F;高速和超高频&#x2F;超高频支架以 0.5 mm&#x2F;min 的恒定十字头速度加载，直到发生故障。支架的孔隙率如前所述计算。简而言之，称量干重（V1）。然后浸入PBS以确定其重量（V2）。最后，去除表面的水以重新称量湿重（V3）。最终孔隙率使用以下等式计算：</p>
-<p>从SEM图像中随机选择10个视野，并使用Nano Measure 1.2图像处理软件计算支架的孔径。孔隙互连率（体积吸附比）如前所述计算</p>
-<p>2.6. 细胞培养和鉴定 人<strong>BMSC</strong>在<strong>DMEM中培养，并补充10%胎牛血清和1%链霉素 - 青霉素</strong>。如前所述，进行了BMSC鉴定[33]。用于表面标记的抗体是人CD34-APC，CD45-FITC，CD13-APC，CD44-FITC，CD73-PE和CD90-PE（天津昊阳生物制造有限公司，天津，中国天津）。为了鉴定BMSC的三系分化潜力，采用致骨、致脂和软骨培养基（富源生物有限公司，中国上海）分别诱导BMSC进行成骨、软骨和脂肪分化。对于成骨和脂肪分化，第3代BMSC以2 104细胞&#x2F; cm 2的密度接种到6孔培养板中。当细胞汇合度达到70%-80%时，培养基被完全替换，然后每三天更换一次成骨或致脂培养基。21天后，通过用<strong>0.2%茜素红S染色来检测成骨能力</strong>（Solarbio，中国）。10天后，通过用<strong>油红O（Solarbio）染色来检测脂肪分化</strong>。为了确定BMSC的软骨潜力，使用沉淀培养系统进行软骨诱导。简而言之，将1 106个BMSC悬浮在15mL离心管中，以800g离心5分钟，然后将细胞沉淀在软骨诱导培养基中培养4周。为了评估软骨分化，将沉淀用<strong>Alcian蓝溶液染色30分钟</strong>。</p>
-<p>2.7. 细胞计数试剂盒-8 （CCK-8） CCK-8测定用于按照标准方案评估<strong>细胞代谢活性</strong>。将200μL培养基中的BMSC（3 103）移植到96孔板中。在SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架中培养1，3，7，14和21 d后，将CCK-8溶液（10μL，中国北京Solarbio）加入到含有100μL培养基混合物的每个孔中。孵育2小时后，使用酶标仪（BioTek酶标仪）在282nm处测量吸光度。2.8. 通过流式细胞术对膜联蛋白V &#x2F; PI染色使用膜联蛋白V-PI细胞凋亡检测试剂盒（Invitrogen;赛默飞世尔科技公司）根据制造商的协议。来自对照组的骨髓增生物质干细胞、血清白热&#x2F;酶链氨基酸、质谱节&#x2F;超肝素和质链纤维&#x2F;酶链纤维&#x2F;五氢大麻酚支架被采摘并用冷PBS清洗两次三次。将不同处理组的BMSC重悬于1X结合缓冲液中，浓度为1 106个细胞&#x2F; mL，并将5μLFITC膜联蛋白V和5μLPI加入到100μL细胞悬液中。然后将混合物在黑暗中孵育15分钟。使用流式细胞术分析制剂（BD FACSAria III，加利福尼亚州圣何塞，美国）。<strong>细胞凋亡率</strong>计算如下：</p>
-<p>2.9. <strong>碱性磷酸酶活性</strong> 培养7天后，将BMSC固定在4%多聚甲醛中10分钟，加入ALP染色液（中国上海北洋时间）20分钟。去除ALP溶液后，使用尼康显微镜（日本港区尼康）可视化ALP染色。如上所述，在正常和骨诱导性培养基中，在存在 SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 或 MSN&#x2F;SF&#x2F;HAp 支架的情况下，将 BMSC 培养。培养7天后，使用100μL RIPA裂解缓冲液裂解BMSC。根据制造商的说明，使用<strong>ALP测定试剂盒（中国北洋时间生物技术）对ALP活性进行定量</strong>。</p>
-<p>2.10. <strong>钙含量</strong> 通过组织学染色分析MSN&#x2F;SF&#x2F;HAp支架上BMSC向成骨细胞的分化。简而言之，将3个BMSC（1 107个细胞&#x2F;毫升，100μL）接种到SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架上。孵育8小时后，向每个孔中加入2mL培养基。每两天更换一次培养基，获得支架，并在21天后使用<strong>组织切片进行von Kossa染色</strong>。如前所述，对冯·科萨阳性区域（%）进行了定量分析[34]。<strong>ARS染色用于评估磷酸钙的沉积水平</strong>（索拉里比奥，中国北京）。培养21天后，弃去培养基，并用PBS洗涤细胞三次。然后将BMSC用4%多聚甲醛（中国北京Solarbio）固定10分钟，并用0.1%ARS溶液（pH 4.2）染色15分钟。反应终止于PBS处理。这些细胞在显微镜下可视化。然后使用醋酸提取对ARS染色进行洗脱和定量，如前所述[35]。</p>
-<p>2.11. 对<strong>转录组RNA测序</strong>（RNA-Seq）和生物信息学分析进行了进一步<strong>探讨SF&#x2F;HAp支架与柚皮苷PLGA微球的机制</strong>。第7天从MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp制备样品用于RNAseq。根据制造商的说明，使用NEBNext® Ultra™ II定向RNA库制备试剂盒（美国马萨诸塞州新英格兰生物实验室公司）构建了测序库。使用 BioAnalyzer 2100 系统（美国安捷伦科技公司）对文库进行质量控制和定量，并使用 Illumina HiSeq 仪器进行 150 bp 配对末端测序。使用HISAT2软件（v2.0.4）将高质量读数与人类参考基因组（UCSC HG19）进行比较。基因本体（GO）富集分析包括生物过程（BP），细胞组分（CC）和分子功能（MF）。GO和京都基因和基因组百科全书（KEGG）途径是使用用于注释，可视化和综合发现的数据库构建的（DAVID，<a href="http://david.abcc.nci/">http://david.abcc.nci</a> fcrf.gov&#x2F;）。</p>
-<p>2.12. RNA 分离和实时定量聚合酶链反应 (<strong>RT-qPCR</strong>) 根据制造商的说明，使用 TRIzol 试剂 (Invitrogen) 进行 RNA 提取。接下来，使用 ReverTra Ace qPCR RT 试剂盒（Toyobo Co. Ltd.，Osaka，Japan），使用 5 μg RNA 模板通过逆转录为 cDNA 模板合成互补 DNA。 RT-qPCR 使用 SYBR® Green Real-Time PCR Master Mix（Toyobo Co. Ltd.，Osaka，Japan）在 LightCycler&amp; Reg 480II 实时 PCR 仪器（Roche，Switzerland）上进行。 RT-qPCR 结果使用比较阈值循环法计算，甘油醛-3-磷酸脱氢酶 (GAPDH) 作为内部控制。<strong>OSX RUNX2 COl1A</strong></p>
-<p>2.13. <strong>蛋白质印迹测定</strong>简要地，使用冰冷的RIPA裂解缓冲液（中国上海北洋时间）裂解BMSC，然后进行十二烷基硫酸钠聚丙烯酰胺凝胶电泳。然后，进行湿电泳转移方法，将分离的蛋白质转移到硝酸纤维素膜（Bio-Rad）上，然后用5%脱脂牛奶溶液阻断。与特异性一抗孵育后，在室温下用抗兔IgG（#7074 S; 1：2000稀释液）探查膜1.5小时。最后，通过增强型化学发光检测试剂盒（皮尔斯生物技术，罗克福德，美国）分析抗体结合。相关抗体信息如表2所示。</p>
-<p>2.14 <strong>免疫荧光</strong> 根据不同的处理方法，将骨髓增生干细胞分为对照组、血细胞增多组、脑脊液组&#x2F;血细胞计数酶组和甲基溴化激素组&#x2F;血细胞计数酶链球菌组。.用4%多聚甲醛固定在盖玻片上的BMSC并用PBS洗涤三次。为了透化细胞膜，将细胞在室温下在Triton（0.5%在磷酸盐缓冲盐水[PBS]中）中孵育25分钟。将样品在含有1%牛血清白蛋白（BSA）的PBS中封闭30分钟。然后将样品与小鼠单克隆IgG-抗runt相关转录因子2（Runx2，稀释1：200，阿比卡姆，剑桥，马萨诸塞州，美国），骨钙素（Ocn，稀释1：200，阿伯康），Notch1（1：200，美国阿伯康）和Hes1（1：200，美国阿卡姆）在4 C过夜过夜。洗涤后，将细胞与FITC或TRITC偶联的二抗在37°C下以1：200的稀释度孵育1小时，并用PBS洗涤三次。最后，将样品与DAPI（10微克&#x2F;毫升，第号）一起孵育。C0065;Solarbio，中国北京）进行3分钟的核染色，并使用奥林巴斯Fluoview FV1000<strong>共聚焦激光扫描显微镜</strong>（奥林巴斯生命科学木卫二，日本东京）检测信号。</p>
-<p>2.15。手术进程 研究方案经天津医院伦理委员会批准（IRB No. 2021YLS197），并符合动物研究：体内实验报告（ARRIVE）动物研究指南（<a href="https://arriveguidelines.org/arrive-guidelines%EF%BC%89">https://arriveguidelines.org/arrive-guidelines）</a> )[36]。新西兰大白兔2月龄，体重2.3-2.5kg，购自天津医院实验动物中心。如前所述 [12] 诱发<strong>股骨远端骨骺（直径 6 毫米，深度 10 毫米）的临界尺寸缺陷</strong>。通过肌肉注射甲苯噻嗪盐酸盐（0.2 mL&#x2F;kg，中国吉林省盛达市）麻醉兔子。消毒后，外侧入路暴露股骨外侧髁。用慢速电钻用冰盐水溶液冲洗双皮质信道逐渐加宽至直径 6.0 mm，以避免热坏死。<strong>兔股骨远端随机分配到对照组（n ¼ 3, 6 条腿）、SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）、MSB&#x2F;SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）和 MSN&#x2F; SF&#x2F;HAp 支架（n ¼ 3, 6 条腿）</strong>。伤口用生理盐水冲洗后，逐层缝合。为了避免伤口感染，每只动物在手术后三天内每天肌肉注射青霉素（100,000 U&#x2F;天）。</p>
-<p>2.16. 植入后<strong>六周，将植入物收获</strong>，固定在4%的多聚甲醛中，用15%EDTA脱钙，并嵌入石蜡中。<strong>Micro-CT分析</strong>（西门子，德国柏林）在缺陷区域对每组的五个样本进行，以确定骨缺损愈合的程度。自动执行3D重建和建模技术。<strong>ROI中愈伤组织特性的测量包括骨体积（BV，mm3）&#x2F;总体积（TV，mm3），小梁厚度（TB.TH），小梁分离（TB）。SP）、骨表面 （BS）&#x2F;BV 和骨矿物质密度（骨密度，毫克&#x2F;立方厘米）。</strong></p>
-<p>2.17. 组织学处理和组织形态学 经过micro-CT扫描和分析后，将收获的样品用15%EDTA脱钙（北京索瑞生物科技有限公司，中国北京，pH 7.4），并用70-100%乙醇脱水（天津富宇精细化工有限公司，天津，中国天津）。将组织处理，包埋在石蜡中，并使用常规进程切成5μm切片。使用二甲苯I和二甲苯II（西安化学试剂仪器公司，中国西安，每个5秒）使脱水切片透明。将样品分别用30%、50%、70%、80%和95%乙醇（中国天津富宇精细化工有限公司）在4 C下脱水10分钟和100%1 h。为了分析组织的COL1A1表达，对石蜡切片进行了免疫组化染色。简而言之，用3%H 2O2处理10 min淬灭内源性过氧化物酶活性（中国天津天利化学试剂有限公司）。对于免疫组织学分析，使用柠檬酸缓冲液（10 mM柠檬酸）在98 C下进行最佳抗原检索，骨切片10分钟，用PBS将H2O2（30%）稀释至终浓度为3%H 2O2。</p>
-<p>通过添加5%BSA阻断非特异性蛋白质结合，然后与针对COL1A1的一抗一抗一起孵育（小鼠抗兔，1：2500;蛋白质科技，中国武汉）在4°C过夜。信号是使用3，3-二氨基联苯胺四盐酸盐试剂盒（博斯特，中国武汉）开发的。使用显微镜（尼康）拍摄图像。</p>
-<p>2.18. 统计分析 使用SPSS软件（版本22.0;美国纽约州阿蒙克市。.多组比较的统计学显着性通过单向方差分析（ANOVA）确定，然后通过Tukey的事后测试来比较治疗。显着性水平设置为P&lt;0.05。</p>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>3.1. 微球表征和释放测试 通过扫描电镜观察PLGA微球的形貌（图2A）。<strong>微球呈规则的球形，微球直径为53.0 15.1 μm</strong>（图2B）。柚皮苷浓度曲线如图1所示。2C.<strong>柚皮苷浓度与吸光度值呈线性相关</strong>（Y 1&#x2F;4 0.0233 X0.0083，R2 1&#x2F;4 0.9996）。柚皮苷在PLGA微球中的负荷效率为0.01634 0.0008（mg柚皮苷&#x2F;mg PLGA）。包封效率为78.5 3.6%。柚皮苷从微球和MSN &#x2F; SF &#x2F; HAp支架中的体外释放曲线如图2 D所示。在孵育的前24小时，约11.2%的柚皮苷从PLGA微球中释放出来，8.62%的柚皮苷从支架中释放出来。PLGA微球的释放速度减慢，经过36天的孵育，分别有约83.9%和71.9%的PLGA微球释放。如图2 E所示，采用扫描电镜进一步观察了支架的微观结构，SF&#x2F;HAp支架具有多孔性，孔隙连接。微球均匀分散在小微室&#x2F;超细&#x2F;肝素和质谱链&#x2F;顺丰&#x2F;肝素支架中。微球的加入不影响多孔结构的形成。SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和 MSN&#x2F;SF&#x2F;HAp 支架的抗压强度之间无统计学意义差异（图 2 F，P &amp;gt; 0.05）。水相&#x2F;华氏体、小白蛋白&#x2F;超细&#x2F;酶平衡和超细化酶&#x2F;超单抗和超细化酶&#x2F;顺化酶&#x2F;氢化酶链反应平均直径分别为100.5 4.5 μm、98.7 4.2 μm和99.4 3.6 μm。如图2 F所示，三组SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp支架的<strong>直径无统计学意义差异</strong>（P &amp;gt;0.05）。制备后的支架的<strong>孔隙率</strong>分别为85.2 2.32%、82.4 1.32%和80.6 1.21%（MSB&#x2F;SF&#x2F;HAp）和MSN&#x2F;SF&#x2F;HAp（图2 F）。SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp的孔隙相互依赖性分别为96.2 0.59%、95.0、1.47%和94.4 1.23%，<strong>表明孔隙的相互连接性均极好</strong>。</p>
-<p>3.2.骨髓间充质干细胞的鉴定 为了进一步表征人骨髓间充质干细胞，通过流式细胞术检查第三代细胞的细胞表面标志物。 BMSCs显示MSC表面标志物CD13（98.5%）、CD44（97.7%）、CD73（95.5%）和CD90（96.6%）阳性表达，CD34（2.21%）和CD45（1.98%）阴性表达国际细胞治疗学会的标准（补充图1A）。</p>
-<p>对人骨髓间充质干细胞的多向分化能力的分析揭示了成骨培养基中类骨质基质样结构的茜素红染色、成脂培养基中细胞周围的脂滴形成以及软骨形成培养基中蛋白聚糖的阿尔新蓝染色（补充图 1B）。这些结果表明，从人骨髓中提取的细胞主要是<strong>hBMSCs</strong>。</p>
-<p>3.3.在 MSN&#x2F;SF&#x2F;HAp 支架上培养的 hBMSCs 的增殖和活力使用 CCK-8 检测试剂盒评估对照、SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和 MSN&#x2F;SF&#x2F;HAp 支架的细胞增殖效果（补充图 2）。如补充图所示。 2、第1天、第3天、第7天和第21天，由于细胞增殖需要时间，<strong>不同支架之间的细胞增殖性能没有显着差异</strong>。 14天时，MSN&#x2F;SF&#x2F;HAp组细胞增殖率高于SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组（P &lt; 0.05）。流式细胞仪用于研究不同处理后的细胞凋亡率。 BMSCs在各支架上培养1、3、5、7天，1、3、5、7天各<strong>支架细胞凋亡率差异无统计学意义****（图3，P＞0.05）。细胞培养1、3、5、7天后，活&#x2F;死染色结果显示支架上的细胞均呈现绿色荧光（活细胞），但7天后仅观察到部分红色荧光（死细胞）细胞培养。对于所有支架，活细胞的数量也随着从 1 到 7 天的孵育时间而增加。可以看出，</strong>细胞在支架孔壁上分布均匀，生长良好<strong>（图4，P＞0.05）。如图 5 所示，每个样品中的 BMSCs 均表现出多极纺锤样形态和组织良好的细胞骨架。这些结果表明，SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp或MSN&#x2F;SF&#x2F;HAp支架处理细胞对BMSCs</strong>没有细胞毒性，表明这些支架具有良好的生物兼容性和生物学可靠性，适合组织工程修复。**.这些结果表明，<strong>本研究中镶嵌柚皮苷PLGA微球的SF&#x2F;HAp支架具有合适的生物兼容性，可以增强细胞活力</strong>。</p>
-<p>3.4. 体外MSN&#x2F;SF&#x2F;HAp支架中BMSC的成骨分化 理想的骨修复材料应具有良好的生物兼容性、机械强度和成骨诱导能力。使用ALP活性，ALP染色和茜素红S染色检查MSN &#x2F; SF &#x2F; HAp支架内BMSC的成骨分化。在成骨培养基中培养7天后，与正常培养基组中相同细胞类型的SF &#x2F; HAp和MSB &#x2F; SF &#x2F; HAp组相比，两个BMSC的SF &#x2F; HAp组显示出增强的ALP染色（图6）。此外，<strong>MSN &#x2F; SF &#x2F; HAp显着增强了成骨作用</strong>，如ALP染色和定量所示（补充图3）。通过对照组，SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp基团中的茜素红染色，证实了BMSC在孵育3周后的<strong>钙盐沉积</strong>（图7和补充图4）。在所有组中的三周时观察到钙沉积;然而，MSN&#x2F;SF&#x2F;HAp组的钙沉积量远高于MSB&#x2F;SF&#x2F;HAp组、SF&#x2F;HAp组和对照组（均磷&amp;lt;0.05）。为评价MSN&#x2F;SF&#x2F;HAp对BMSC体外成骨分化的影响，在成骨诱导21 d后用冯科萨染色支架。结果表明，冯·科萨阳性区相当，MSN&#x2F;SF&#x2F;HAp组的产量显着高于SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组（补充图5）。</p>
-<p>为了揭示MSN &#x2F; SF &#x2F; HAp支架对BMSC体外成骨分化的影响，我们将细胞接种在对照，SF &#x2F; HAp，MSB &#x2F; SF &#x2F; HAp和MSN &#x2F; SF &#x2F; HAp支架上。为探讨MSN&#x2F;SF&#x2F;HAp对BMSC分化的影响，在MSN&#x2F;SF&#x2F;HAp存在或不存在MSN&#x2F;HAp的情况下，在成骨培养基中培养细胞14 d，<strong>采用RT-PCR和蛋白质印迹法分析BMSC中的成骨标志物蛋白</strong>（补充图6 A和B）。结果表明，SF&#x2F;HAp组和MSB&#x2F;SF&#x2F;HAp组均优于对照组（P &lt;0.01）。与 SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp 和对照组相比，MSN&#x2F;SF&#x2F;HAp 支架对<strong>成骨标志物（Runx2、BMP2、OCN）的表达更能促进其表</strong>达。这些结果表明，镶嵌在SF &#x2F; HAp支架中的柚皮苷微球可以促进BMSC的成骨分化。造骨标志物的<strong>蛋白质印迹结果与RT-PCR结果一致</strong>。</p>
-<p>3.5. MSN&#x2F;SF&#x2F;HAp支架激活了缺口信号通路 我们对对照组和MSN&#x2F;SF&#x2F;HAp支架处理的BMSC之间的RNA测序数据进行了差异基因表达分析。我们鉴定了710个差异表达的RNA：323个基因下调，387个上调（图8 A和B）。使用<strong>GO分析</strong>检查了三个亚个体，血压，MF和CC（图8C）。BP主要包括缺口信号通路、缺口信号通路调控、细胞分化调控、细胞过程正调控、细胞发育调控等。CC主要包括转录复合物、核质、蛋白质包含复合物、细胞内细胞器管腔和细胞核。MF主要包括β-连环蛋白结合、蛋白质结构域特异性结合、转录因子结合、酶结合和蛋白质结合。<strong>MSN&#x2F;SF&#x2F;HAp 诱导的BMSC成骨分化的前五名GO术语包括核质、核、酶结合、转录因子和Notch信号通路（图8 D）</strong>。<strong>前十大富集KEGG通路包括缺口信号通路、癌症通路、内分泌耐药通路、PI3K&#x2F;Akt信号通路、Wnt信号通路、HIF-1信号通路、细胞周期、TGF-β信号通路、肾细胞癌和乳腺癌（图8E）</strong>。为了检测BMSC中缺口信号通路中基因的蛋白表达，将BMSC在对照组SF&#x2F;HAp、MSB&#x2F;SF&#x2F;HAp和MSN&#x2F;SF&#x2F;HAp中培养7 d，并通过蛋白质印迹分析检测蛋白。使用实时荧光定量PCR检测缺口信号通路组分的表达，包括缺口1、锯齿状1和NICD（补充图7 A和B）。结果显示，MSN&#x2F;SF&#x2F;HAp组的缺口1、锯齿状1和NICD表达水平均高于对照组（磷&amp;lt;0.05）和MSB&#x2F;SF&#x2F;HAp组和SF&#x2F;HAp组（P &amp;lt; 0.05）。与对照组相比，沙吞&#x2F;血细胞计数组、MSB&#x2F;SF&#x2F;HAp组和MSN&#x2F;SF&#x2F;HAp组的缺口1、锯齿状1和NICD表达水平显着提高（P &amp;lt;0.05）。MSN&#x2F;SF&#x2F;HAp 组与缺口信号通路相关的蛋白表达高于 SF&#x2F;HAp 组和 MSB&#x2F;SF&#x2F;HAp 组（补充图 7C）。通过免疫荧光进一步检查了14天后接种在不同支架上的BMSC中Notch1，Hes1，RUNX2和OCN的表达。缺口1和Hes1染色显示为细胞质模式（补充图8）。此外，与其他组相比，MSN&#x2F;SF&#x2F;HAp 的 RUNX2 和 OCN 表达增幅最高（补充图 8）。</p>
-<p>3.6. MSN&#x2F;SF&#x2F;HAp支架体内骨再生 6周后，micro-CT对股骨远端骨小梁结构的三维重建如图9所示。如图9所示，<strong>在对照组中，在缺损边缘仅观察到一些纤维组织和少量新骨形成。在 SF&#x2F;HAp 和 MSB&#x2F;SF&#x2F;HAp 组中观察到比对照组更多的新骨形成。与SF&#x2F;HAp或MSB&#x2F;SF&#x2F;HAp相比，MSN&#x2F;SF&#x2F;HAp在骨缺损修复方面表现出更优越的治疗效果</strong>。 MSN&#x2F;SF&#x2F;HAp 组的 BMD 显着增加，其次是 MSB&#x2F;SF&#x2F;HAp、SF&#x2F;HAp 和对照组（图 9）。对照组的骨密度是最低的骨矿物质密度。<strong>HE 染色显示 MSN&#x2F;SF&#x2F;HAp 组的骨缺损显示出明显的骨修复迹象。与对照组和 MSB&#x2F;SF&#x2F;HAp 组相比，在 MSN&#x2F;SF&#x2F;HAp 组的缺损部位观察到胶原纤维组织的积累</strong>*（图 10）。在 SF&#x2F;HAp 和 MSB&#x2F;SF&#x2F;HAp 组中观察到少量新骨组织。此外，与其他组相比，MSN&#x2F;SF&#x2F;HAp 组的<strong>骨形成量最大</strong>。<strong>甲苯胺蓝（图 11）和番红 O</strong>（图 12）染色进一步确定<strong>MSN&#x2F;SF&#x2F;HAp 组比其他组与更多的新骨形成相关</strong>。使用 COL1A 的免疫组织化学染色确认骨基质形成。我们进行了免疫组织化学以鉴定所有组中的 COL1A 表达。结果表明 MSN&#x2F;SF&#x2F;HAp 支架中的 <strong>COL1A 阳性细胞</strong>比其他组多得多（图 13）。结果表明，MSN&#x2F;SF&#x2F;HAp支架<strong>显着促进了兔股骨远端骨缺损的修复，并表现出较高的骨再生效率</strong>。</p>
-<h3 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h3><p>近年来，研究人员在使用组织工程技术生产骨移植替代品方面取得了重大努力[37-40]。不幸的是，骨修复支架仍然存在许多问题，例如骨修复速度和血管生成能力低[41]。骨骼是一种钙化组织，由35%的有机物和65%的无机物组成[42]。</p>
-<p>无机物的主要成分是I型胶原蛋白，无机物的主要成分是弱结晶HAp[43]。 <strong>SF 提供生物兼容性、可控的降解速率和优异的机械性能</strong> [44-46]。 <strong>HAp 因其优异的生物兼容性、生物活性和骨传导性而被广泛用作生物材料</strong> [47,48]。在我们之前的研究中，我们通过<strong>盐浸制备了 SF&#x2F;HAp 支架，并在其上镶嵌柚皮苷用于骨形成</strong>[12]。然而，这项研究仍然存在三个问题。首先，柚皮苷从支架中的<strong>高初始突释可能导致药物以毒性剂量释放</strong>，并且大量药物的损失不能用于以后的释放。此外，六氟异丙醇被用作溶剂来生产 SF 溶液，这可能具有一些潜在的<strong>毒性作用</strong> [49]。第三，<strong>当 SF 溶液中 HAp 的质量增加时，悬浮液的稳定性下降</strong>。</p>
-<p>为此，首先<strong>通过w&#x2F; o &#x2F; w溶剂蒸发法生产含有柚皮苷的PLGA微球</strong>。将获得的微球用于体外柚皮苷释放实验和成骨分化测定，随后植入兔股骨远端骨缺损模型。我们的主要研究结果表明，SF &#x2F; HAp与含有柚皮苷的PLGA微球结合作为有效的柚皮苷载体，提供扩散控制的柚皮苷释放曲线。因此，我们生成了柚皮苷包封的PLGA微球并维持柚皮苷的释放。<strong>此外，还生成了水溶性SF，避免了六氟异丙醇作为溶剂</strong>。我们添加了 <strong>cCNF 以提高 SF 解决方案中 HAp 的稳定性</strong>。柚皮苷与PLGA微球显示柚皮苷从微球中持续释放30天。这项研究表明，在掺入SF &#x2F; HAp支架之前将柚皮苷包封到PLGA微球中是以长期和持续释放方式提供柚皮苷的有效策略。此前，加载到PLGA&#x2F;HAp中的辛伐他汀微球被开发为治疗严重骨缺损的骨诱导剂[50]。Wang等人[51]构建了SF &#x2F; HAp支架，并发现它适用于骨再生。SF &#x2F; HAp支架的微观结构与天然人松质骨相似，SF &#x2F; HAp支架的平均直径约为100μm[52]。骨向内生长所需的孔径大于40μmis;类骨形成需要100μm的最小孔径[53]。最后，我们生成了一种新型的SF&#x2F;HAp支架，其柚皮苷释放促进BMSC的成骨分化和骨再生。在我们的研究中，ALP和ARS染色，qRT-PCR和蛋白质印迹测定表明，带有柚皮苷微球的SF &#x2F; HAp支架可以积极调节BMSC的成骨分化，并促进BMSC分化成成成骨细胞。Ge等人[20]发现柚皮苷通过PI3K &#x2F; AKT &#x2F; mTOR途径对糖皮质激素诱导的骨质疏松症具有保护作用。我们小组发现柚皮苷通过PI3K&#x2F;Akt信号通路增强骨折愈合[22，23，54]。此外，我们测试了这种新型支架对BMSC成骨分化的机制。我们发现MSN &#x2F; SF &#x2F; HAp支架正向调节缺口信号通路。此前，我们研究了柚皮苷在镶嵌有柚皮苷的SF&#x2F;HAp支架中对人脐带间充质干细胞进行成骨分化的机制[12]。主要的富集途径是PI3K&#x2F;Akt信号通路。这表明MSN &#x2F; SF &#x2F; HAp的机制与柚皮素镶嵌SF &#x2F; HAp支架的机制不同。缺口信号传导关键调节许多细胞类型的命运，包括BMSC和成骨细胞[55-58]。一些研究发现，缺口信号通路在BMSC的成骨分化和成骨性疾病的治疗中起重要作用[59-61]。Notch家族成员及其配体平衡成骨细胞的分化[62]。此外，缺口信号通路被认为是血管生成的调节因子[63]。此外，缺口信号传导指导发芽血管生成的启动和稳定[64]。植入6周后，MSN&#x2F;SF&#x2F;HAp显着增加了兔股骨远端骨缺损模型中的骨形成。HAp通常用于临床实践中促进骨再生，因为它具有合适的骨诱导特性[65]。MSN&#x2F;SF&#x2F;HAp 支架提高了 RUNX2、COL1A1 和 OCN 的表达水平。MSN &#x2F; SF &#x2F; HAp支架在体内显示出更高的骨诱导性，正如显着更高的BV &#x2F; TV和结核病所证明的那样。TH 值。我们进行了HE，甲苯胺蓝和沙夫胺O染色，以评估兔子远端股骨缺损的骨再生。HE染色显示，MSN&#x2F;SF&#x2F;HAp支架显着增加了缺损区域的新骨形成。在MSN &#x2F; SF &#x2F; HAp中，在骨缺损的边缘观察到比在MSB &#x2F; SF &#x2F; HAp和SF &#x2F; HAp组中观察到更多矿物组织的甲苯胺蓝染色更多。 此外，MSN&#x2F;SF&#x2F;HAp 显着增加了骨缺损区域的 COL1A 表达。<strong>COL1A</strong>在成骨细胞分化过程中提供坚固而灵活的骨骼结构。Shao等人先前进行的一项研究[66]检查了GelMA掺入的金红石纳米棒薄膜中的柚皮素，发现这些新薄膜调节MSCs的成骨分化。本研究有几个局限性。<strong>首先，没有对兔远端股骨缺损进行长期观察。此外，它还涉及一个小动物模型，并且有必要进一步研究实验动物研究的结果是否可以推广到人类。</strong></p>
-<h3 id="5-结论"><a href="#5-结论" class="headerlink" title="5.结论"></a>5.结论</h3><p><strong>制备载柚皮苷的PLGA微球，然后将其掺入SF&#x2F;HAp支架中，得到载柚皮苷的复合支架（MSN&#x2F;SF&#x2F;HAp支架）。体外评估表明，MSN&#x2F;SF&#x2F;HAp 支架表现出柚皮苷的缓释作用，并支持 BMSCs 的附着、增殖和成骨分化。体内分析表明 MSN&#x2F;SF&#x2F;HAp 促进骨缺损的修复，从而为 BTE 提供潜在的临床候选者。</strong></p>
-<hr>
-<p>附：来源网络</p>
-<p><strong>1.HE染色</strong></p>
-<p>HE染色是组织学中最基础、使用最广泛的染色手段，相信大家对此都不陌生。HE染色可以区分一般的骨组织结构和细胞，如下图所示。<strong>其中，五角星和白色箭头表示大量炎症细胞，三角形表示新骨小梁，黑色箭头表示骨髓。</strong>但单一的HE染色并不能区分新生骨组织的数量、胶原以及其他细胞状态，大多数都需要配合其他染色技术共同观察骨愈合状态。特别的，现在都需要对新生组织进行量化研究，HE染色显然是不能满足要求的。（DOI：10.1002&#x2F;adfm.202009189）</p>
-<p><img src="https://pic4.zhimg.com/80/v2-01426852d9f208e9d669698d8b914db7_720w.jpg"></p>
-<p><strong>2.Masson染色</strong></p>
-<p>Masson染色的颜色对比鲜明，可见明显的胶原纤维网（<strong>甲苯胺蓝染色则为蓝色，甲基绿则为绿色</strong>），能较好地反映纤维组织的形态。其中，蓝色表示新形成的骨，红色表示成熟的骨组织。图中很明显可以看到，对比组及水凝胶组治疗的的骨缺损被板层骨和骨髓替代，并且骨的一些区域高度成熟。当然，不同修复时期的胶原纤维数量是不一样的，随着修复时间增长，染色区域逐渐增大表明成熟的骨组织逐渐增加。（DOI：10.1002&#x2F;adfm.202009189）</p>
-<p><img src="https://pic4.zhimg.com/80/v2-82c458d9a462938379ca27d284127cfb_720w.jpg"></p>
-<p><strong>3.亚甲基蓝-酸性品红染色</strong></p>
-<p><strong>亚甲基蓝-酸性品红染色可以清晰的显示成骨细胞、细胞基质以及类骨质。染色后，植入体表面的羟基磷灰石涂层为紫色，成骨细胞核为深蓝色或深紫色，细胞质基质为淡紫色，紫灰色为新生骨组织。</strong>图片展示了不同时期骨修复的状态，在牵张成骨早期，可见浅紫色的细胞分泌的细胞外基质，深紫色的细胞核，未见明显骨小梁结构。中期，可见骨小梁较细小，骨小梁区比结缔组织区颜色更紫。在牵张成骨后期，见骨小梁较粗壮，周围一圈可见深蓝色成骨细胞，骨小梁边缘处为紫灰色新生骨组织，中心为深紫色的较成熟骨组织。（DOI：10.3969&#x2F;j.issn.1674-3806.2022.04.08）</p>
-<p><img src="https://pic1.zhimg.com/80/v2-004c053d63a85670985e51aaed0deb70_720w.jpg"></p>
-<p><strong>4.Von Kossa染色</strong></p>
-<p>钙结节的形成为成骨细胞特有，<strong>钙沉积是表明新骨生成的一个证据。钙盐沉积区域为黑色或棕黑色，细胞核表现为蓝色。</strong>Von Kossa染色证实，与无颗粒对照相比，在所有颗粒植入的股骨中有钙沉积的证据。与对照组相比，明显看出植入HUVEC和HBMSC颗粒的缺损内和周围有钙沉积，颗粒周围有同心堆积，夹杂着类骨质形成(粉红色&#x2F;紫色，箭头)，部分是原有骨的残余。（DOI：10.1096&#x2F;fj.201801114R）</p>
-<p><img src="https://pic3.zhimg.com/80/v2-44ebacc37acb2f5cc5b8959c56adc9b6_720w.jpg"></p>
-<p><strong>5.Trap染色</strong></p>
-<p><strong>Trap染色是用于检测骨组织、骨细胞中特征物质的染色，使破骨细胞呈红色，背景呈绿色或蓝色。</strong>抗酒石酸酸性磷酸酶（Trap）为破骨细胞的标志酶，特异地分布于破骨细胞中，为破骨细胞所特有，通常作为鉴别破骨细胞的重要标志物。如图可见随着浓度增高，显著刺激破骨细胞分化（RANKL+组）。<strong>总之，Trap染色可直接鉴别及分析破骨细胞的状态。</strong>（DOI：10.1038&#x2F;ncomms12794）</p>
-<p><img src="https://pic3.zhimg.com/80/v2-086a7afe7d080d5cc8dc6fc55bdd79f2_720w.jpg"></p>
-<p><strong>6.茜素红染色</strong></p>
-<p>茜素红可以与钙发生显色反应，生成深红色的化合物，这样成骨诱导的细胞外面沉积的<strong>钙结节也就被染成了深红色</strong>。如图示，下面红色即为茜素红染色后的结果。很明显观察到，钙结节逐渐增加，表明了材料更优异的成骨能力。（DOI: 10.1002&#x2F;adfm.202201067）</p>
-<p><img src="https://pic4.zhimg.com/80/v2-6c69483ffa0a71691b6d39320e8f9707_720w.jpg"></p>
-<p><strong>7.番红O-固绿染色</strong></p>
-<p>番红O-固绿染色可直观反映关节软骨、软骨下的骨组织结构，<strong>嗜碱性的软骨与碱性染料番红 O 结合呈现红色，嗜酸性的骨和酸性染料固绿结合而成蓝色</strong>，在关节软骨及软骨下骨的形态学研究中受到了欢迎。与下图表现的一致，代表软骨的红色部分从左至右依次增加，说明材料可以有效促进软骨修复。（DOI：10.1002&#x2F;adfm.202105084）</p>
-<p><img src="https://pic3.zhimg.com/80/v2-4127dba0eba020f7c3c0738e82b6af2e_720w.jpg"></p>
-<p>其中，<strong>HE染色是最常用的染色方法；Masson染色是结缔组织染色的最经典方法，以选择性地显示胶原纤维和肌纤维；番红Ｏ⁃固绿染色常用于区分软骨组织和骨组织区；Von Kossa染色法中的银溶液作用于含有不溶性钙盐的切片；亚甲基蓝⁃酸性品红染色主要用于区分新生骨质，多用于评估种植体骨界面成骨效果以及血管化程度；TRAP染色能够特异性展示破骨细胞的状态。</strong></p>
-<p>根据材料的设计方案和修复机制不同，我们可以选择其中的一种或者几种组合探究骨修复的状态，深入了解骨修复的机制及动态。以上就是为大家总结的7种骨修复中常用的染色方法啦，希望能够为大家的实验进展助力一小步，离成功更进一步~**</p>
 ]]></content>
       <tags>
         <tag>科研</tag>
