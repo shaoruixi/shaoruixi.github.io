@@ -6,7 +6,7 @@
   <link href="https://ruixi.fun/atom.xml" rel="self"/>
   
   <link href="https://ruixi.fun/"/>
-  <updated>2024-02-26T12:11:32.911Z</updated>
+  <updated>2024-03-25T11:20:07.529Z</updated>
   <id>https://ruixi.fun/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客插入图片</title>
+    <link href="https://ruixi.fun/post/9584ceb1.html"/>
+    <id>https://ruixi.fun/post/9584ceb1.html</id>
+    <published>2024-03-25T11:08:22.000Z</published>
+    <updated>2024-03-25T11:20:07.529Z</updated>
+    
+    <content type="html"><![CDATA[<p>解决方案三（最新方案，强烈推荐）：<br>[参考链接](资源文件夹 | Hexo)<br>优点<br>在Typora中可以直接用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>标签显示同名文件夹中的图片，还可成功布置到博客上。</p><p>首先要修改博客配置文件_config.yml,把配置文件里的post_asset_folder设置为true，并在配置文件里添加以下的marked部分，官方文档说hexo-renderer-marked 3.1.0 引入了一个新的选项，其允许你在 markdown 中嵌入图片，而是使用 3.1.0插件无需下载，在新版的hexo中已经集成了，如果不确定有没有可以使用npm list hexo-renderer-marked&#96;命令查看。<br>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">---------------------------------添加以下内容----------------</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置完后用hexo new “文章标题”创建文章时会自动创建一个同名的文件夹，用于存放资源文件，一定要用这个方法创建文章。使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>方法必须将图片放在新建文件时生成的同名文件夹目录下，然后在Typora中使用以下命令格式即可添加图片：</p><p><img src="/Users/shaoruixi/ruixifun/source/_posts/hexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/a.png" alt="a"></p><p> &#x2F;&#x2F; 这里的图片路径直接填图片名即可，不需要在添加其它目录<br>此时会发现一个bug，无法在Typora中显示图片，但是可以在博客中显示，解决方法是在Typora中设置图片根目录时选择放置图片的目录，详细步骤是在Typora中选择：<br>格式（O） -&gt; 图像 -&gt; 设置图片根目录 -&gt; 选择文章同名文件夹（即放置图片的文件夹)<br>设置完后就可以在Typora中显示图片了。<br>细节<br>经过多次测试，一定要把post_asset_folder设置为true，再使用hexo new “文章标题”创建文章才可以，只用在这种情况下在自动创建的同名文件夹中的图片才管用，才没有问题，自己手动创建文件夹放置图片会导致在Typora中不显示图片，设置为false的话会导致图片仅在Typora中显示而不在博客中显示。<br>缺点<br>没有找到一个好的方法删除文章的同时删除对应的文件夹。<br>————————————————</p><pre><code>                        版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。</code></pre><p>原文链接：<a href="https://blog.csdn.net/elexiangchirou/article/details/134699785">https://blog.csdn.net/elexiangchirou/article/details/134699785</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;解决方案三（最新方案，强烈推荐）：&lt;br&gt;[参考链接](资源文件夹 | Hexo)&lt;br&gt;优点&lt;br&gt;在Typora中可以直接用&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p</summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="https://ruixi.fun/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>R语言学习--数学符号</title>
+    <link href="https://ruixi.fun/post/ae04c50d.html"/>
+    <id>https://ruixi.fun/post/ae04c50d.html</id>
+    <published>2024-03-25T11:04:10.000Z</published>
+    <updated>2024-03-25T11:05:52.307Z</updated>
+    
+    
+    
+    
+    
+    <category term="R语言" scheme="https://ruixi.fun/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>柔软的卫生纸需要什么？</title>
+    <link href="https://ruixi.fun/post/a3334128.html"/>
+    <id>https://ruixi.fun/post/a3334128.html</id>
+    <published>2024-03-04T02:50:57.000Z</published>
+    <updated>2024-03-25T11:05:21.624Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为卫生纸最重要的特性之一，柔软度跟什么有关呢？</p><p>我们可以将对卫生纸的的感知详细地分解一下，就拿我们每个人都会做的一件事，从纸巾盒里抽纸巾，然后擦手。</p><p>首先我们需要用手指捏住纸巾，这时候，我们会感知到纸巾的粗糙度以及硬度。</p><p>其次我们需要将其抽出来，这时候会感受到它的刚度以及强度。</p><p>这些我们感受到的属性共同体现了柔软度，特别是弯曲刚度，拉伸形变能力，模量。</p><p>柔软度与纸巾的体积、光滑度、粗糙度、硬度、刚度、强度等有关。没有任何单一的特性与柔软度直接相关，因为柔软度是许多特性的相互作用。物体可以有两种类型的有形物体属性：“宏观空间属性，包括形状和方向;和材料属性，如粗糙度，柔软度和温度”（Kitada等人，2019）。神经影像学研究发现，宏观空间特性和材料特性需要不同的网络参与来进行处理（Kitada等人，2019）。对于柔软性的性质，很少有研究“对象顺应性和柔软性感知的神经相关性”。研究发现，“柔软度的触觉感知是基于皮肤上压力的时空变化”（Kitada等人，2019）。在造纸工业中，</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;作为卫生纸最重要的特性之一，柔软度跟什么有关呢？&lt;/p&gt;
+&lt;p&gt;我们可以将对卫生纸的的感知详细地分解一下，就拿我们每个人都会做的一件事，从纸巾盒里抽纸巾，然后擦手。&lt;/p&gt;
+&lt;p&gt;首先我们需要用手指捏住纸巾，这时候，我们会感知到纸巾的粗糙度以及硬度。&lt;/p&gt;
+&lt;p&gt;其次我们</summary>
+      
+    
+    
+    
+    
+    <category term="小知识" scheme="https://ruixi.fun/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>THP-1细胞复苏</title>
@@ -393,86 +456,6 @@
     
     
     <category term="科研" scheme="https://ruixi.fun/tags/%E7%A7%91%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习日记 Day-2</title>
-    <link href="https://ruixi.fun/post/db90e617.html"/>
-    <id>https://ruixi.fun/post/db90e617.html</id>
-    <published>2022-09-12T14:00:17.000Z</published>
-    <updated>2024-01-25T12:02:41.141Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天听了第一次组会，从中知道了自己需要学习的内容，以及一些文献汇报中的注意点。</p><span id="more"></span><p>需要学习的点：</p><ul><li><p><input disabled="" type="checkbox"> 免疫</p></li><li><p><input disabled="" type="checkbox"> 细胞间接触</p></li><li><p><input disabled="" type="checkbox"> 细胞培养</p></li><li><p><input disabled="" type="checkbox"> 应力，应变</p></li><li><p><input disabled="" type="checkbox"> 杨氏模量</p></li><li><p><input disabled="" type="checkbox"> 电镜</p></li><li><p><input disabled="" type="checkbox"> 成骨分化特异性标志物</p></li><li><p><input disabled="" type="checkbox"> 材料@材料代表什么意思</p></li><li><p><input disabled="" type="checkbox"> EDS 分析</p></li><li><p><input disabled="" type="checkbox"> 骨修复ct和micro ct</p></li><li><p><input disabled="" type="checkbox"> he染色</p></li><li><p><input disabled="" type="checkbox"> 文献汇报注意点 创新点 认为怎么样</p></li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;今天听了第一次组会，从中知道了自己需要学习的内容，以及一些文献汇报中的注意点。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="科研" scheme="https://ruixi.fun/tags/%E7%A7%91%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习日记 Day-1</title>
-    <link href="https://ruixi.fun/post/4299b7ad.html"/>
-    <id>https://ruixi.fun/post/4299b7ad.html</id>
-    <published>2022-09-11T08:32:56.000Z</published>
-    <updated>2024-01-25T12:02:41.140Z</updated>
-    
-    <content type="html"><![CDATA[<p>初步了解一下导师实验室的研究内容，总结一下之前的了解情况</p><p>交叉学科：生物科学、高分子科学、材料科学、医学科学</p><p>研究角度：生物医学材料、保健品、环保材料、新型质纤维材料</p><p>丝蛋白的基础理论与应用研究：生物矿化、干细胞培养、噬菌体展示技术<br>其他：生物敷料、多孔支架、微球、3D打印、纳米纤维</p><p>具体：<br>        利用分子自组装原理阐明丝蛋白调控羟基磷灰石结晶生成的生物矿化机制<br>        蚕丝蛋白材料在骨组织工程领域的应用<br>        蚕丝蛋白材料在药物缓释载体领域的应用<br>        蚕丝蛋白材料在人工皮肤领域的应用<br>        蚕丝蛋白在环保领域的应用</p><p>需要进一步了解的点：</p><ol><li><p>材料力学性能中的专业名词和公式原理等</p><ol><li><p>模量、断裂强度、GPa、MPa、断裂伸长率等</p></li><li><p>材料共混带来的影响</p></li><li><p>力学性能改善的方法</p></li></ol></li></ol><span id="more"></span><h2 id="1-认识蚕丝"><a href="#1-认识蚕丝" class="headerlink" title="1.   认识蚕丝"></a>1.   认识蚕丝</h2><p>1.   蚕丝的基本知识</p><ol><li><p>蚕丝蛋白包括丝素蛋白和丝胶蛋白。</p><p>丝素蛋白占蚕丝蛋白总含量的四分之三，丝胶蛋白含量约占四分之一。</p><p>丝胶蛋白包裹与丝素蛋白纤维外侧，起到保护和黏附丝素蛋白的作用。</p></li><li><p>两种蛋白氨基酸组成相同，由18种氨基酸构成，但氨基酸含量占比不同。</p><p><strong>丝素蛋白具有疏水性</strong>，疏水性氨基酸含量比亲水性氨基酸含量多，<strong>丝氨酸</strong>、<strong>丙氨酸</strong>和<strong>甘氨酸</strong>占氨基酸总量的87%。</p><p><strong>丝胶蛋白具有亲水性</strong>，亲水性氨基酸含量比疏水性氨基酸含量多。</p></li><li><p>丝素蛋白为主要成分，占总蚕丝质量的70-75%，结构由：重链、轻链和P25蛋白构成，分子比为6：6：1。</p><p>丝素蛋白中存在两种区域：以甘氨酸、丙氨酸和丝氨酸残基为主构成的整齐且有序的<strong>结晶区</strong>；以苯丙氨酸、酪氨酸、色氨酸等其他氨基酸残基构成的松散且无序的<strong>非结晶区</strong>。</p><p><strong>重链</strong>中包含12个疏水结构域，由重复序列的氨基酸组成的疏水结构域能够形成β-折叠结构，提高了丝素蛋白的强度和韧性。11个亲水结构域由非重复序列氨基酸组成。主要有Silk I型、Silk II型和Silk III型三种聚集形态，I型主要存在于丝素蛋白非结晶区，分子构象介于α-螺旋和β-折叠之间（分子链构像以无规卷曲和α-螺旋为主？），通过改变温度、pH、剪切力等方法，可以使之转变为II型，更加稳定，是一种反平行β-折叠层状结构。</p></li><li><p>丝素蛋白材料的特性：</p><ol><li><p>丝素蛋白的<strong>力学性能</strong></p><p>丝素蛋白中结晶区紧密的β-折叠结构，使其拥有较好的抗拉伸性和良好的韧性，而非结晶区的杂乱无序和较多的极性基团，又能使其获得较好的弹性和延展性。天然蚕丝纤维的初始模量为5-12GPa，断裂强度为500MPa，断裂伸长率为19%；脱胶蚕丝纤维的初始模量为15-17GPa，断裂强度为610-690MPa，断裂伸长率为4%-16%。与天然丝素纤维相比，再生丝素材料力学性能有所下降，所以改善再生丝素材料力学性能已成为丝素蛋白生物材料领域的重要研究课题。如将一些高分子物质，如聚乙二醇、聚己内酯、聚乙烯醇等，与丝素蛋白进行共混，从而达到改善丝素材料力学性能的效果。此外，向再生丝素蛋白材料中添加微&#x2F;纳米级别的物质，同样可以制备得到力学性能增强的丝素材料。</p></li><li><p>丝素蛋白的<strong>生物相容性</strong></p><p>生物相容性是指材料与生物体之间相互作用后产生的各种反应，包括生物反应、物理反应、化学反应等。丝线缝合的成功使蚕丝蛋白成为一种具有良好生物相容性的材料。在丝素蛋白的18种氨基酸中，有11种氨基酸为人体必需的氨基酸，且蚕丝无毒无污染，具有良好的抑菌效果和一定的抗紫外线效果。其吸湿能力和保湿能力优良，致敏性极低。</p></li><li><p>丝素蛋白的<strong>可降解性</strong></p><p>生物降解性是材料选择的一项重要指标。生物降解性是指生物材料在生理环境下发生分解、溶解或生分子量下降，降解产物可以被机体吸收或释放出体外的性质。丝素蛋白材料无论是何种形态，在合适的酶作用下都可以被最终降解。通过生物体内的可降解性实验表明，水凝胶丝素3D支架植入大鼠后，在几周内就出现裂解，并在一年后完全消失。宿主免疫系统对三维丝素蛋白多孔支架的降解并无明显排斥，这表明丝素不仅可降解，而且可以被机体有效吸收。</p></li></ol></li><li><p>丝胶含有较多极性残基蛋白，大部分由<strong>丝氨酸</strong>和<strong>天冬氨酸</strong>组成，丝氨酸和天冬氨酸都是亲水基团，大约占丝胶成分的 80%，丝胶的结构排列也不紧密，分子间作用力小，这使得丝胶的亲水性较好。</p></li><li><p>丝素蛋白作为天然蛋白，有很好的生物相容性、降解性和稳定性，能促进细胞在材料表面的黏附，支持细胞的铺展和生长，维持细胞正常形态和功能，因此在骨修复、伤口敷料和生物传感器等<strong>生物医学组织工程</strong>。丝素蛋白经加工处理后可以获得不同形态：如<strong>膜、凝胶、微球和多孔支架</strong>等。</p></li></ol><p>    饲养家蚕可以获得家蚕蚕丝，正常家蚕吐丝可获得椭圆状的蚕茧，改变家蚕营茧的蔟具可获得<strong>家蚕平面丝（Flat silk cocoon）</strong>。平面丝天然形成了一个平面的网状结构，是一种天然的高分子聚合物。</p><hr><h2 id="2-已有的蚕丝应用"><a href="#2-已有的蚕丝应用" class="headerlink" title="2.   已有的蚕丝应用"></a>2.   已有的蚕丝应用</h2><p>    传统：丝绸服装的制作，蚕丝被的加工，平面丝可加工成丝绵被、仿皮、地毯、书画丝纸等工艺品。但是经济效益不好。由蚕丝纤维加工成的织物具有优雅的外观、 柔软性、舒适性、亲肤性，并且能够生物降解，是一种非常优质的绿色环保面料。</p><h2 id="3-丝素蛋白在生物材料领域的应用"><a href="#3-丝素蛋白在生物材料领域的应用" class="headerlink" title="3. 丝素蛋白在生物材料领域的应用"></a><strong>3. 丝素蛋白在生物材料领域的应用</strong></h2><h3 id="3-1-骨组织"><a href="#3-1-骨组织" class="headerlink" title="3.1  骨组织"></a>3.1  骨组织</h3><p>骨组织工程当前研究的重要方向是制备具有骨再生功能且可生物降解的支架材料。丝素蛋白已成为骨组织工程的重点开发对象，可形成各种形式的丝素蛋白生物材料，如丝素膜、丝素水凝胶、丝素多孔支架等。在骨组织修复应用中，丝素蛋白可以作为引导骨组织再生膜的重要材料来源，并通过先进的技术来改良其性能，对骨缺损修复起到重要作用。在骨组织工程所需的支架材料中，丝素蛋白可以提供细胞生长、附着和分化的空间。</p><p>近年来，研究人员致力于研究具有良好骨传导性和骨诱导性，同时保有材料良好的生物相容性及降解性的丝素蛋白复合材料。羟基磷灰石是目前在复合材料中应用较为广泛的一种主要无机成分，此种复合材料的生物力学性能优越，作为工程支架时大大提高了力学性能和骨传导性。</p><h3 id="3-2-血管组织"><a href="#3-2-血管组织" class="headerlink" title="3.2  血管组织"></a>3.2  血管组织</h3><p>丝素蛋白特殊的氨基酸排列结构使它具有一定的抗凝血功能，同时还具有抗血栓形成的表面，对高剪切应力和血流压力具有良好的抵抗力。将蚕丝蛋白用于人造血管的材料中，不但具有良好的生物相容性，还有利于人造血管的内皮细胞定植生长。此外，加入甘油可增加材料的难溶性，亦可提高止血性能。在丝素蛋白表面构建再生丝素蛋白和壳聚糖多层膜，可以显著提高人工血管材料的生物相容性，促进组织生长。 </p><h3 id="3-3-神经组织"><a href="#3-3-神经组织" class="headerlink" title="3.3  神经组织"></a>3.3  神经组织</h3><p>每年有数以百万计的人遭受周围神经损伤，神经系统能够自我修复轻度伤害，而大的损伤需要通过在身体其他部位收获的神经移植物进行手术治疗。自体神经移植由于术后并发症和自体神经量有限的问题，并不能很好地满足医疗需求。寻找合适的生物材料来提高人工神经的修复能力是目前研究的关键点。国内外团队通过研究发现在丝素蛋白中混入丝胶蛋白可以大大提高材料的机械强度，制备出机械强度优良的高仿生丝胶蛋白&#x2F;丝素蛋白共混材料人工神经导管。此外3D打印技术与静电纺丝法相结合所制备出的聚吡咯&#x2F;丝素蛋白纤维基导电型复合支架，支架稳定性强，生物相容性好，有助于背根神经节的粘附生长和轴突的延伸生长。 </p><h3 id="3-4-皮肤组织"><a href="#3-4-皮肤组织" class="headerlink" title="3.4  皮肤组织"></a>3.4  皮肤组织</h3><p>丝素蛋白能很好地支持人类角质形成细胞和成纤维细胞。用丝素蛋白制成的皮肤敷料可以帮助皮肤得到更快的修复。以丝素蛋白作为主要材料来制备皮肤敷料时，主要是以丝素水凝胶形式进行。单颖慧老师团队通过静电纺丝法将黄芪装载于丝素&#x2F;明胶纳米纤维膜中，得到一种载药纳米纤维敷料，生物相容性好，促进皮肤创口愈合且能抑制疤痕形成。 </p><h3 id="3-5-药物缓释载体"><a href="#3-5-药物缓释载体" class="headerlink" title="3.5  药物缓释载体"></a>3.5  药物缓释载体</h3><p>药物缓释是指使药物缓慢进入血液以降低血液中的药物浓度，所以制备能使被承载的药物缓慢释放的载体材料是非常必要的。现今常见的材料包括壳聚糖、水凝胶、聚羟基丁酸酯等。丝素蛋白也因其优良特性在药物缓释中得到应用。张海云团队以丝素蛋白与 Fe3O4纳米颗粒为主要材料，制备成一种具有磁靶向的复合微球药物载体，其具有药物靶向释放能力，可以有效提高药物利用率和控制药物缓释，并证明了具备良好流动性后的丝素蛋白水凝胶的药物传递效率较高。</p><h3 id="3-6-水凝胶"><a href="#3-6-水凝胶" class="headerlink" title="3.6  水凝胶"></a>3.6  水凝胶</h3><p>丝素蛋白通过氢键、亲疏水性、静电及剪切力等相互作用，使得分子链之间相互作用形成 β-折叠结构，导致大分子链之间相互缠绕、集聚，形成蛋白微球胶束，并进一步物理交联形成水凝胶。聚氨酯基丝素蛋白水凝胶是丝素蛋白复合水凝胶中的一种，因为同时具有水凝胶的优异生物相容性和聚氨酯材料在性能方面的可调性，一直受到研究人员的青睐。现有的工艺技术已将聚氨酯与丝素蛋白的优异性能结合起来，优化合成工艺，制备出力学性能较好的聚氨酯-丝素蛋白水凝胶材料，在生物工程材料领域有着广泛的应用前景。</p><h2 id="4-丝素蛋白未来的发展前景"><a href="#4-丝素蛋白未来的发展前景" class="headerlink" title="4.丝素蛋白未来的发展前景"></a><strong>4</strong>.<strong>丝素蛋白未来的发展前景</strong></h2><p>丝素蛋白目前最广泛的应用于在骨修复领域。主要包括丝素蛋白骨修复材料的制备工艺研究、体内外生物相容性研究、丝素蛋白生物材料对干细胞的成骨和成软骨诱导能力研究以及丝素组织工程骨在体内骨缺失修复效果研究几个方面。可以根据临床的实际需要，将丝素蛋白制备成不同形式的骨修复材料，如丝素膜、丝素纳米纤维、丝素水凝胶以及丝素多孔支架。此外，丝素蛋白生物材料能够通过化学修饰、负载生物活性因子以及复合无机物的等方式来增强骨修复的效果。虽然研究者对丝素蛋白在骨修复的应用进行了体内体外等一系列研究，但是离临床应用要求还一定差距，仍有一些问题需要解决，如: 丝素蛋白骨修复材料如何更好地调控种子细胞的成骨分化; 如何构建出更高机械强度的丝素蛋白骨修复材料; 如何确保丝素蛋白骨修复材料的降解速度与骨组织的生长相匹配等等。如果仅期望于通过优化丝素蛋白材料的加工工艺解决上述所有问题，其难度很大。因此，利用转基因技术得到适合于骨修复的具有优良性能的重组丝素蛋白，再通过化学修饰、组分复合等手段得到性能优良，具有临床应用价值的骨修复材料，将成为今后该领域研究的热点。此外，利用3D打印技术制备出完全模拟骨组织内部结构的丝素骨修复材料，以及对丝素生物材料体内外诱导成骨机理的研究，也是今后值得关注的课题。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;初步了解一下导师实验室的研究内容，总结一下之前的了解情况&lt;/p&gt;
-&lt;p&gt;交叉学科：生物科学、高分子科学、材料科学、医学科学&lt;/p&gt;
-&lt;p&gt;研究角度：生物医学材料、保健品、环保材料、新型质纤维材料&lt;/p&gt;
-&lt;p&gt;丝蛋白的基础理论与应用研究：生物矿化、干细胞培养、噬菌体展示技术&lt;br&gt;其他：生物敷料、多孔支架、微球、3D打印、纳米纤维&lt;/p&gt;
-&lt;p&gt;具体：&lt;br&gt;        利用分子自组装原理阐明丝蛋白调控羟基磷灰石结晶生成的生物矿化机制&lt;br&gt;        蚕丝蛋白材料在骨组织工程领域的应用&lt;br&gt;        蚕丝蛋白材料在药物缓释载体领域的应用&lt;br&gt;        蚕丝蛋白材料在人工皮肤领域的应用&lt;br&gt;        蚕丝蛋白在环保领域的应用&lt;/p&gt;
-&lt;p&gt;需要进一步了解的点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;材料力学性能中的专业名词和公式原理等&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;模量、断裂强度、GPa、MPa、断裂伸长率等&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;材料共混带来的影响&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;力学性能改善的方法&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    
-    <category term="科研" scheme="https://ruixi.fun/tags/%E7%A7%91%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习记录</title>
-    <link href="https://ruixi.fun/post/8ad1a2bc.html"/>
-    <id>https://ruixi.fun/post/8ad1a2bc.html</id>
-    <published>2022-08-12T06:32:57.000Z</published>
-    <updated>2024-01-25T12:02:41.139Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><p>2022年8月12日22:25:33 <a href="https://www.runoob.com/html/html-head.html">HTML 头部 | 菜鸟教程 (runoob.com)</a></p></li><li><p>2022年8月13日16:42:22 利用valine及<a href="https://console.leancloud.cn/apps">LeanCloud</a>搭建评论系统（无备案）</p></li><li><p>2022年9月11日17:15:08  插入&lt;!-- more --&gt;控制hexo next主页文章预览范围</p></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;2022年8月12日22:25:33 &lt;a href=&quot;https://www.runoob.com/html/html-head.html&quot;&gt;HTML 头部 | 菜鸟教程 (runoob.com)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;2022年8月</summary>
-      
-    
-    
-    
-    
-    <category term="学习" scheme="https://ruixi.fun/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
