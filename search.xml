@@ -78,14 +78,6 @@ End Sub
       </tags>
   </entry>
   <entry>
-    <title>R语言学习--数学符号</title>
-    <url>/post/ae04c50d.html</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>R语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>THP-1细胞复苏</title>
     <url>/post/15f8deb0.html</url>
     <content><![CDATA[<p>操作方法：</p>
@@ -147,9 +139,6 @@ End Sub
 <p>方法必须将图片放在新建文件时生成的同名文件夹目录下，然后在Typora中使用以下命令格式即可添加图片：</p>
 <p><img src="/post/9584ceb1/a.png" alt="a"></p>
 <p> &#x2F;&#x2F; 这里的图片路径直接填图片名即可，不需要在添加其它目录</p>
-<pre><code>                        版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-</code></pre>
-<p>原文链接：<a href="https://blog.csdn.net/elexiangchirou/article/details/134699785">https://blog.csdn.net/elexiangchirou/article/details/134699785</a></p>
 ]]></content>
       <tags>
         <tag>hexo</tag>
@@ -836,6 +825,15 @@ he染色</p>
 ]]></content>
       <tags>
         <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R语言学习-数学符号</title>
+    <url>/post/b4ab6645.html</url>
+    <content><![CDATA[<p>![符号](R语言学习-数学符号&#x2F;截屏2024-03-25 19.03.11.png)</p>
+]]></content>
+      <tags>
+        <tag>R语言</tag>
       </tags>
   </entry>
 </search>

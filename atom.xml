@@ -6,7 +6,7 @@
   <link href="https://ruixi.fun/atom.xml" rel="self"/>
   
   <link href="https://ruixi.fun/"/>
-  <updated>2024-03-25T11:27:16.772Z</updated>
+  <updated>2024-03-26T01:34:47.810Z</updated>
   <id>https://ruixi.fun/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>R语言学习-数学符号</title>
+    <link href="https://ruixi.fun/post/b4ab6645.html"/>
+    <id>https://ruixi.fun/post/b4ab6645.html</id>
+    <published>2024-03-26T01:32:36.000Z</published>
+    <updated>2024-03-26T01:34:47.810Z</updated>
+    
+    <content type="html"><![CDATA[<p>![符号](R语言学习-数学符号&#x2F;截屏2024-03-25 19.03.11.png)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;![符号](R语言学习-数学符号&amp;#x2F;截屏2024-03-25 19.03.11.png)&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="R语言" scheme="https://ruixi.fun/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo博客插入图片</title>
     <link href="https://ruixi.fun/post/9584ceb1.html"/>
     <id>https://ruixi.fun/post/9584ceb1.html</id>
     <published>2024-03-25T11:08:22.000Z</published>
-    <updated>2024-03-25T11:27:16.772Z</updated>
+    <updated>2024-03-26T01:30:14.645Z</updated>
     
-    <content type="html"><![CDATA[<p>解决方案：</p><p>在Typora中可以直接用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>标签显示同名文件夹中的图片，还可成功布置到博客上。</p><span id="more"></span><p>首先要修改博客配置文件_config.yml,把配置文件里的post_asset_folder设置为true，并在配置文件里添加以下的marked部分.<br>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">---------------------------------添加以下内容----------------</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置完后用hexo new “文章标题”创建文章时会自动创建一个同名的文件夹，用于存放资源文件，一定要用这个方法创建文章。使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>方法必须将图片放在新建文件时生成的同名文件夹目录下，然后在Typora中使用以下命令格式即可添加图片：</p><p><img src="/post/9584ceb1/a.png" alt="a"></p><p> &#x2F;&#x2F; 这里的图片路径直接填图片名即可，不需要在添加其它目录</p><pre><code>                        版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。</code></pre><p>原文链接：<a href="https://blog.csdn.net/elexiangchirou/article/details/134699785">https://blog.csdn.net/elexiangchirou/article/details/134699785</a></p>]]></content>
+    <content type="html"><![CDATA[<p>解决方案：</p><p>在Typora中可以直接用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>标签显示同名文件夹中的图片，还可成功布置到博客上。</p><span id="more"></span><p>首先要修改博客配置文件_config.yml,把配置文件里的post_asset_folder设置为true，并在配置文件里添加以下的marked部分.<br>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">---------------------------------添加以下内容----------------</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置完后用hexo new “文章标题”创建文章时会自动创建一个同名的文件夹，用于存放资源文件，一定要用这个方法创建文章。使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>方法必须将图片放在新建文件时生成的同名文件夹目录下，然后在Typora中使用以下命令格式即可添加图片：</p><p><img src="/post/9584ceb1/a.png" alt="a"></p><p> &#x2F;&#x2F; 这里的图片路径直接填图片名即可，不需要在添加其它目录</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;解决方案：&lt;/p&gt;
@@ -36,21 +59,6 @@
     
     
     <category term="hexo" scheme="https://ruixi.fun/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>R语言学习--数学符号</title>
-    <link href="https://ruixi.fun/post/ae04c50d.html"/>
-    <id>https://ruixi.fun/post/ae04c50d.html</id>
-    <published>2024-03-25T11:04:10.000Z</published>
-    <updated>2024-03-25T11:05:52.307Z</updated>
-    
-    
-    
-    
-    
-    <category term="R语言" scheme="https://ruixi.fun/tags/R%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
