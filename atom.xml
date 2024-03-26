@@ -6,7 +6,7 @@
   <link href="https://ruixi.fun/atom.xml" rel="self"/>
   
   <link href="https://ruixi.fun/"/>
-  <updated>2024-03-26T01:52:06.132Z</updated>
+  <updated>2024-03-26T08:18:12.363Z</updated>
   <id>https://ruixi.fun/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>R语言绘图实操——柱状图1</title>
+    <link href="https://ruixi.fun/post/ea11fa53.html"/>
+    <id>https://ruixi.fun/post/ea11fa53.html</id>
+    <published>2024-03-26T08:14:42.000Z</published>
+    <updated>2024-03-26T08:18:12.363Z</updated>
+    
+    <content type="html"><![CDATA[<p>![截屏2024-03-26 16.16.38](&#x2F;Users&#x2F;shaoruixi&#x2F;ruixifun&#x2F;source&#x2F;_posts&#x2F;R语言绘图实操——柱状图1&#x2F;截屏2024-03-26 16.16.38.png)</p><span id="more"></span><p>代码如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">library(ggplot2)</span><br><span class="line"></span><br><span class="line">library(dplyr)</span><br><span class="line"></span><br><span class="line">library(tidyr)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Creating the initial data frame</span><br><span class="line"></span><br><span class="line">data &lt;- tibble(</span><br><span class="line"></span><br><span class="line"> `0.25mg/mL` = c(6, 3, 4),</span><br><span class="line"></span><br><span class="line"> `0.5mg/mL` = c(14, 9, 12),</span><br><span class="line"></span><br><span class="line"> `1mg/mL` = c(26, 20, 24),</span><br><span class="line"></span><br><span class="line"> `2mg/mL` = c(41, 42, 42)</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Calculating means and SEMs for each concentration</span><br><span class="line"></span><br><span class="line">data_means_sems &lt;- data %&gt;%</span><br><span class="line"></span><br><span class="line"> summarise(across(everything(), list(mean = ~mean(.), sem = ~sd(.) / sqrt(n())))) %&gt;%</span><br><span class="line"></span><br><span class="line"> pivot_longer(cols = everything(), names_to = &quot;concentration_stat&quot;, values_to = &quot;value&quot;) %&gt;%</span><br><span class="line"></span><br><span class="line"> separate(concentration_stat, into = c(&quot;concentration&quot;, &quot;stat&quot;), sep = &quot;_&quot;) %&gt;%</span><br><span class="line"></span><br><span class="line"> pivot_wider(names_from = &quot;stat&quot;, values_from = &quot;value&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Plot with specified &quot;skyblue&quot; fill color and adding data labels</span><br><span class="line"></span><br><span class="line">p &lt;- ggplot(data_means_sems, aes(x = concentration, y = mean)) +</span><br><span class="line"></span><br><span class="line"> geom_bar(stat = &quot;identity&quot;, position = position_dodge(), fill = &quot;#619CFF&quot;) + # Specified fill color here</span><br><span class="line"></span><br><span class="line"> geom_errorbar(aes(ymin = mean - sem, ymax = mean + sem), width = .1) +</span><br><span class="line"></span><br><span class="line"> geom_text(aes(label = sprintf(&quot;%.2f&quot;, mean)), vjust = -2, color = &quot;black&quot;) + # Adding mean data labels</span><br><span class="line"></span><br><span class="line"> labs(x = &quot;Concentration&quot;, y = &quot;Scavenging rate (%)&quot;) +</span><br><span class="line"></span><br><span class="line"> theme_minimal() +</span><br><span class="line"></span><br><span class="line"> theme(legend.position = &quot;none&quot;)+</span><br><span class="line"></span><br><span class="line">scale_y_continuous(limits = c(NA, max(data_means_sems$mean + data_means_sems$sem) * 1.1)) # 调整Y轴范围</span><br><span class="line"></span><br><span class="line">print(p)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;![截屏2024-03-26 16.16.38](&amp;#x2F;Users&amp;#x2F;shaoruixi&amp;#x2F;ruixifun&amp;#x2F;source&amp;#x2F;_posts&amp;#x2F;R语言绘图实操——柱状图1&amp;#x2F;截屏2024-03-26 16.16.38.png)&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="R语言" scheme="https://ruixi.fun/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>R语言学习-数学符号</title>
@@ -44,13 +63,12 @@
     <link href="https://ruixi.fun/post/9584ceb1.html"/>
     <id>https://ruixi.fun/post/9584ceb1.html</id>
     <published>2024-03-25T11:08:22.000Z</published>
-    <updated>2024-03-26T01:30:14.645Z</updated>
+    <updated>2024-03-26T08:07:43.760Z</updated>
     
-    <content type="html"><![CDATA[<p>解决方案：</p><p>在Typora中可以直接用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>标签显示同名文件夹中的图片，还可成功布置到博客上。</p><span id="more"></span><p>首先要修改博客配置文件_config.yml,把配置文件里的post_asset_folder设置为true，并在配置文件里添加以下的marked部分.<br>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">---------------------------------添加以下内容----------------</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置完后用hexo new “文章标题”创建文章时会自动创建一个同名的文件夹，用于存放资源文件，一定要用这个方法创建文章。使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>方法必须将图片放在新建文件时生成的同名文件夹目录下，然后在Typora中使用以下命令格式即可添加图片：</p><p><img src="/post/9584ceb1/a.png" alt="a"></p><p> &#x2F;&#x2F; 这里的图片路径直接填图片名即可，不需要在添加其它目录</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h1><p>在Typora中可以直接用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>标签显示同名文件夹中的图片，还可成功布置到博客上。</p><span id="more"></span><p>首先要修改博客配置文件_config.yml,把配置文件里的post_asset_folder设置为true，并在配置文件里添加以下的marked部分.<br>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">---------------------------------添加以下内容----------------</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置完后用hexo new “文章标题”创建文章时会自动创建一个同名的文件夹，用于存放资源文件，一定要用这个方法创建文章。使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![]()</span><br></pre></td></tr></table></figure><p>方法必须将图片放在新建文件时生成的同名文件夹目录下，然后在Typora中使用以下命令格式即可添加图片：</p><p><img src="/post/9584ceb1/a.png" alt="a"></p><p> &#x2F;&#x2F; 这里的图片路径直接填图片名即可，不需要在添加其它目录</p><h1 id="网络图片"><a href="#网络图片" class="headerlink" title="网络图片"></a>网络图片</h1><p>直接拖进Typora，网页中不显示。</p><p>在文章头下加入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;/&gt;</span><br></pre></td></tr></table></figure><p>加入后，完美解决</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;解决方案：&lt;/p&gt;
-&lt;p&gt;在Typora中可以直接用&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;本地图片&quot;&gt;&lt;a href=&quot;#本地图片&quot; class=&quot;headerlink&quot; title=&quot;本地图片&quot;&gt;&lt;/a&gt;本地图片&lt;/h1&gt;&lt;p&gt;在Typora中可以直接用&lt;/p&gt;
 &lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;![]()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;p&gt;标签显示同名文件夹中的图片，还可成功布置到博客上。&lt;/p&gt;</summary>
@@ -439,28 +457,6 @@
     <summary type="html">&lt;p&gt;Electrospinning for tissue engineering applications&lt;/p&gt;
 &lt;p&gt;用于组织工程应用的静电纺丝&lt;/p&gt;
 &lt;p&gt;RAHMATI M, MILLS D K, URBANSKA A M, 等. Electrospinning for tissue engineering applications[J&amp;#x2F;OL]. Progress in Materials Science, 2021, 117: 100721. DOI:&lt;a href=&quot;https://doi.org/10.1016/j.pmatsci.2020.100721&quot;&gt;10.1016&amp;#x2F;j.pmatsci.2020.100721&lt;/a&gt;.&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="科研" scheme="https://ruixi.fun/tags/%E7%A7%91%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习日记 Day-3</title>
-    <link href="https://ruixi.fun/post/ac97d681.html"/>
-    <id>https://ruixi.fun/post/ac97d681.html</id>
-    <published>2022-09-13T02:38:47.000Z</published>
-    <updated>2024-01-25T12:02:41.141Z</updated>
-    
-    <content type="html"><![CDATA[<p>1、EDS分析：<strong>X射线能谱分析，简写EDS，通常通过配合扫描电子显微镜与透射电子显微镜的使用，是用来对材料微区成分元素种类与含量进行分析：利用电子束与物质作用时产生的特征X射线，来提供样品化学组成方面的信息，可定性、半定量检测大部分元素（Be4-PU94），可进行表面污染物的分析。</strong>  </p><p>(1)定性分析<br>EDS的谱图中谱峰代表样品中存在的元素。定性分析是分析未知样品的第一步，即鉴别所含的元素。如果不能正确地鉴别元素的种类，最后定量分析的精度就毫无意义。  </p><p>(2)定量分析<br>定量分析是通过X射线强度来获取组成样品材料的各种元素的浓度。根据实际情况，人们寻求并提出了测量未知样品和标样的强度比方法，再把强度比经过定量修正换算成浓度比。最广泛使用的一种定量修正技术是ZAF修正。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1、EDS分析：&lt;strong&gt;X射线能谱分析，简写EDS，通常通过配合扫描电子显微镜与透射电子显微镜的使用，是用来对材料微区成分元素种类与含量进行分析：利用电子束与物质作用时产生的特征X射线，来提供样品化学组成方面的信息，可定性、半定量检测大部分元素（Be4-PU94），</summary>
-      
     
     
     
