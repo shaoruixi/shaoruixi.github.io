@@ -80,6 +80,29 @@ End Sub
       </tags>
   </entry>
   <entry>
+    <title>R语言学习-数学符号</title>
+    <url>/post/b4ab6645.html</url>
+    <content><![CDATA[<p><img src="/post/b4ab6645/a.png" alt="a"></p>
+]]></content>
+      <tags>
+        <tag>R语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R语言绘图实操——柱状图1</title>
+    <url>/post/ea11fa53.html</url>
+    <content><![CDATA[<p><img src="/post/ea11fa53/1.png"></p>
+<span id="more"></span>
+
+<p>代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">library(ggplot2)</span><br><span class="line"></span><br><span class="line">library(dplyr)</span><br><span class="line"></span><br><span class="line">library(tidyr)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Creating the initial data frame</span><br><span class="line"></span><br><span class="line">data &lt;- tibble(</span><br><span class="line"></span><br><span class="line"> `0.25mg/mL` = c(6, 3, 4),</span><br><span class="line"></span><br><span class="line"> `0.5mg/mL` = c(14, 9, 12),</span><br><span class="line"></span><br><span class="line"> `1mg/mL` = c(26, 20, 24),</span><br><span class="line"></span><br><span class="line"> `2mg/mL` = c(41, 42, 42)</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Calculating means and SEMs for each concentration</span><br><span class="line"></span><br><span class="line">data_means_sems &lt;- data %&gt;%</span><br><span class="line"></span><br><span class="line"> summarise(across(everything(), list(mean = ~mean(.), sem = ~sd(.) / sqrt(n())))) %&gt;%</span><br><span class="line"></span><br><span class="line"> pivot_longer(cols = everything(), names_to = &quot;concentration_stat&quot;, values_to = &quot;value&quot;) %&gt;%</span><br><span class="line"></span><br><span class="line"> separate(concentration_stat, into = c(&quot;concentration&quot;, &quot;stat&quot;), sep = &quot;_&quot;) %&gt;%</span><br><span class="line"></span><br><span class="line"> pivot_wider(names_from = &quot;stat&quot;, values_from = &quot;value&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Plot with specified &quot;skyblue&quot; fill color and adding data labels</span><br><span class="line"></span><br><span class="line">p &lt;- ggplot(data_means_sems, aes(x = concentration, y = mean)) +</span><br><span class="line"></span><br><span class="line"> geom_bar(stat = &quot;identity&quot;, position = position_dodge(), fill = &quot;#619CFF&quot;) + # Specified fill color here</span><br><span class="line"></span><br><span class="line"> geom_errorbar(aes(ymin = mean - sem, ymax = mean + sem), width = .1) +</span><br><span class="line"></span><br><span class="line"> geom_text(aes(label = sprintf(&quot;%.2f&quot;, mean)), vjust = -2, color = &quot;black&quot;) + # Adding mean data labels</span><br><span class="line"></span><br><span class="line"> labs(x = &quot;Concentration&quot;, y = &quot;Scavenging rate (%)&quot;) +</span><br><span class="line"></span><br><span class="line"> theme_minimal() +</span><br><span class="line"></span><br><span class="line"> theme(legend.position = &quot;none&quot;)+</span><br><span class="line"></span><br><span class="line">scale_y_continuous(limits = c(NA, max(data_means_sems$mean + data_means_sems$sem) * 1.1)) # 调整Y轴范围</span><br><span class="line"></span><br><span class="line">print(p)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>R语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>THP-1细胞复苏</title>
     <url>/post/15f8deb0.html</url>
     <content><![CDATA[<p>操作方法：</p>
@@ -358,20 +381,6 @@ he染色</p>
       </tags>
   </entry>
   <entry>
-    <title>柔软的卫生纸需要什么？</title>
-    <url>/post/a3334128.html</url>
-    <content><![CDATA[<p>作为卫生纸最重要的特性之一，柔软度跟什么有关呢？</p>
-<p>我们可以将对卫生纸的的感知详细地分解一下，就拿我们每个人都会做的一件事，从纸巾盒里抽纸巾，然后擦手。</p>
-<p>首先我们需要用手指捏住纸巾，这时候，我们会感知到纸巾的粗糙度以及硬度。</p>
-<p>其次我们需要将其抽出来，这时候会感受到它的刚度以及强度。</p>
-<p>这些我们感受到的属性共同体现了柔软度，特别是弯曲刚度，拉伸形变能力，模量。</p>
-<p>柔软度与纸巾的体积、光滑度、粗糙度、硬度、刚度、强度等有关。没有任何单一的特性与柔软度直接相关，因为柔软度是许多特性的相互作用。物体可以有两种类型的有形物体属性：“宏观空间属性，包括形状和方向;和材料属性，如粗糙度，柔软度和温度”（Kitada等人，2019）。神经影像学研究发现，宏观空间特性和材料特性需要不同的网络参与来进行处理（Kitada等人，2019）。对于柔软性的性质，很少有研究“对象顺应性和柔软性感知的神经相关性”。研究发现，“柔软度的触觉感知是基于皮肤上压力的时空变化”（Kitada等人，2019）。在造纸工业中，</p>
-]]></content>
-      <tags>
-        <tag>小知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>干细胞人工子宫培养胚胎文献阅读</title>
     <url>/post/7e182216.html</url>
     <content><![CDATA[<p>Post-Gastrulation Synthetic Embryos Generated Ex Utero from Mouse Naive ESCs</p>
@@ -449,6 +458,20 @@ he染色</p>
 ]]></content>
       <tags>
         <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>柔软的卫生纸需要什么？</title>
+    <url>/post/a3334128.html</url>
+    <content><![CDATA[<p>作为卫生纸最重要的特性之一，柔软度跟什么有关呢？</p>
+<p>我们可以将对卫生纸的的感知详细地分解一下，就拿我们每个人都会做的一件事，从纸巾盒里抽纸巾，然后擦手。</p>
+<p>首先我们需要用手指捏住纸巾，这时候，我们会感知到纸巾的粗糙度以及硬度。</p>
+<p>其次我们需要将其抽出来，这时候会感受到它的刚度以及强度。</p>
+<p>这些我们感受到的属性共同体现了柔软度，特别是弯曲刚度，拉伸形变能力，模量。</p>
+<p>柔软度与纸巾的体积、光滑度、粗糙度、硬度、刚度、强度等有关。没有任何单一的特性与柔软度直接相关，因为柔软度是许多特性的相互作用。物体可以有两种类型的有形物体属性：“宏观空间属性，包括形状和方向;和材料属性，如粗糙度，柔软度和温度”（Kitada等人，2019）。神经影像学研究发现，宏观空间特性和材料特性需要不同的网络参与来进行处理（Kitada等人，2019）。对于柔软性的性质，很少有研究“对象顺应性和柔软性感知的神经相关性”。研究发现，“柔软度的触觉感知是基于皮肤上压力的时空变化”（Kitada等人，2019）。在造纸工业中，</p>
+]]></content>
+      <tags>
+        <tag>小知识</tag>
       </tags>
   </entry>
   <entry>
@@ -834,22 +857,13 @@ he染色</p>
       </tags>
   </entry>
   <entry>
-    <title>R语言学习-数学符号</title>
-    <url>/post/b4ab6645.html</url>
-    <content><![CDATA[<p><img src="/post/b4ab6645/a.png" alt="a"></p>
-]]></content>
-      <tags>
-        <tag>R语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>R语言绘图实操——柱状图1</title>
-    <url>/post/ea11fa53.html</url>
-    <content><![CDATA[<p>![截屏2024-03-26 16.16.38](&#x2F;Users&#x2F;shaoruixi&#x2F;ruixifun&#x2F;source&#x2F;_posts&#x2F;R语言绘图实操——柱状图1&#x2F;截屏2024-03-26 16.16.38.png)</p>
+    <title>R语言绘图实操——折线图1</title>
+    <url>/post/e315e1cc.html</url>
+    <content><![CDATA[<p><img src="/post/e315e1cc/1.png"></p>
 <span id="more"></span>
 
-<p>代码如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">library(ggplot2)</span><br><span class="line"></span><br><span class="line">library(dplyr)</span><br><span class="line"></span><br><span class="line">library(tidyr)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Creating the initial data frame</span><br><span class="line"></span><br><span class="line">data &lt;- tibble(</span><br><span class="line"></span><br><span class="line"> `0.25mg/mL` = c(6, 3, 4),</span><br><span class="line"></span><br><span class="line"> `0.5mg/mL` = c(14, 9, 12),</span><br><span class="line"></span><br><span class="line"> `1mg/mL` = c(26, 20, 24),</span><br><span class="line"></span><br><span class="line"> `2mg/mL` = c(41, 42, 42)</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Calculating means and SEMs for each concentration</span><br><span class="line"></span><br><span class="line">data_means_sems &lt;- data %&gt;%</span><br><span class="line"></span><br><span class="line"> summarise(across(everything(), list(mean = ~mean(.), sem = ~sd(.) / sqrt(n())))) %&gt;%</span><br><span class="line"></span><br><span class="line"> pivot_longer(cols = everything(), names_to = &quot;concentration_stat&quot;, values_to = &quot;value&quot;) %&gt;%</span><br><span class="line"></span><br><span class="line"> separate(concentration_stat, into = c(&quot;concentration&quot;, &quot;stat&quot;), sep = &quot;_&quot;) %&gt;%</span><br><span class="line"></span><br><span class="line"> pivot_wider(names_from = &quot;stat&quot;, values_from = &quot;value&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\# Plot with specified &quot;skyblue&quot; fill color and adding data labels</span><br><span class="line"></span><br><span class="line">p &lt;- ggplot(data_means_sems, aes(x = concentration, y = mean)) +</span><br><span class="line"></span><br><span class="line"> geom_bar(stat = &quot;identity&quot;, position = position_dodge(), fill = &quot;#619CFF&quot;) + # Specified fill color here</span><br><span class="line"></span><br><span class="line"> geom_errorbar(aes(ymin = mean - sem, ymax = mean + sem), width = .1) +</span><br><span class="line"></span><br><span class="line"> geom_text(aes(label = sprintf(&quot;%.2f&quot;, mean)), vjust = -2, color = &quot;black&quot;) + # Adding mean data labels</span><br><span class="line"></span><br><span class="line"> labs(x = &quot;Concentration&quot;, y = &quot;Scavenging rate (%)&quot;) +</span><br><span class="line"></span><br><span class="line"> theme_minimal() +</span><br><span class="line"></span><br><span class="line"> theme(legend.position = &quot;none&quot;)+</span><br><span class="line"></span><br><span class="line">scale_y_continuous(limits = c(NA, max(data_means_sems$mean + data_means_sems$sem) * 1.1)) # 调整Y轴范围</span><br><span class="line"></span><br><span class="line">print(p)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">library(ggplot2)</span><br><span class="line">library(minpack.lm) # 加载minpack.lm包</span><br><span class="line"></span><br><span class="line"># 已有的数据和模型拟合，使用nlsLM代替nls</span><br><span class="line">data_SFP &lt;- data.frame(concentration = c(0.25, 0.5, 1, 2, 5, 10),</span><br><span class="line">                       Clearance = c(6, 14, 26, 41, 55, 78))</span><br><span class="line"></span><br><span class="line">model_SFP &lt;- nlsLM(Clearance ~ L / (1 + exp(-k * (concentration - x0))),</span><br><span class="line">                   data = data_SFP,</span><br><span class="line">                   start = list(L = 80, k = 1, x0 = 2), # 修改起始值</span><br><span class="line">                   control = list(maxiter = 200)) # 可能需要增加最大迭代次数</span><br><span class="line"></span><br><span class="line"># 第二组数据，使用nlsLM</span><br><span class="line">data_SFP2 &lt;- data.frame(concentration = c(0.25, 0.5, 1, 2, 5, 10),</span><br><span class="line">                        Clearance = c(3, 7, 14, 8, 6, 9))</span><br><span class="line">model_SFP2 &lt;- nlsLM(Clearance ~ L / (1 + exp(-k * (concentration - x0))),</span><br><span class="line">                    data = data_SFP2,</span><br><span class="line">                    start = list(L = 20, k = 1, x0 = 2), # 修改起始值</span><br><span class="line">                    control = list(maxiter = 200))</span><br><span class="line"></span><br><span class="line"># 第三组数据，同样使用nlsLM</span><br><span class="line">data_SFP3 &lt;- data.frame(concentration = c(0.25, 0.5, 1, 2, 5, 10),</span><br><span class="line">                        Clearance = c(9, 7, 10, 11, 28, 48))</span><br><span class="line"></span><br><span class="line">model_SFP3 &lt;- nlsLM(Clearance ~ L / (1 + exp(-k * (concentration - x0))),</span><br><span class="line">                    data = data_SFP3,</span><br><span class="line">                    start = list(L = 50, k = 1, x0 = 2),</span><br><span class="line">                    control = list(maxiter = 200))</span><br><span class="line"># 接下来，创建预测数据框并绘图，此部分与之前的代码相同，只需确保使用正确的模型变量即可</span><br><span class="line"># 注意：此处不再重复绘图代码，你可以使用前面提供的绘图代码进行绘制</span><br><span class="line"></span><br><span class="line"># 创建用于绘图的预测数据框</span><br><span class="line">concentration_range &lt;- seq(0, 10, length.out = 100)</span><br><span class="line">Clearance_pred_SFP &lt;- predict(model_SFP, newdata = list(concentration = concentration_range))</span><br><span class="line">data_pred_SFP &lt;- data.frame(concentration = concentration_range, Clearance = Clearance_pred_SFP)</span><br><span class="line"></span><br><span class="line">concentration_range2 &lt;- seq(0, 10, length.out = 100)</span><br><span class="line">Clearance_pred_SFP2 &lt;- predict(model_SFP2, newdata = list(concentration = concentration_range2))</span><br><span class="line">data_pred_SFP2 &lt;- data.frame(concentration = concentration_range2, Clearance = Clearance_pred_SFP2)</span><br><span class="line"></span><br><span class="line">concentration_range3 &lt;- seq(0, 10, length.out = 100)</span><br><span class="line">Clearance_pred_SFP3 &lt;- predict(model_SFP3, newdata = list(concentration = concentration_range3))</span><br><span class="line">data_pred_SFP3 &lt;- data.frame(concentration = concentration_range3, Clearance = Clearance_pred_SFP3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p &lt;- ggplot() +</span><br><span class="line">  geom_point(data = data_SFP, aes(x = concentration, y = Clearance, color = &quot;SFP&quot;), size = 2) +</span><br><span class="line">  geom_line(data = data_pred_SFP, aes(x = concentration, y = Clearance, color = &quot;SFP&quot;), size = 1) +</span><br><span class="line">  geom_point(data = data_SFP2, aes(x = concentration, y = Clearance, color = &quot;QL&quot;), size = 2) +</span><br><span class="line">  geom_line(data = data_pred_SFP2, aes(x = concentration, y = Clearance, color = &quot;QL&quot;), size = 1) +</span><br><span class="line">  geom_point(data = data_SFP3, aes(x = concentration, y = Clearance, color = &quot;DL&quot;), size = 2) +</span><br><span class="line">  geom_line(data = data_pred_SFP3, aes(x = concentration, y = Clearance, color = &quot;DL&quot;), size = 1) +</span><br><span class="line">  xlab(&quot;Concentration (mg/mL)&quot;) +</span><br><span class="line">  ylab(&quot;Scavenging rate (%)&quot;) +</span><br><span class="line">  ggtitle(&quot;DPPH scavenging rates of different concentrations of SFP&quot;) +</span><br><span class="line">  theme_minimal() </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(p)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <tags>
