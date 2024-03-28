@@ -6,7 +6,7 @@
   <link href="https://ruixi.fun/atom.xml" rel="self"/>
   
   <link href="https://ruixi.fun/"/>
-  <updated>2024-03-26T08:23:51.263Z</updated>
+  <updated>2024-03-28T08:47:14.264Z</updated>
   <id>https://ruixi.fun/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BCA法测透皮多肽浓度</title>
+    <link href="https://ruixi.fun/post/a9a5a73b.html"/>
+    <id>https://ruixi.fun/post/a9a5a73b.html</id>
+    <published>2024-03-28T08:34:52.000Z</published>
+    <updated>2024-03-28T08:47:14.264Z</updated>
+    
+    <content type="html"><![CDATA[<p>选用Franz扩散池，如下图</p><p><img src="/post/a9a5a73b/a.png" alt="a"></p><span id="more"></span><h2 id="BCA法原理："><a href="#BCA法原理：" class="headerlink" title="BCA法原理："></a>BCA法原理：</h2><p>​BCA法中选用牛血清白蛋白（BSA）作为标准蛋白，原理是蛋白质中的酪氨酸、色氨酸等在碱性环境下可以将二价铜离子还原为一价铜离子，BCA与一价铜离子相互作用，两分子的BCA螯合一个铜离子，形成紫色复合物，可在562nm显示出强烈的吸光性。</p><h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h2><p>1、BCA法中的标准蛋白BSA与待测多肽的组成不同，多肽中的酪氨酸等含量更多的话会有更强的还原铜离子的能力，因此选择特定多肽代替BSA作标准曲线可以更加准确地得到待测液体中的多肽浓度。</p><p>2、取样点要在接受池内部，尽量靠近中间，以获得更加准确的浓度。</p><p>3、皮肤、聚合物膜等需要拉平整，不然会由于液位高低产生凹面或者凸面，影响接触面积大小，同时接受池中尽量不产生气泡，以免气泡减少接触面积，一开始可以排气泡，但上方加入了液体后，会变困难。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;选用Franz扩散池，如下图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/post/a9a5a73b/a.png&quot; alt=&quot;a&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="BCA法" scheme="https://ruixi.fun/tags/BCA%E6%B3%95/"/>
+    
+    <category term="透皮实验" scheme="https://ruixi.fun/tags/%E9%80%8F%E7%9A%AE%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>R语言绘图实操——折线图1</title>
     <link href="https://ruixi.fun/post/e315e1cc.html"/>
     <id>https://ruixi.fun/post/e315e1cc.html</id>
     <published>2024-03-26T08:20:54.000Z</published>
-    <updated>2024-03-26T08:23:51.263Z</updated>
+    <updated>2024-03-26T08:23:55.279Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/post/e315e1cc/1.png"></p><span id="more"></span><p>代码如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">library(ggplot2)</span><br><span class="line">library(minpack.lm) # 加载minpack.lm包</span><br><span class="line"></span><br><span class="line"># 已有的数据和模型拟合，使用nlsLM代替nls</span><br><span class="line">data_SFP &lt;- data.frame(concentration = c(0.25, 0.5, 1, 2, 5, 10),</span><br><span class="line">                       Clearance = c(6, 14, 26, 41, 55, 78))</span><br><span class="line"></span><br><span class="line">model_SFP &lt;- nlsLM(Clearance ~ L / (1 + exp(-k * (concentration - x0))),</span><br><span class="line">                   data = data_SFP,</span><br><span class="line">                   start = list(L = 80, k = 1, x0 = 2), # 修改起始值</span><br><span class="line">                   control = list(maxiter = 200)) # 可能需要增加最大迭代次数</span><br><span class="line"></span><br><span class="line"># 第二组数据，使用nlsLM</span><br><span class="line">data_SFP2 &lt;- data.frame(concentration = c(0.25, 0.5, 1, 2, 5, 10),</span><br><span class="line">                        Clearance = c(3, 7, 14, 8, 6, 9))</span><br><span class="line">model_SFP2 &lt;- nlsLM(Clearance ~ L / (1 + exp(-k * (concentration - x0))),</span><br><span class="line">                    data = data_SFP2,</span><br><span class="line">                    start = list(L = 20, k = 1, x0 = 2), # 修改起始值</span><br><span class="line">                    control = list(maxiter = 200))</span><br><span class="line"></span><br><span class="line"># 第三组数据，同样使用nlsLM</span><br><span class="line">data_SFP3 &lt;- data.frame(concentration = c(0.25, 0.5, 1, 2, 5, 10),</span><br><span class="line">                        Clearance = c(9, 7, 10, 11, 28, 48))</span><br><span class="line"></span><br><span class="line">model_SFP3 &lt;- nlsLM(Clearance ~ L / (1 + exp(-k * (concentration - x0))),</span><br><span class="line">                    data = data_SFP3,</span><br><span class="line">                    start = list(L = 50, k = 1, x0 = 2),</span><br><span class="line">                    control = list(maxiter = 200))</span><br><span class="line"># 接下来，创建预测数据框并绘图，此部分与之前的代码相同，只需确保使用正确的模型变量即可</span><br><span class="line"># 注意：此处不再重复绘图代码，你可以使用前面提供的绘图代码进行绘制</span><br><span class="line"></span><br><span class="line"># 创建用于绘图的预测数据框</span><br><span class="line">concentration_range &lt;- seq(0, 10, length.out = 100)</span><br><span class="line">Clearance_pred_SFP &lt;- predict(model_SFP, newdata = list(concentration = concentration_range))</span><br><span class="line">data_pred_SFP &lt;- data.frame(concentration = concentration_range, Clearance = Clearance_pred_SFP)</span><br><span class="line"></span><br><span class="line">concentration_range2 &lt;- seq(0, 10, length.out = 100)</span><br><span class="line">Clearance_pred_SFP2 &lt;- predict(model_SFP2, newdata = list(concentration = concentration_range2))</span><br><span class="line">data_pred_SFP2 &lt;- data.frame(concentration = concentration_range2, Clearance = Clearance_pred_SFP2)</span><br><span class="line"></span><br><span class="line">concentration_range3 &lt;- seq(0, 10, length.out = 100)</span><br><span class="line">Clearance_pred_SFP3 &lt;- predict(model_SFP3, newdata = list(concentration = concentration_range3))</span><br><span class="line">data_pred_SFP3 &lt;- data.frame(concentration = concentration_range3, Clearance = Clearance_pred_SFP3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p &lt;- ggplot() +</span><br><span class="line">  geom_point(data = data_SFP, aes(x = concentration, y = Clearance, color = &quot;SFP&quot;), size = 2) +</span><br><span class="line">  geom_line(data = data_pred_SFP, aes(x = concentration, y = Clearance, color = &quot;SFP&quot;), size = 1) +</span><br><span class="line">  geom_point(data = data_SFP2, aes(x = concentration, y = Clearance, color = &quot;QL&quot;), size = 2) +</span><br><span class="line">  geom_line(data = data_pred_SFP2, aes(x = concentration, y = Clearance, color = &quot;QL&quot;), size = 1) +</span><br><span class="line">  geom_point(data = data_SFP3, aes(x = concentration, y = Clearance, color = &quot;DL&quot;), size = 2) +</span><br><span class="line">  geom_line(data = data_pred_SFP3, aes(x = concentration, y = Clearance, color = &quot;DL&quot;), size = 1) +</span><br><span class="line">  xlab(&quot;Concentration (mg/mL)&quot;) +</span><br><span class="line">  ylab(&quot;Scavenging rate (%)&quot;) +</span><br><span class="line">  ggtitle(&quot;DPPH scavenging rates of different concentrations of SFP&quot;) +</span><br><span class="line">  theme_minimal() </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(p)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -432,29 +454,6 @@
 &lt;p&gt;幼稚的胚胎干细胞在胚胎中产生所有胚胎和胚胎外隔室&lt;/p&gt;
 &lt;p&gt;原肠胚形成后干细胞衍生的胚胎发育出器官特异性祖细胞&lt;/p&gt;
 &lt;p&gt;胚外隔室在原肠胚发育后充分发育整个胚胎&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="科研" scheme="https://ruixi.fun/tags/%E7%A7%91%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>蚕丝蛋白综述</title>
-    <link href="https://ruixi.fun/post/19afb55e.html"/>
-    <id>https://ruixi.fun/post/19afb55e.html</id>
-    <published>2022-09-16T07:40:06.000Z</published>
-    <updated>2024-01-25T12:02:41.145Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials"><a href="#1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials" class="headerlink" title="1. Structures, mechanical properties and applications of silk fibroin materials"></a>1. Structures, mechanical properties and applications of silk fibroin materials</h1><p>丝素蛋白材料的结构、力学性能及应用</p><p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr1.jpg"></p><blockquote><p>Fig. 1. In vivo processing in silk glands and natural spinning by silkworms to produce fibroin fibers with unique features</p></blockquote><span id="more"></span><hr><p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr2.jpg"></p><blockquote><p>Fig. 2. <em>Bombyx mori</em> silkworm silk in various morphologies. (A) The raw silk consists of two fibroin fibers held together with a layer of sericin on their surfaces. After degumming to remove sericin, the fibroin fibers are dissolved in <a href="https://www.sciencedirect.com/topics/chemistry/lithium-bromide" title="Learn more about lithium bromide from ScienceDirect&#39;s AI-generated Topic Pages">lithium bromide</a> solution followed by dialyzing against ultrapure water or <a href="https://www.sciencedirect.com/topics/chemistry/poly-ethylene-glycol" title="Learn more about polyethylene glycol from ScienceDirect&#39;s AI-generated Topic Pages">polyethylene glycol</a> to obtain regenerated fibroin solution <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1015">[12]</a>, (B) Mature silkworm and produced cocoon <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1020">[13]</a>, (C) Silk braided <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1025">[14]</a>, knitted <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1030">[15]</a>, and non-woven matrices <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1035">[16]</a> constructed from the fibroin fibers, (D) Silk sponges <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1040">[17]</a>, hydrogels <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, films <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, nanofibrous mats <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, microparticles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1010">[11]</a>, and microneedles <a href="https://www.sciencedirect.com/science/article/pii/S0079670015000155?via=ihub#bib1045">[18]</a> constructed from the regenerated fibroin solution.</p></blockquote><h2 id="机械性能"><a href="#机械性能" class="headerlink" title="机械性能"></a>机械性能</h2><h2 id="机械性能增强"><a href="#机械性能增强" class="headerlink" title="机械性能增强"></a>机械性能增强</h2><h2 id="功能化"><a href="#功能化" class="headerlink" title="功能化"></a>功能化</h2><h4 id="1-内在功能化"><a href="#1-内在功能化" class="headerlink" title="1.内在功能化"></a>1.内在功能化</h4><h4 id="2-后修饰功能化"><a href="#2-后修饰功能化" class="headerlink" title="2.后修饰功能化"></a>2.后修饰功能化</h4><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h4 id="1-织物"><a href="#1-织物" class="headerlink" title="1.织物"></a>1.织物</h4><h4 id="2-手术缝合线"><a href="#2-手术缝合线" class="headerlink" title="2.手术缝合线"></a>2.手术缝合线</h4><h4 id="3-组织工程"><a href="#3-组织工程" class="headerlink" title="3.组织工程"></a>3.组织工程</h4><h4 id="4-药物递送"><a href="#4-药物递送" class="headerlink" title="4.药物递送"></a>4.药物递送</h4><h4 id="5-光学传感"><a href="#5-光学传感" class="headerlink" title="5.光学传感"></a>5.光学传感</h4>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials&quot;&gt;&lt;a href=&quot;#1-Structures-mechanical-properties-and-applications-of-silk-fibroin-materials&quot; class=&quot;headerlink&quot; title=&quot;1. Structures, mechanical properties and applications of silk fibroin materials&quot;&gt;&lt;/a&gt;1. Structures, mechanical properties and applications of silk fibroin materials&lt;/h1&gt;&lt;p&gt;丝素蛋白材料的结构、力学性能及应用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://ars.els-cdn.com/content/image/1-s2.0-S0079670015000155-gr1.jpg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Fig. 1. In vivo processing in silk glands and natural spinning by silkworms to produce fibroin fibers with unique features&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
     
     
     

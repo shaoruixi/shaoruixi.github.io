@@ -870,4 +870,21 @@ he染色</p>
         <tag>R语言</tag>
       </tags>
   </entry>
+  <entry>
+    <title>BCA法测透皮多肽浓度</title>
+    <url>/post/a9a5a73b.html</url>
+    <content><![CDATA[<p>选用Franz扩散池，如下图</p>
+<p><img src="/post/a9a5a73b/a.png" alt="a"></p>
+<span id="more"></span>
+
+<h2 id="BCA法原理："><a href="#BCA法原理：" class="headerlink" title="BCA法原理："></a>BCA法原理：</h2><p>​	BCA法中选用牛血清白蛋白（BSA）作为标准蛋白，原理是蛋白质中的酪氨酸、色氨酸等在碱性环境下可以将二价铜离子还原为一价铜离子，BCA与一价铜离子相互作用，两分子的BCA螯合一个铜离子，形成紫色复合物，可在562nm显示出强烈的吸光性。</p>
+<h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h2><p>1、BCA法中的标准蛋白BSA与待测多肽的组成不同，多肽中的酪氨酸等含量更多的话会有更强的还原铜离子的能力，因此选择特定多肽代替BSA作标准曲线可以更加准确地得到待测液体中的多肽浓度。</p>
+<p>2、取样点要在接受池内部，尽量靠近中间，以获得更加准确的浓度。</p>
+<p>3、皮肤、聚合物膜等需要拉平整，不然会由于液位高低产生凹面或者凸面，影响接触面积大小，同时接受池中尽量不产生气泡，以免气泡减少接触面积，一开始可以排气泡，但上方加入了液体后，会变困难。</p>
+]]></content>
+      <tags>
+        <tag>BCA法</tag>
+        <tag>透皮实验</tag>
+      </tags>
+  </entry>
 </search>
